@@ -9,7 +9,9 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="{{ site.baseurl }}/">{{ site.title }}</a>
+            <a class="navbar-brand" href="{{ site.baseurl }}/">
+                {% octicon briefcase height:32 class:"right left" aria-label:hi %}
+            </a>
         </div>
 
         <!-- Collect the nav links, forms, and other content for toggling -->
@@ -18,13 +20,22 @@
                 <li>
                     <a href="{{ site.baseurl }}/">Home</a>
                 </li>
-                {% for page in site.pages %}{% if page.title %}
+                <li>
+                    <a href="{{ site.baseurl }}/about">About</a>
+                </li>
+                <li>
+                    <a href="{{ site.baseurl }}/contact">Contact</a>
+                </li>
+                <li>
+                    <a href="{{ site.baseurl }}/blog">Blog</a>
+                </li>
+                <!-- {% for page in site.pages %}{% if page.title %}
 				{% if page.url != '/404.html' %}
                 <li>
                     <a href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
                 </li>
 				{% endif %}
-                {% endif %}{% endfor %}
+                {% endif %}{% endfor %} -->
             </ul>
         </div>
         <!-- /.navbar-collapse -->
