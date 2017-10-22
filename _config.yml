@@ -1,16 +1,16 @@
 # Site settings
 title: Brad Kwon
 header-img: img/home-bg.jpg
-email: your-email@yourdomain.com
-copyright_name: Your/Project/Corporate Name
-description: "Write your site description here. It will be used as your sites meta description as well!"
+email: junya815@gmail.com
+copyright_name: Brad Kwon
+description: "Brad Kwon's site"
 baseurl: ""
 url: "https://BradKwon.github.io"
 #url: "http://localhost:4000"
-twitter_username: SBootstrap
-github_username:  davidtmiller
-facebook_username:  StartBootstrap
-email_username:  your-email@yourdomain.com
+#twitter_username: SBootstrap
+github_username:  BradKwon
+facebook_username:  hyeongu.kwon
+email_username:  junya815@gmail.com
 
 # Google Analytics
 # To enable google analytics, uncomment below line with a valid Google Tracking ID
