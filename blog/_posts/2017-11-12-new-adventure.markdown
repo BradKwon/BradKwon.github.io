@@ -2,7 +2,7 @@
 layout:     post
 title:      "새로운 도전"
 published: false
-header-img: "img/blog/frankfurtHbf.jpg"
+header-img: "blog/img/20171112/frankfurtHbf.jpg"
 ---
 
 <p>
