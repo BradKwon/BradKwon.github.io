@@ -3,6 +3,7 @@ layout:     post
 title:      "Xamarin Android Emulator Setup in Visual Studio 2017"
 subtitle:   "with Visual Studio Emulator for Android"
 header-img: "tech/img/20171115/xamarin-android-emulator-setup.jpg"
+tags:       [Xamarin,  Visual Studio, C#, Mobile, Android]
 ---
 <p>
 I've recently started to learn Xamarin to build any mobile app with C# because I've mainly used C# for programming. 
