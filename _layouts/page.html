@@ -23,7 +23,6 @@ layout: default
     loop
     muted
     autoplay
-    controls="true"
     preload="auto"
     poster="{{ postVideo }}.png">
     <source src="{{ postVideo }}.mp4" type="video/mp4">
@@ -78,3 +77,9 @@ layout: default
 {% endif %}
 
 <hr>
+
+<script>
+document.addEventListener('touchstart', function(event) {
+    video.play();
+}, false);
+</script>
