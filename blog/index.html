@@ -269,8 +269,7 @@
     <script>
         $(document).ready(function(){
             if (navigator.userAgent.match(/(iPod|iPhone|iPad|Android)/)) {
-                $('video.background').attr('position','absolute')
-                                    .attr('top','-5%');
+                $('video.background').css('position','absolute').css('top','-5%');
                 $('div#mainContent').attr('style','');
             }
 
