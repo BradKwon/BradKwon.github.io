@@ -135,8 +135,8 @@
 
 <style>
     video.background {
-        position: absolute;
-        top: -5%;
+        position: fixed;
+        top: 50%;
         left: 50%;
         min-width: 100%;
         min-height: 100%;
@@ -170,13 +170,12 @@
             </div>
         </div>
     </div>
-</header>
 
-<!-- Main Content -->
-<div class="container">
-    <div class="row">
-        <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-            <h2>Hello there!</h2>
+    <!-- Main Content -->
+    <div class="container" style="color: white;">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <h2>Hello there!</h2>
 <p>
     I am the person who loves travelling, listening to music, learning and smiling.
     Get up and go attitude is what I have and it led me to Berlin, the heart of passion in Germany.
@@ -195,9 +194,10 @@
     If you want to contact me, please click any circular button in the bottom.
 </p>
 <p>Thank you!</p>
+            </div>
         </div>
     </div>
-</div>
+</header>
 
 
 <hr>
@@ -298,6 +298,11 @@
 
     <script>
         $(document).ready(function(){
+            if (navigator.userAgent.match(/(iPod|iPhone|iPad|Android)/)) {
+                $('video.background').attr('position','absolute')
+                                    .attr('top','-5%');
+            }
+
             $(window).scroll(function () {
                 if ($(this).scrollTop() > 50) {
                     $('#back-to-top').fadeIn();
