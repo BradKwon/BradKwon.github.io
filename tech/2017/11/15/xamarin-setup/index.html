@@ -378,6 +378,11 @@ Eventually, I could see something different on the output window after executing
 
     <script>
         $(document).ready(function(){
+            if (navigator.userAgent.match(/(iPod|iPhone|iPad|Android)/)) {
+                $('video.background').attr('position','absolute')
+                                    .attr('top','-5%');
+            }
+
             $(window).scroll(function () {
                 if ($(this).scrollTop() > 50) {
                     $('#back-to-top').fadeIn();
