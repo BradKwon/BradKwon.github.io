@@ -127,7 +127,33 @@
 
 
     <!-- Page Header -->
-<header class="intro-header" style="background-image: url('/img/home-bg.jpg')">
+
+<style>
+    video.background {
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        min-width: 100%;
+        min-height: 100%;
+        width: auto;
+        height: auto;
+        z-index: -100;
+        transform: translate(-50%, -50%);
+    }
+</style>
+    
+
+<video class="background"
+    loop
+    muted
+    autoplay
+    preload="auto"
+    poster="/video/milkyway.png">
+    <source src="/video/milkyway.mp4" type="video/mp4">
+    <source src="/video/milkyway.webm" type="video/webm">
+</video>
+
+<header class="intro-header" style="background-color: initial;">
     <div class="container">
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
@@ -139,13 +165,12 @@
             </div>
         </div>
     </div>
-</header>
 
-<!-- Main Content -->
-<div class="container">
-    <div class="row">
-        <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-            <h2>Hello there!</h2>
+    <!-- Main Content -->
+    <div class="container" style="color: white;">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <h2>Hello there!</h2>
 <p>
     I am the person who loves travelling, listening to music, learning and smiling.
     Get up and go attitude is what I have and it led me to Berlin, the heart of passion in Germany.
@@ -164,9 +189,11 @@
     If you want to contact me, please click any circular button in the bottom.
 </p>
 <p>Thank you!</p>
+            </div>
         </div>
     </div>
-</div>
+</header>
+
 
 <hr>
 

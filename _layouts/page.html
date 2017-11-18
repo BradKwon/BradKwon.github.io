@@ -3,6 +3,55 @@ layout: default
 ---
 
 <!-- Page Header -->
+{% if page.video %}
+<style>
+    video.background {
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        min-width: 100%;
+        min-height: 100%;
+        width: auto;
+        height: auto;
+        z-index: -100;
+        transform: translate(-50%, -50%);
+    }
+</style>
+    
+{% assign postVideo = page.video %}
+<video class="background"
+    loop
+    muted
+    autoplay
+    preload="auto"
+    poster="{{ postVideo }}.png">
+    <source src="{{ postVideo }}.mp4" type="video/mp4">
+    <source src="{{ postVideo }}.webm" type="video/webm">
+</video>
+
+<header class="intro-header" style="background-color: initial;">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <div class="site-heading">
+                    <h1>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</h1>
+                    <hr class="small">
+                    <span class="subheading">{{ page.description }}</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="container" style="color: white;">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                {{ content }}
+            </div>
+        </div>
+    </div>
+</header>
+{% else %}
 <header class="intro-header" style="background-image: url('{{ site.baseurl }}/{% if page.header-img %}{{ page.header-img }}{% else %}{{ site.header-img }}{% endif %}')">
     <div class="container">
         <div class="row">
@@ -25,5 +74,6 @@ layout: default
         </div>
     </div>
 </div>
+{% endif %}
 
 <hr>
