@@ -301,10 +301,9 @@
                 $('#back-to-top').tooltip('hide');
 
                 $('body,html').animate({
-                    scrollTop: 0
-                }, 800, function() {
-                    $('body,html').clearQueue();
-                });
+                    scrollTop: 100,
+                    scrollLeft: 200
+                }, 800);
 
                 return false;
             });
