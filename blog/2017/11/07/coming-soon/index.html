@@ -300,15 +300,11 @@
             $('#back-to-top').click(function () {
                 $('#back-to-top').tooltip('hide');
 
-                // Mobile devices don't know what 'body,html' is so differentiate it.
-                if (navigator.userAgent.match(/(iPod|iPhone|iPad|Android)/)) {
-                    window.scrollTo(0, 0);
-                }
-                else {
-                    $('body,html').animate({
-                        scrollTop: 0
-                    }, 800);
-                }
+                $('body,html').animate({
+                    scrollTop: 0
+                }, 800, function() {
+                    $('body,html').clearQueue();
+                });
 
                 return false;
             });
