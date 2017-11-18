@@ -388,7 +388,7 @@ Eventually, I could see something different on the output window after executing
             // scroll body to 0px on click
             $('#back-to-top').click(function () {
                 $('#back-to-top').tooltip('hide');
-                $('html').animate({
+                $('html,body').animate({
                     scrollTop: 0
                 }, 800);
                 return false;
