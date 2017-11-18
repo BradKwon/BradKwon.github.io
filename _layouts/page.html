@@ -6,15 +6,15 @@ layout: default
 {% if page.video %}
 <style>
     video.background {
-        position: fixed;
-        top: 50%;
+        position: absolute;
+        top: -5%;
         left: 50%;
         min-width: 100%;
         min-height: 100%;
         width: auto;
         height: auto;
         z-index: -100;
-        /* transform: translate(-50%, -50%); */
+        transform: translate(-50%, -50%);
     }
 </style>
     
@@ -41,16 +41,16 @@ layout: default
             </div>
         </div>
     </div>
+</header>
 
-    <!-- Main Content -->
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-                {{ content }}
-            </div>
+<!-- Main Content -->
+<div class="container">
+    <div class="row">
+        <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+            {{ content }}
         </div>
     </div>
-</header>
+</div>
 {% else %}
 <header class="intro-header" style="background-image: url('{{ site.baseurl }}/{% if page.header-img %}{{ page.header-img }}{% else %}{{ site.header-img }}{% endif %}')">
     <div class="container">
