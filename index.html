@@ -172,7 +172,7 @@
     </div>
 
     <!-- Main Content -->
-    <div class="container" style="color: white;">
+    <div class="container" id="mainContent" style="color: white;">
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
                 <h2>Hello there!</h2>
@@ -301,6 +301,7 @@
             if (navigator.userAgent.match(/(iPod|iPhone|iPad|Android)/)) {
                 $('video.background').attr('position','absolute')
                                     .attr('top','-5%');
+                $('div#mainContent').attr('style','');
             }
 
             $(window).scroll(function () {
