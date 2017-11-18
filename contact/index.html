@@ -46,10 +46,10 @@
             opacity: 0.5;
         }
 
-        /* *::-webkit-media-controls-start-playback-button {
+        *::-webkit-media-controls-start-playback-button {
             display: none!important;
             -webkit-appearance: none;
-        } */
+        }
     </style>
 
 </head>
@@ -306,9 +306,17 @@
             // scroll body to 0px on click
             $('#back-to-top').click(function () {
                 $('#back-to-top').tooltip('hide');
-                $('body,html').animate({
-                    scrollTop: 0
-                }, 800);
+
+                // Mobile devices don't know what 'body,html' is so differentiate it.
+                if (navigator.userAgent.match(/(iPod|iPhone|iPad|Android)/)) {
+                    window.scrollTo(0, 0);
+                }
+                else {
+                    $('body,html').animate({
+                        scrollTop: 0
+                    }, 800);
+                }
+
                 return false;
             });
             
