@@ -6,7 +6,6 @@ copyright_name: Brad Kwon
 description: "Brad Kwon's site"
 baseurl: ""
 url: "https://BradKwon.github.io"
-#url: "http://localhost:4000"
 #twitter_username: SBootstrap
 linkedin_username: BradKwon
 github_username:  BradKwon
@@ -23,7 +22,7 @@ highlighter: rouge
 permalink: pretty
 exclude: ["less","node_modules","Gruntfile.js","package.json","README.md"]
 
-plugins: [jekyll-paginate-v2, jekyll-feed, jekyll-octicons]
+plugins: [jekyll-paginate-v2, jekyll-feed, jekyll-octicons, jekyll-seo-tag]
 
 pagination:
   enabled: true
