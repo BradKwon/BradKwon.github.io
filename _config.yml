@@ -4,7 +4,7 @@ header-img: img/home-bg.jpg
 email: junya815@gmail.com
 copyright_name: Brad Kwon
 description: "Brad Kwon's site"
-baseurl: ""
+baseurl: "https://BradKwon.github.io"
 url: "https://BradKwon.github.io"
 #twitter_username: SBootstrap
 linkedin_username: BradKwon
