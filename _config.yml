@@ -3,7 +3,7 @@ title: Brad Kwon
 header-img: img/home-bg.jpg
 email: junya815@gmail.com
 copyright_name: Brad Kwon
-description: "Brad Kwon's site"
+description: "Brad Kwon's personal website. The introduction, the portfolio and blogs about programming and life of Brad Hyeongu Kwon."
 baseurl: ""
 url: "https://BradKwon.github.io"
 #twitter_username: SBootstrap
@@ -22,7 +22,7 @@ highlighter: rouge
 permalink: pretty
 exclude: ["less","node_modules","Gruntfile.js","package.json","README.md"]
 
-plugins: [jekyll-paginate-v2, jekyll-feed, jekyll-octicons, jekyll-seo-tag]
+plugins: [jekyll-paginate-v2, jekyll-feed, jekyll-octicons, jekyll-seo-tag, jekyll-sitemap]
 
 pagination:
   enabled: true
