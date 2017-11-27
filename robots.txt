@@ -1,0 +1,2 @@
+User-agent: *
+Sitemap: https://bradkwon.github.io/sitemap.xml
