@@ -5,6 +5,9 @@ subtitle:   "with Visual Studio Emulator for Android"
 header-img: "tech/img/20171115/xamarin-android-emulator-setup.jpg"
 tags:       [Xamarin,  Visual Studio, C#, Mobile, Android]
 ---
+<blockquote>
+<a href="{{ site.baseurl }}/tech/2017/11/15/xamarin-setup-kr/">Korean Version</a>
+</blockquote>
 <p>
 I've recently started to learn Xamarin to build any mobile app with C# because I've mainly used C# for programming. 
 The concept of Xamarin which is write-once, run everywhere seemed quite attractive so I decided to learn it.  
@@ -76,7 +79,7 @@ I could get the Android SDK full path from <blockquote>Visual Studio > Tools > O
 Eventually, I could see something different on the output window after executing debugging.
 </p>
 <a class="popupImg">
-    <img src="{{ site.baseurl }}/tech/img/20171115/xamarin-android-emulator-setup5.jpg" alt="Visual Studio tools options view">
+    <img src="{{ site.baseurl }}/tech/img/20171115/xamarin-android-emulator-setup5.jpg" alt="Debugging running view2">
 </a>
 <span class="caption text-muted">Deployment Success!!</span>
 <blockquote><h2 class="section-heading">Happy Coding!</h2></blockquote>
