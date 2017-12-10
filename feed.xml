@@ -1,4 +1,182 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.6.2">Jekyll</generator><link href="https://bradkwon.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://bradkwon.github.io/" rel="alternate" type="text/html" /><updated>2017-12-10T17:43:28+01:00</updated><id>https://bradkwon.github.io/</id><title type="html">Brad Kwon</title><subtitle>Brad Kwon's personal website. The introduction, the portfolio and blogs about programming and life of Brad Hyeongu Kwon.</subtitle><entry><title type="html">Xamarin Code Sharing</title><link href="https://bradkwon.github.io/tech/2017/12/01/xamarin-code-sharing/" rel="alternate" type="text/html" title="Xamarin Code Sharing" /><published>2017-12-01T00:00:00+01:00</published><updated>2017-12-01T00:00:00+01:00</updated><id>https://bradkwon.github.io/tech/2017/12/01/xamarin-code-sharing</id><content type="html" xml:base="https://bradkwon.github.io/tech/2017/12/01/xamarin-code-sharing/">&lt;blockquote&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.6.2">Jekyll</generator><link href="https://bradkwon.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://bradkwon.github.io/" rel="alternate" type="text/html" /><updated>2017-12-10T21:40:25+01:00</updated><id>https://bradkwon.github.io/</id><title type="html">Brad Kwon</title><subtitle>Brad Kwon's personal website. The introduction, the portfolio and blogs about programming and life of Brad Hyeongu Kwon.</subtitle><entry><title type="html">Introduction to Xamarin.Forms</title><link href="https://bradkwon.github.io/tech/2017/12/04/xamarin-forms-intro/" rel="alternate" type="text/html" title="Introduction to Xamarin.Forms" /><published>2017-12-04T00:00:00+01:00</published><updated>2017-12-04T00:00:00+01:00</updated><id>https://bradkwon.github.io/tech/2017/12/04/xamarin-forms-intro</id><content type="html" xml:base="https://bradkwon.github.io/tech/2017/12/04/xamarin-forms-intro/">&lt;blockquote&gt;
+&lt;a href=&quot;/tech/2017/12/04/xamarin-forms-intro-kr/&quot;&gt;Korean Version&lt;/a&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;
+&lt;u&gt;&lt;small&gt;Please let me know if there is any incorrect information because this is what I summarized what I understood.&lt;/small&gt;&lt;/u&gt;
+&lt;/p&gt;
+&lt;p&gt;
+Xamarin.Forms enables for users to reuse commonly used UI components as well as business logics that are possible by the &lt;a href=&quot;/tech/2017/12/01/xamarin-code-sharing/&quot; target=&quot;_blank&quot;&gt;code sharing&lt;/a&gt; feature that I dealt with before. For instance, components such as Page, Layout, Inputbox, Button and Label can be used in all platforms thus, we can write only one UI components generation code and then apply to all platforms through Xamarin.Forms.
+&lt;/p&gt;
+&lt;p&gt;
+You can see the list of available components in Xamarin.Forms through this &lt;a href=&quot;https://developer.xamarin.com/guides/xamarin-forms/user-interface/controls/views/&quot; target=&quot;_blank&quot;&gt;link&lt;/a&gt;.
+&lt;/p&gt;
+&lt;p&gt;
+If you take a look at how the code matches UI with below, you will notice that you can implement same components and functions on all platforms once you write the code once.
+&lt;/p&gt;
+&lt;div class=&quot;language-csharp highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;MainPage&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;ContentPage&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;Entry&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;phoneNumberText&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;Button&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;translateButton&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;Button&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;callButton&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;kt&quot;&gt;string&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;translatedNumber&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+
+    &lt;span class=&quot;k&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;MainPage&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
+    &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+        &lt;span class=&quot;c1&quot;&gt;// Set padding in the page.&lt;/span&gt;
+        &lt;span class=&quot;k&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Padding&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;Thickness&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;20&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;20&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;20&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;20&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+
+        &lt;span class=&quot;c1&quot;&gt;// Create a layout component for the page with the spacing setup.&lt;/span&gt;
+        &lt;span class=&quot;n&quot;&gt;StackLayout&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;panel&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;StackLayout&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Spacing&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;15&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;};&lt;/span&gt;
+
+        &lt;span class=&quot;c1&quot;&gt;// Add a label&lt;/span&gt;
+        &lt;span class=&quot;n&quot;&gt;panel&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Children&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;Add&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Label&lt;/span&gt;
+        &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+            &lt;span class=&quot;n&quot;&gt;Text&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;Enter a Phoneword:&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+            &lt;span class=&quot;n&quot;&gt;FontSize&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Device&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;GetNamedSize&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;NamedSize&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Large&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;typeof&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Label&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;
+        &lt;span class=&quot;p&quot;&gt;});&lt;/span&gt;
+
+        &lt;span class=&quot;c1&quot;&gt;// Add a textbox for input&lt;/span&gt;
+        &lt;span class=&quot;n&quot;&gt;panel&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Children&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;Add&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;phoneNumberText&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Entry&lt;/span&gt;
+        &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+            &lt;span class=&quot;n&quot;&gt;Text&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;1-855-XAMARIN&quot;&lt;/span&gt;
+        &lt;span class=&quot;p&quot;&gt;});&lt;/span&gt;
+
+        &lt;span class=&quot;c1&quot;&gt;// Add the translate button&lt;/span&gt;
+        &lt;span class=&quot;n&quot;&gt;panel&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Children&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;Add&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;translateButton&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Button&lt;/span&gt;
+        &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+            &lt;span class=&quot;n&quot;&gt;Text&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;Translate&quot;&lt;/span&gt;
+        &lt;span class=&quot;p&quot;&gt;});&lt;/span&gt;
+
+        &lt;span class=&quot;c1&quot;&gt;// Add the call button&lt;/span&gt;
+        &lt;span class=&quot;n&quot;&gt;panel&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Children&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;Add&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;callButton&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Button&lt;/span&gt;
+        &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+            &lt;span class=&quot;n&quot;&gt;Text&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;Call&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+            &lt;span class=&quot;n&quot;&gt;IsEnabled&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;false&lt;/span&gt;
+        &lt;span class=&quot;p&quot;&gt;});&lt;/span&gt;
+
+        &lt;span class=&quot;c1&quot;&gt;// Add a click event hander on the translate button&lt;/span&gt;
+        &lt;span class=&quot;n&quot;&gt;translateButton&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Clicked&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;+=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;s&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;e&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&amp;gt;&lt;/span&gt;
+        &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+            &lt;span class=&quot;kt&quot;&gt;string&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;enteredNumber&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;phoneNumberText&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Text&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+            &lt;span class=&quot;n&quot;&gt;translatedNumber&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;PhonewordTranslator&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;ToNumber&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;enteredNumber&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+
+            &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(!&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;string&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;IsNullOrWhiteSpace&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;translatedNumber&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;
+            &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+                &lt;span class=&quot;n&quot;&gt;callButton&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;IsEnabled&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;true&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+                &lt;span class=&quot;n&quot;&gt;callButton&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Text&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;Call &quot;&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;translatedNumber&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+            &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+            &lt;span class=&quot;k&quot;&gt;else&lt;/span&gt;
+            &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+                &lt;span class=&quot;n&quot;&gt;callButton&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;IsEnabled&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;false&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+                &lt;span class=&quot;n&quot;&gt;callButton&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Text&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;Call&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+            &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+        &lt;span class=&quot;p&quot;&gt;};&lt;/span&gt;
+
+        &lt;span class=&quot;c1&quot;&gt;// Set the layout component to the page.&lt;/span&gt;
+        &lt;span class=&quot;k&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Content&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;panel&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;&lt;a class=&quot;popupImg&quot;&gt;
+    &lt;img src=&quot;/tech/img/20171204/1.png&quot; alt=&quot;UI views on each mobile platform&quot; /&gt;
+&lt;/a&gt;
+&lt;span class=&quot;caption text-muted&quot;&gt;UI views on each mobile platform&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;
+If we look into how this works under the hood, button classes created and bound click event handlers in C# code is transformed to each language for each playform at compile tiem. If you want to see what do the code or files transformed to each platform look like, please do research on it by yourself because I am quite...lazy and am not curious... but it would be great to understand the inside of Xamarin for sure :)
+&lt;/p&gt;
+&lt;p&gt;
+Then how we can implement functions that are platform-specific? Xamarin provides several approach to resolve this such as DependencyService or applying the dependency injection (DI) pattern with super classes like interfaces or abstract classes and then each platform inject their methods into it. In this writing, we are just catching a glimpse in order to understand Xamarin concept (I don't know well either..), so I recommend you watch lectures in the &lt;a href=&quot;https://university.xamarin.com/welcome&quot; target=&quot;_blank&quot;&gt;Xamarin University&lt;/a&gt;.
+&lt;/p&gt;
+&lt;blockquote&gt;&lt;h2 class=&quot;section-heading&quot;&gt;Happy Coding!&lt;/h2&gt;&lt;/blockquote&gt;</content><author><name></name></author><category term="Xamarin" /><category term="Visual Studio" /><category term="C#" /><category term="Mobile" /><summary type="html">Korean Version Please let me know if there is any incorrect information because this is what I summarized what I understood. Xamarin.Forms enables for users to reuse commonly used UI components as well as business logics that are possible by the code sharing feature that I dealt with before. For instance, components such as Page, Layout, Inputbox, Button and Label can be used in all platforms thus, we can write only one UI components generation code and then apply to all platforms through Xamarin.Forms. You can see the list of available components in Xamarin.Forms through this link. If you take a look at how the code matches UI with below, you will notice that you can implement same components and functions on all platforms once you write the code once. ```csharp public class MainPage : ContentPage { Entry phoneNumberText; Button translateButton; Button callButton; string translatedNumber;</summary></entry><entry><title type="html">Xamarin.Forms 소개</title><link href="https://bradkwon.github.io/tech/2017/12/04/xamarin-forms-intro-kr/" rel="alternate" type="text/html" title="Xamarin.Forms 소개" /><published>2017-12-04T00:00:00+01:00</published><updated>2017-12-04T00:00:00+01:00</updated><id>https://bradkwon.github.io/tech/2017/12/04/xamarin-forms-intro-kr</id><content type="html" xml:base="https://bradkwon.github.io/tech/2017/12/04/xamarin-forms-intro-kr/">&lt;blockquote&gt;
+&lt;a href=&quot;/tech/2017/12/04/xamarin-forms-intro/&quot;&gt;영문 버전&lt;/a&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;
+&lt;u&gt;&lt;small&gt;이 글은 저도 Xamarin 을 배우는 입장에서 공부한 내용을 정리해 놓은 글이기 때문에 혹시 틀린 내용이 있으면 지적해 주시면 감사하겠습니다.&lt;/small&gt;&lt;/u&gt;
+&lt;/p&gt;
+&lt;p&gt;
+Xamarin.Forms 는 이전 장인 &lt;a href=&quot;/tech/2017/12/01/xamarin-code-sharing-kr/&quot; target=&quot;_blank&quot;&gt;Code Sharing&lt;/a&gt; 으로 가능했던 비즈니스 로직 재사용 방법처럼 공통적으로 쓰이는 UI 컴포넌트들을 재사용할 수 있게 해준다. 예를 들면, 페이지, 레이아웃, 입력 상자, 버튼 그리고 라벨과 같은 컴포넌트들은 모든 플랫폼에서 공통적으로 사용할 수 있기 때문에 이를 Xamarin.Forms 에서 모든 플랫폼에 동일하게 생성하여 개발 및 관리를 쉽게 해준다. 
+&lt;/p&gt;
+&lt;p&gt;
+Xamarin.Forms 에서 사용가능한 컴포넌트 리스트는 &lt;a href=&quot;https://developer.xamarin.com/guides/xamarin-forms/user-interface/controls/views/&quot; target=&quot;_blank&quot;&gt;이 링크&lt;/a&gt;를 통해 확인 가능하다.
+&lt;/p&gt;
+&lt;p&gt;
+코드와 화면으로 어떻게 구현이 되는지 한 번 확인해 보면 다음과 같은 하나의 코드로 안드로이드, 아이폰, 윈도우폰에 동일한 컴포넌트, 기능을 구현할 수 있다.
+&lt;/p&gt;
+&lt;div class=&quot;language-csharp highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;MainPage&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;ContentPage&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;Entry&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;phoneNumberText&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;Button&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;translateButton&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;Button&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;callButton&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;kt&quot;&gt;string&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;translatedNumber&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+
+    &lt;span class=&quot;k&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;MainPage&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
+    &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+        &lt;span class=&quot;c1&quot;&gt;// Set padding in the page.&lt;/span&gt;
+        &lt;span class=&quot;k&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Padding&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;Thickness&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;20&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;20&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;20&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;20&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+
+        &lt;span class=&quot;c1&quot;&gt;// Create a layout component for the page with the spacing setup.&lt;/span&gt;
+        &lt;span class=&quot;n&quot;&gt;StackLayout&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;panel&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;StackLayout&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Spacing&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;15&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;};&lt;/span&gt;
+
+        &lt;span class=&quot;c1&quot;&gt;// Add a label&lt;/span&gt;
+        &lt;span class=&quot;n&quot;&gt;panel&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Children&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;Add&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Label&lt;/span&gt;
+        &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+            &lt;span class=&quot;n&quot;&gt;Text&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;Enter a Phoneword:&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+            &lt;span class=&quot;n&quot;&gt;FontSize&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Device&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;GetNamedSize&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;NamedSize&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Large&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;typeof&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Label&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;
+        &lt;span class=&quot;p&quot;&gt;});&lt;/span&gt;
+
+        &lt;span class=&quot;c1&quot;&gt;// Add a textbox for input&lt;/span&gt;
+        &lt;span class=&quot;n&quot;&gt;panel&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Children&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;Add&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;phoneNumberText&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Entry&lt;/span&gt;
+        &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+            &lt;span class=&quot;n&quot;&gt;Text&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;1-855-XAMARIN&quot;&lt;/span&gt;
+        &lt;span class=&quot;p&quot;&gt;});&lt;/span&gt;
+
+        &lt;span class=&quot;c1&quot;&gt;// Add the translate button&lt;/span&gt;
+        &lt;span class=&quot;n&quot;&gt;panel&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Children&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;Add&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;translateButton&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Button&lt;/span&gt;
+        &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+            &lt;span class=&quot;n&quot;&gt;Text&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;Translate&quot;&lt;/span&gt;
+        &lt;span class=&quot;p&quot;&gt;});&lt;/span&gt;
+
+        &lt;span class=&quot;c1&quot;&gt;// Add the call button&lt;/span&gt;
+        &lt;span class=&quot;n&quot;&gt;panel&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Children&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;Add&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;callButton&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Button&lt;/span&gt;
+        &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+            &lt;span class=&quot;n&quot;&gt;Text&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;Call&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+            &lt;span class=&quot;n&quot;&gt;IsEnabled&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;false&lt;/span&gt;
+        &lt;span class=&quot;p&quot;&gt;});&lt;/span&gt;
+
+        &lt;span class=&quot;c1&quot;&gt;// Add a click event hander on the translate button&lt;/span&gt;
+        &lt;span class=&quot;n&quot;&gt;translateButton&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Clicked&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;+=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;s&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;e&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&amp;gt;&lt;/span&gt;
+        &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+            &lt;span class=&quot;kt&quot;&gt;string&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;enteredNumber&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;phoneNumberText&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Text&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+            &lt;span class=&quot;n&quot;&gt;translatedNumber&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;PhonewordTranslator&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;ToNumber&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;enteredNumber&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+
+            &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(!&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;string&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;IsNullOrWhiteSpace&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;translatedNumber&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;
+            &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+                &lt;span class=&quot;n&quot;&gt;callButton&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;IsEnabled&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;true&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+                &lt;span class=&quot;n&quot;&gt;callButton&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Text&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;Call &quot;&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;translatedNumber&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+            &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+            &lt;span class=&quot;k&quot;&gt;else&lt;/span&gt;
+            &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+                &lt;span class=&quot;n&quot;&gt;callButton&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;IsEnabled&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;false&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+                &lt;span class=&quot;n&quot;&gt;callButton&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Text&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;Call&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+            &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+        &lt;span class=&quot;p&quot;&gt;};&lt;/span&gt;
+
+        &lt;span class=&quot;c1&quot;&gt;// Set the layout component to the page.&lt;/span&gt;
+        &lt;span class=&quot;k&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Content&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;panel&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;&lt;a class=&quot;popupImg&quot;&gt;
+    &lt;img src=&quot;/tech/img/20171204/1.png&quot; alt=&quot;각각 모바일 플랫폼별 화면&quot; /&gt;
+&lt;/a&gt;
+&lt;span class=&quot;caption text-muted&quot;&gt;각각 모바일 플랫폼별 화면&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;
+내부 동작 방식을 보면 버튼을 예로 들었을 때, 위의 코드에서와 같이 Button 클래스를 생성하고 click event handler 를 C# 으로 작성해서 컴파일을 하면 Xamarin 이 각각 플랫폼에 맞게 이를 변환한다고 보면 된다. 각각 플랫폼의 언어로 컴파일이 되었는지는 저는 궁금하지 않아서 보진 않았지만 궁금하신 분들은 한 번 찾아서 보면 좋을 것 같다.
+&lt;/p&gt;
+&lt;p&gt;
+그러면 공통적으로 사용할 수 없는 플랫폼 의존적인 기능들은 어떻게 구현할까? 이는 Xamarin 에서 제공하는 DependencyService 등이나 인터페이스나 추상 클래스를 사용하여 상위 클래스를 만든 후 Dependency Injection (DI) 패턴을 적용하여 각각의 플랫폼에서 자기 코드를 넘겨서 처리하는 방법이 있다. 여기선 Xamarin.Forms 가 어떤건지 개념을 잡기 위해 훑어만 보는 수준이므로 (나도 아직 잘 모름..) 실제 적용방법은 &lt;a href=&quot;https://university.xamarin.com/welcome&quot; target=&quot;_blank&quot;&gt;Xamarin University&lt;/a&gt; 등에서 각자 알아서 찾아보기로…
+&lt;/p&gt;
+&lt;blockquote&gt;&lt;h2 class=&quot;section-heading&quot;&gt;Happy Coding!&lt;/h2&gt;&lt;/blockquote&gt;</content><author><name></name></author><category term="Xamarin" /><category term="Visual Studio" /><category term="C#" /><category term="Mobile" /><summary type="html">영문 버전 이 글은 저도 Xamarin 을 배우는 입장에서 공부한 내용을 정리해 놓은 글이기 때문에 혹시 틀린 내용이 있으면 지적해 주시면 감사하겠습니다. Xamarin.Forms 는 이전 장인 Code Sharing 으로 가능했던 비즈니스 로직 재사용 방법처럼 공통적으로 쓰이는 UI 컴포넌트들을 재사용할 수 있게 해준다. 예를 들면, 페이지, 레이아웃, 입력 상자, 버튼 그리고 라벨과 같은 컴포넌트들은 모든 플랫폼에서 공통적으로 사용할 수 있기 때문에 이를 Xamarin.Forms 에서 모든 플랫폼에 동일하게 생성하여 개발 및 관리를 쉽게 해준다. Xamarin.Forms 에서 사용가능한 컴포넌트 리스트는 이 링크를 통해 확인 가능하다. 코드와 화면으로 어떻게 구현이 되는지 한 번 확인해 보면 다음과 같은 하나의 코드로 안드로이드, 아이폰, 윈도우폰에 동일한 컴포넌트, 기능을 구현할 수 있다. ```csharp public class MainPage : ContentPage { Entry phoneNumberText; Button translateButton; Button callButton; string translatedNumber;</summary></entry><entry><title type="html">Xamarin Code Sharing</title><link href="https://bradkwon.github.io/tech/2017/12/01/xamarin-code-sharing/" rel="alternate" type="text/html" title="Xamarin Code Sharing" /><published>2017-12-01T00:00:00+01:00</published><updated>2017-12-01T00:00:00+01:00</updated><id>https://bradkwon.github.io/tech/2017/12/01/xamarin-code-sharing</id><content type="html" xml:base="https://bradkwon.github.io/tech/2017/12/01/xamarin-code-sharing/">&lt;blockquote&gt;
 &lt;a href=&quot;/tech/2017/12/01/xamarin-code-sharing-kr/&quot;&gt;Korean Version&lt;/a&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;
