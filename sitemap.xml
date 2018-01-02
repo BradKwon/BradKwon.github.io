@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
-<loc>https://bradkwon.github.io/blog/2017/11/07/coming-soon/</loc>
-<lastmod>2017-11-07T00:00:00+01:00</lastmod>
+<loc>https://bradkwon.github.io/blog/2017/06/27/hector-book-review/</loc>
+<lastmod>2017-06-27T00:00:00+02:00</lastmod>
 </url>
 <url>
 <loc>https://bradkwon.github.io/tech/2017/11/15/xamarin-setup-kr/</loc>
@@ -27,6 +27,30 @@
 <url>
 <loc>https://bradkwon.github.io/tech/2017/12/04/xamarin-forms-intro/</loc>
 <lastmod>2017-12-04T00:00:00+01:00</lastmod>
+</url>
+<url>
+<loc>https://bradkwon.github.io/tech/2017/12/10/xaml-in-xamarin-kr/</loc>
+<lastmod>2017-12-10T00:00:00+01:00</lastmod>
+</url>
+<url>
+<loc>https://bradkwon.github.io/tech/2017/12/10/xaml-in-xamarin/</loc>
+<lastmod>2017-12-10T00:00:00+01:00</lastmod>
+</url>
+<url>
+<loc>https://bradkwon.github.io/blog/2018/01/02/algorithm-book-review/</loc>
+<lastmod>2018-01-02T00:00:00+01:00</lastmod>
+</url>
+<url>
+<loc>https://bradkwon.github.io/blog/2018/01/02/flipped-movie-review/</loc>
+<lastmod>2018-01-02T00:00:00+01:00</lastmod>
+</url>
+<url>
+<loc>https://bradkwon.github.io/blog/2018/01/02/hector-book-review/</loc>
+<lastmod>2018-01-02T00:00:00+01:00</lastmod>
+</url>
+<url>
+<loc>https://bradkwon.github.io/blog/2018/01/02/reading-method/</loc>
+<lastmod>2018-01-02T00:00:00+01:00</lastmod>
 </url>
 <url>
 <loc>https://bradkwon.github.io/about/</loc>
