@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Brad Kwon's personal website. The introduction, the portfolio and blogs about programming and life of Brad Hyeongu Kwon.">
+    <meta name="naver-site-verification" content="9c8c9683b49583c406c78fb59d7e152db4bf04d5"/>
+
+    <title>책 누워서 읽는 알고리즘 독서 후기 - Brad Kwon</title>
+
+    <link rel="canonical" href="https://BradKwon.github.io/blog/2018/01/02/algorithm-book-review/">
+
+    <!-- Bootstrap Core CSS -->
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/css/clean-blog.css">
+
+    <!-- Pygments Github CSS -->
+    <link rel="stylesheet" href="/css/syntax.css">
+
+    <!-- Custom Fonts -->
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href='//fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/earlyaccess/notosanskr.css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <link type="application/atom+xml" rel="alternate" href="https://bradkwon.github.io/feed.xml" title="Brad Kwon" />
+
+    <style>
+        .back-to-top {
+            cursor: pointer;
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            display:none;
+            opacity: 0.5;
+        }
+
+        *::-webkit-media-controls-start-playback-button {
+            display: none!important;
+            -webkit-appearance: none;
+        }
+    </style>
+
+</head>
+
+<!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>책 누워서 읽는 알고리즘 독서 후기 | Brad Kwon</title>
+<meta property="og:title" content="책 누워서 읽는 알고리즘 독서 후기" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="이러이러한 알고리즘이 있고 배경은 이렇다..까지만 이해할 수 있었다. 이 책을 읽으면서, 그리고 해외취업을 위해 외국 회사들에 기술 인터뷰를 보면서 느꼈던 건 절망감이었다. 그동안 나는 무얼 한걸까? 기술 인터뷰에서의 내 모습은 그냥 대학에 처음 들어와 첫번째 중간고사 시험을 치르는 학생의 모습이었다. 거기에 플러스로 경력을 보고 환대하던 인터뷰어들의 실망하는 표정들이란. 나에게는 자극이란 것이 없는지 당황스럽고 우울해지긴 하지만 뭔가 오기가 생기지는 않았다. 전혀 머리가 돌아가지가 않았다. 이런 문제들을 무사히 잘 헤쳐나가 일하고 있는 세상의 수 많은 개발자들은 그럼 도대체 얼마나 똑똑하단 말인가. 세상에 이렇게나 많은 똑똑한 사람들이 있을 줄은 몰랐다. 세상은 개발자들에게 서로 의견을 공유하고 대화를 하라고 하는데 이런 똑똑한 사람들하고 대화를 할 만한 레벨이 내가 되는가? 그렇다고 그걸 단시간에 따라잡기 위해 잠을 줄여가며 열심히 공부할 내가 아니라 결국, 천천히 나 혼자 공부를 하게 된다. 사실 프로그래밍에 미쳐있는 것도 아니고 좋아하는 것도 아니니 그냥 내가 원하는대로 돈 적당히 잘 벌면서 오래 일할 수 있고 시간과 장소의 제약만 없었으면 좋겠다. 열심히 하지 말자. 난 열심히 할 수 있는 사람은 아니다. 그냥 꾸준히 할 뿐이다. 언젠가 시간이 지나 내가 좀 더 아는게 많아진다면 그 때 다시 읽어봐야겠다." />
+<meta property="og:description" content="이러이러한 알고리즘이 있고 배경은 이렇다..까지만 이해할 수 있었다. 이 책을 읽으면서, 그리고 해외취업을 위해 외국 회사들에 기술 인터뷰를 보면서 느꼈던 건 절망감이었다. 그동안 나는 무얼 한걸까? 기술 인터뷰에서의 내 모습은 그냥 대학에 처음 들어와 첫번째 중간고사 시험을 치르는 학생의 모습이었다. 거기에 플러스로 경력을 보고 환대하던 인터뷰어들의 실망하는 표정들이란. 나에게는 자극이란 것이 없는지 당황스럽고 우울해지긴 하지만 뭔가 오기가 생기지는 않았다. 전혀 머리가 돌아가지가 않았다. 이런 문제들을 무사히 잘 헤쳐나가 일하고 있는 세상의 수 많은 개발자들은 그럼 도대체 얼마나 똑똑하단 말인가. 세상에 이렇게나 많은 똑똑한 사람들이 있을 줄은 몰랐다. 세상은 개발자들에게 서로 의견을 공유하고 대화를 하라고 하는데 이런 똑똑한 사람들하고 대화를 할 만한 레벨이 내가 되는가? 그렇다고 그걸 단시간에 따라잡기 위해 잠을 줄여가며 열심히 공부할 내가 아니라 결국, 천천히 나 혼자 공부를 하게 된다. 사실 프로그래밍에 미쳐있는 것도 아니고 좋아하는 것도 아니니 그냥 내가 원하는대로 돈 적당히 잘 벌면서 오래 일할 수 있고 시간과 장소의 제약만 없었으면 좋겠다. 열심히 하지 말자. 난 열심히 할 수 있는 사람은 아니다. 그냥 꾸준히 할 뿐이다. 언젠가 시간이 지나 내가 좀 더 아는게 많아진다면 그 때 다시 읽어봐야겠다." />
+<link rel="canonical" href="https://bradkwon.github.io/blog/2018/01/02/algorithm-book-review/" />
+<meta property="og:url" content="https://bradkwon.github.io/blog/2018/01/02/algorithm-book-review/" />
+<meta property="og:site_name" content="Brad Kwon" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2018-01-02T00:00:00+01:00" />
+<script type="application/ld+json">
+{"name":null,"description":"이러이러한 알고리즘이 있고 배경은 이렇다..까지만 이해할 수 있었다. 이 책을 읽으면서, 그리고 해외취업을 위해 외국 회사들에 기술 인터뷰를 보면서 느꼈던 건 절망감이었다. 그동안 나는 무얼 한걸까? 기술 인터뷰에서의 내 모습은 그냥 대학에 처음 들어와 첫번째 중간고사 시험을 치르는 학생의 모습이었다. 거기에 플러스로 경력을 보고 환대하던 인터뷰어들의 실망하는 표정들이란. 나에게는 자극이란 것이 없는지 당황스럽고 우울해지긴 하지만 뭔가 오기가 생기지는 않았다. 전혀 머리가 돌아가지가 않았다. 이런 문제들을 무사히 잘 헤쳐나가 일하고 있는 세상의 수 많은 개발자들은 그럼 도대체 얼마나 똑똑하단 말인가. 세상에 이렇게나 많은 똑똑한 사람들이 있을 줄은 몰랐다. 세상은 개발자들에게 서로 의견을 공유하고 대화를 하라고 하는데 이런 똑똑한 사람들하고 대화를 할 만한 레벨이 내가 되는가? 그렇다고 그걸 단시간에 따라잡기 위해 잠을 줄여가며 열심히 공부할 내가 아니라 결국, 천천히 나 혼자 공부를 하게 된다. 사실 프로그래밍에 미쳐있는 것도 아니고 좋아하는 것도 아니니 그냥 내가 원하는대로 돈 적당히 잘 벌면서 오래 일할 수 있고 시간과 장소의 제약만 없었으면 좋겠다. 열심히 하지 말자. 난 열심히 할 수 있는 사람은 아니다. 그냥 꾸준히 할 뿐이다. 언젠가 시간이 지나 내가 좀 더 아는게 많아진다면 그 때 다시 읽어봐야겠다.","author":null,"@type":"BlogPosting","url":"https://bradkwon.github.io/blog/2018/01/02/algorithm-book-review/","publisher":null,"image":null,"headline":"책 누워서 읽는 알고리즘 독서 후기","dateModified":"2018-01-02T00:00:00+01:00","datePublished":"2018-01-02T00:00:00+01:00","sameAs":null,"mainEntityOfPage":{"@type":"WebPage","@id":"https://bradkwon.github.io/blog/2018/01/02/algorithm-book-review/"},"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+
+<body>
+
+    <!-- Navigation -->
+<nav class="navbar navbar-default navbar-custom navbar-fixed-top">
+    <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header page-scroll">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <!-- <a class="navbar-brand" href="/"></a> -->
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <li>
+                    <a href="/">Home</a>
+                </li>
+                <li>
+                    <a href="/about">Who Am I</a>
+                </li>
+                <li>
+                    <a href="/contact">Contact</a>
+                </li>
+                <li>
+                    <a href="/tech">Tech</a>
+                </li>
+                <li>
+                    <a href="/blog">Blog</a>
+                </li>
+                <li>
+                    <a href="/tags">Tags</a>
+                </li>
+                <!-- 
+				
+                <li>
+                    <a href="/about/">Who am I</a>
+                </li>
+				
+                
+				
+                <li>
+                    <a href="/contact/">Contact</a>
+                </li>
+				
+                
+				
+                <li>
+                    <a href="/tags/">Tags</a>
+                </li>
+				
+                
+				
+                <li>
+                    <a href="/tech/index.html">Tech</a>
+                </li>
+				
+                
+				
+                <li>
+                    <a href="/blog/index.html">Blog</a>
+                </li>
+				
+                 -->
+            </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container -->
+</nav>
+
+
+    <!-- Post Header -->
+<header class="intro-header" style="background-image: url('/blog/img/20180102/algorithm01.png')">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <div class="post-heading">
+                    <h1>책 누워서 읽는 알고리즘 독서 후기</h1>
+                    
+                    <span class="meta">Posted by Brad Kwon on January 2, 2018</span>
+                    
+
+<span class="glyphicon glyphicon-tag" aria-hidden="true" aria-label="Tags" style="vertical-align:middle;"></span>
+
+<a href="/tags/#Book"><small class="text-primary">Book</small></a><small>, </small>
+
+<a href="/tags/#Review"><small class="text-primary">Review</small></a><small></small>
+
+
+                </div>  
+            </div>
+        </div>
+    </div>
+</header>
+
+<!-- Post Content -->
+<article>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+
+				<p>
+이러이러한 알고리즘이 있고 배경은 이렇다..까지만 이해할 수 있었다. 이 책을 읽으면서, 그리고 해외취업을 위해 외국 회사들에 기술 인터뷰를
+보면서 느꼈던 건 절망감이었다. 그동안 나는 무얼 한걸까? 기술 인터뷰에서의 내 모습은 그냥 대학에 처음 들어와 첫번째 중간고사 시험을
+치르는 학생의 모습이었다. 거기에 플러스로 경력을 보고 환대하던 인터뷰어들의 실망하는 표정들이란. 나에게는 자극이란 것이 없는지
+당황스럽고 우울해지긴 하지만 뭔가 오기가 생기지는 않았다. 전혀 머리가 돌아가지가 않았다. 이런 문제들을 무사히 잘 헤쳐나가 일하고 있는
+세상의 수 많은 개발자들은 그럼 도대체 얼마나 똑똑하단 말인가. 세상에 이렇게나 많은 똑똑한 사람들이 있을 줄은 몰랐다.
+</p>
+<p>
+세상은 개발자들에게 서로 의견을 공유하고 대화를 하라고 하는데 이런 똑똑한 사람들하고 대화를 할 만한 레벨이 내가 되는가? 그렇다고 그걸 단시간에 따라잡기 위해 잠을 줄여가며 열심히 공부할 내가 아니라 결국, 천천히 나 혼자 공부를 하게 된다. 사실 프로그래밍에 미쳐있는 것도 아니고 좋아하는 것도 아니니 그냥 내가 원하는대로 돈 적당히 잘 벌면서 오래 일할 수 있고 시간과 장소의 제약만 없었으면 좋겠다. 열심히 하지 말자. 난 열심히 할 수 있는 사람은 아니다. 그냥 꾸준히 할 뿐이다.
+</p>
+<p>
+언젠가 시간이 지나 내가 좀 더 아는게 많아진다면 그 때 다시 읽어봐야겠다.
+</p>
+<p><a class="popupImg">
+    <img src="/blog/img/20180102/book-algorithm.jpg" alt="누워서 읽는 알고리즘 책 표지" />
+</a></p>
+
+
+                <hr>
+
+                <div id="disqus_thread"></div>
+                <script>
+                
+                /**
+                *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+                *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
+                /*
+                var disqus_config = function () {
+                this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+                this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+                };
+                */
+                (function() { // DON'T EDIT BELOW THIS LINE
+                var d = document, s = d.createElement('script');
+                s.src = 'https://brad-kwon.disqus.com/embed.js';
+                s.setAttribute('data-timestamp', +new Date());
+                (d.head || d.body).appendChild(s);
+                })();
+                </script>
+                <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+                <hr>
+
+                <ul class="pager">
+                    
+                    
+                    <li class="next">
+                        <a href="/blog/2018/01/02/flipped-movie-review/" data-toggle="tooltip" data-placement="top" title="영화 Flipped 관람 후기">Next Post &rarr;</a>
+                    </li>
+                    
+                </ul>
+
+            </div>
+        </div>
+    </div>
+</article>
+
+<hr>
+
+    <!-- Footer -->
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <ul class="list-inline text-center">
+                    <!-- <li>
+                        <a href="/feed.xml">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-rss fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li> -->
+                    
+                    
+                    <li>
+                        <a href="https://www.linkedin.com/in/BradKwon">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+                    
+                    
+                    <li>
+                        <a href="https://www.facebook.com/hyeongu.kwon">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+                    
+                    
+                    <li>
+                        <a href="https://github.com/BradKwon">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+                    
+                    
+                    <li>
+                        <a href="mailto:junya815@gmail.com">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-envelope fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+                    
+                </ul>
+                <p class="copyright text-muted">Copyright &copy; Brad Kwon 2018</p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!-- jQuery -->
+<script src="/js/jquery.min.js "></script>
+
+<!-- Bootstrap Core JavaScript -->
+<script src="/js/bootstrap.min.js "></script>
+
+<!-- Custom Theme JavaScript -->
+<script src="/js/clean-blog.min.js "></script>
+
+
+    
+
+
+    <a id="back-to-top" href="#" class="btn btn-primary back-to-top" role="button" 
+        title="Click to return on the top page" data-toggle="tooltip" data-placement="left">
+        <span class="glyphicon glyphicon-chevron-up"></span>
+    </a>
+
+    <div id="popupImage" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" style="width:80%;height:80%;">
+            <div class="modal-content">
+                <!-- <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                </div> -->
+                <div class="modal-body">
+                    <img id="popupImageUrl" class="img-responsive" />
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        $(document).ready(function(){
+            if (navigator.userAgent.match(/(iPod|iPhone|iPad|Android)/)) {
+                $('video.background').css('position','absolute').css('top','-11%');
+                $('div#mainContent').attr('style','');
+            }
+
+            $(window).scroll(function () {
+                if ($(this).scrollTop() > 50) {
+                    $('#back-to-top').fadeIn();
+                } else {
+                    $('#back-to-top').fadeOut();
+                }
+            });
+            // scroll body to 0px on click
+            $('#back-to-top').click(function () {
+                $('#back-to-top').tooltip('hide');
+
+                $('body,html').animate({
+                    scrollTop: 0
+                }, 800);
+
+                return false;
+            });
+            
+            $('#back-to-top').tooltip('show');
+            
+            $('div.container a.popupImg').click(function() {
+                $('img#popupImageUrl').attr('src', $(this).find('img').attr('src'));
+                $(this).attr('data-toggle','modal')
+                        .attr('data-target','#popupImage');
+            });
+
+            $('div#popupImage').click(function() {
+                $(this).modal('toggle');
+            });
+        });
+    </script>
+</body>
+
+</html>

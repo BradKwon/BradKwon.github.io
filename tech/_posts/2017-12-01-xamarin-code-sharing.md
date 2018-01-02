@@ -2,7 +2,7 @@
 layout:     post
 title:      "Xamarin Code Sharing"
 header-img: "tech/img/20171115/xamarin-android-emulator-setup.jpg"
-tags:       [Xamarin,  Visual Studio, C#, Mobile]
+tags:       [Xamarin, C#, Mobile]
 ---
 <blockquote>
 <a href="{{ site.baseurl }}/tech/2017/12/01/xamarin-code-sharing-kr/">Korean Version</a>
