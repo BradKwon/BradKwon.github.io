@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.6.2">Jekyll</generator><link href="https://bradkwon.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://bradkwon.github.io/" rel="alternate" type="text/html" /><updated>2018-01-02T19:11:52+01:00</updated><id>https://bradkwon.github.io/</id><title type="html">Brad Kwon</title><subtitle>Brad Kwon's personal website. The introduction, the portfolio and blogs about programming and life of Brad Hyeongu Kwon.</subtitle><entry><title type="html">책 읽기 방법에 대한 나의 결론</title><link href="https://bradkwon.github.io/blog/2018/01/02/reading-method/" rel="alternate" type="text/html" title="책 읽기 방법에 대한 나의 결론" /><published>2018-01-02T00:00:00+01:00</published><updated>2018-01-02T00:00:00+01:00</updated><id>https://bradkwon.github.io/blog/2018/01/02/reading-method</id><content type="html" xml:base="https://bradkwon.github.io/blog/2018/01/02/reading-method/">&lt;p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.6.2">Jekyll</generator><link href="https://bradkwon.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://bradkwon.github.io/" rel="alternate" type="text/html" /><updated>2018-01-03T16:26:11+01:00</updated><id>https://bradkwon.github.io/</id><title type="html">Brad Kwon</title><subtitle>Brad Kwon's personal website. The introduction, the portfolio and blogs about programming and life of Brad Hyeongu Kwon.</subtitle><entry><title type="html">책 읽기 방법에 대한 나의 결론</title><link href="https://bradkwon.github.io/blog/2018/01/02/reading-method/" rel="alternate" type="text/html" title="책 읽기 방법에 대한 나의 결론" /><published>2018-01-02T00:00:00+01:00</published><updated>2018-01-02T00:00:00+01:00</updated><id>https://bradkwon.github.io/blog/2018/01/02/reading-method</id><content type="html" xml:base="https://bradkwon.github.io/blog/2018/01/02/reading-method/">&lt;p&gt;
 나는 책을 읽을 때 주로 속으로 글을 읽으면서 읽는다. 속발음이라고 하는 것 같은데 속도가 무척 느리다. 그러다보니 책 한 권을 다 읽는데
 시간이 너무 오래 걸리고 흐름이 잘 끊겨서 스토리가 잘 생각이 안 나는 경우가 허다하다.
 &lt;/p&gt;
@@ -58,7 +58,113 @@
 &lt;/p&gt;
 &lt;p&gt;&lt;a class=&quot;popupImg&quot;&gt;
     &lt;img src=&quot;/blog/img/20180102/book-algorithm.jpg&quot; alt=&quot;누워서 읽는 알고리즘 책 표지&quot; /&gt;
-&lt;/a&gt;&lt;/p&gt;</content><author><name></name></author><category term="Book" /><category term="Review" /><summary type="html">이러이러한 알고리즘이 있고 배경은 이렇다..까지만 이해할 수 있었다. 이 책을 읽으면서, 그리고 해외취업을 위해 외국 회사들에 기술 인터뷰를 보면서 느꼈던 건 절망감이었다. 그동안 나는 무얼 한걸까? 기술 인터뷰에서의 내 모습은 그냥 대학에 처음 들어와 첫번째 중간고사 시험을 치르는 학생의 모습이었다. 거기에 플러스로 경력을 보고 환대하던 인터뷰어들의 실망하는 표정들이란. 나에게는 자극이란 것이 없는지 당황스럽고 우울해지긴 하지만 뭔가 오기가 생기지는 않았다. 전혀 머리가 돌아가지가 않았다. 이런 문제들을 무사히 잘 헤쳐나가 일하고 있는 세상의 수 많은 개발자들은 그럼 도대체 얼마나 똑똑하단 말인가. 세상에 이렇게나 많은 똑똑한 사람들이 있을 줄은 몰랐다. 세상은 개발자들에게 서로 의견을 공유하고 대화를 하라고 하는데 이런 똑똑한 사람들하고 대화를 할 만한 레벨이 내가 되는가? 그렇다고 그걸 단시간에 따라잡기 위해 잠을 줄여가며 열심히 공부할 내가 아니라 결국, 천천히 나 혼자 공부를 하게 된다. 사실 프로그래밍에 미쳐있는 것도 아니고 좋아하는 것도 아니니 그냥 내가 원하는대로 돈 적당히 잘 벌면서 오래 일할 수 있고 시간과 장소의 제약만 없었으면 좋겠다. 열심히 하지 말자. 난 열심히 할 수 있는 사람은 아니다. 그냥 꾸준히 할 뿐이다. 언젠가 시간이 지나 내가 좀 더 아는게 많아진다면 그 때 다시 읽어봐야겠다.</summary></entry><entry><title type="html">XAML in Xamarin</title><link href="https://bradkwon.github.io/tech/2017/12/10/xaml-in-xamarin/" rel="alternate" type="text/html" title="XAML in Xamarin" /><published>2017-12-10T00:00:00+01:00</published><updated>2017-12-10T00:00:00+01:00</updated><id>https://bradkwon.github.io/tech/2017/12/10/xaml-in-xamarin</id><content type="html" xml:base="https://bradkwon.github.io/tech/2017/12/10/xaml-in-xamarin/">&lt;blockquote&gt;
+&lt;/a&gt;&lt;/p&gt;</content><author><name></name></author><category term="Book" /><category term="Review" /><summary type="html">이러이러한 알고리즘이 있고 배경은 이렇다..까지만 이해할 수 있었다. 이 책을 읽으면서, 그리고 해외취업을 위해 외국 회사들에 기술 인터뷰를 보면서 느꼈던 건 절망감이었다. 그동안 나는 무얼 한걸까? 기술 인터뷰에서의 내 모습은 그냥 대학에 처음 들어와 첫번째 중간고사 시험을 치르는 학생의 모습이었다. 거기에 플러스로 경력을 보고 환대하던 인터뷰어들의 실망하는 표정들이란. 나에게는 자극이란 것이 없는지 당황스럽고 우울해지긴 하지만 뭔가 오기가 생기지는 않았다. 전혀 머리가 돌아가지가 않았다. 이런 문제들을 무사히 잘 헤쳐나가 일하고 있는 세상의 수 많은 개발자들은 그럼 도대체 얼마나 똑똑하단 말인가. 세상에 이렇게나 많은 똑똑한 사람들이 있을 줄은 몰랐다. 세상은 개발자들에게 서로 의견을 공유하고 대화를 하라고 하는데 이런 똑똑한 사람들하고 대화를 할 만한 레벨이 내가 되는가? 그렇다고 그걸 단시간에 따라잡기 위해 잠을 줄여가며 열심히 공부할 내가 아니라 결국, 천천히 나 혼자 공부를 하게 된다. 사실 프로그래밍에 미쳐있는 것도 아니고 좋아하는 것도 아니니 그냥 내가 원하는대로 돈 적당히 잘 벌면서 오래 일할 수 있고 시간과 장소의 제약만 없었으면 좋겠다. 열심히 하지 말자. 난 열심히 할 수 있는 사람은 아니다. 그냥 꾸준히 할 뿐이다. 언젠가 시간이 지나 내가 좀 더 아는게 많아진다면 그 때 다시 읽어봐야겠다.</summary></entry><entry><title type="html">Layouts in Xamarin.Forms</title><link href="https://bradkwon.github.io/tech/2017/12/15/layouts-in-xamarin-forms/" rel="alternate" type="text/html" title="Layouts in Xamarin.Forms" /><published>2017-12-15T00:00:00+01:00</published><updated>2017-12-15T00:00:00+01:00</updated><id>https://bradkwon.github.io/tech/2017/12/15/layouts-in-xamarin-forms</id><content type="html" xml:base="https://bradkwon.github.io/tech/2017/12/15/layouts-in-xamarin-forms/">&lt;blockquote&gt;
+&lt;a href=&quot;/tech/2017/12/15/layouts-in-xamarin-forms-kr/&quot;&gt;Korean Version&lt;/a&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;
+&lt;u&gt;&lt;small&gt;Please let me know if there is any incorrect information because this is what I summarized what I understood.&lt;/small&gt;&lt;/u&gt;
+&lt;/p&gt;
+&lt;p&gt;
+In order to build up a well-made app, it is important to keep the same look on every devices. Therefore, Xamarin.Forms provides flexible layout containers. These containers calculate positions and sizes of UI components automatically and re-calculate them when a user rotates a device or changes a view size also automatically. These layout containers that Xamarin.Forms provides are StackLayout, Grid, AbsoluteLayout and RelativeLayout and StackLayout and Grid are popular among them.
+&lt;/p&gt;
+&lt;p&gt;&lt;a class=&quot;popupImg&quot;&gt;
+    &lt;img src=&quot;/tech/img/20171215/1.png&quot; alt=&quot;Types of layout container&quot; /&gt;
+&lt;/a&gt;
+&lt;span class=&quot;caption text-muted&quot;&gt;Types of layout container&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;
+You can use WidthRequest and HeightRequest attributes to set width and height ot each UI component instead of width and height that are normally used in general because Xamarin.Forms doesn't guarantee exact sizes as they are re-calculated based on which platform the app is run. For alignment, you can use VerticalOptions and HorizontalOptions attributes.
+&lt;/p&gt;
+&lt;p&gt;&lt;a class=&quot;popupImg&quot;&gt;
+    &lt;img src=&quot;/tech/img/20171215/2.png&quot; alt=&quot;Width and height attributes of UI component&quot; /&gt;
+&lt;/a&gt;
+&lt;span class=&quot;caption text-muted&quot;&gt;Width and height attributes of UI component&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;
+Each platform has different way to translate sizes and resolutions so if you set WidthRequest and HeightRequest, then although absolute sizes might not be same but would have the same look.
+&lt;/p&gt;
+&lt;p&gt;Resolution method on major platforms.&lt;/p&gt;
+&lt;ul&gt;
+    &lt;li&gt;Windows Phone – Effective pixels&lt;/li&gt;
+    &lt;li&gt;iPhone – Points&lt;/li&gt;
+    &lt;li&gt;Androind – Density-independent pixels&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;a class=&quot;popupImg&quot;&gt;
+    &lt;img src=&quot;/tech/img/20171215/4.png&quot; alt=&quot;UI component size on each platform&quot; /&gt;
+&lt;/a&gt;
+&lt;span class=&quot;caption text-muted&quot;&gt;UI component size on each platform&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;
+Let's look into two popular layout containers, StackLayout and Grid.
+&lt;/p&gt;
+&lt;p&gt;
+StackLayout is just to stack up UI components in vertical way. As it is very simple, it is also used for building up prototypes.
+&lt;/p&gt;
+&lt;p&gt;&lt;a class=&quot;popupImg&quot;&gt;
+    &lt;img src=&quot;/tech/img/20171215/5.png&quot; alt=&quot;StackLayout container&quot; /&gt;
+&lt;/a&gt;
+&lt;span class=&quot;caption text-muted&quot;&gt;StackLayout container&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;
+Grid is similar to table. You can set the size of rows and columns in &lt;code&gt;&amp;lt;Grid&amp;gt;&lt;/code&gt; tag and can set where each UI component locates by Grid.Row and Grid.Column. Besides, You can make the layout flexible using attributes like RowSpan and ColumnSpan in HTML.
+&lt;/p&gt;
+&lt;p&gt;&lt;a class=&quot;popupImg&quot;&gt;
+    &lt;img src=&quot;/tech/img/20171215/6.png&quot; alt=&quot;Grid container&quot; /&gt;
+&lt;/a&gt;
+&lt;span class=&quot;caption text-muted&quot;&gt;Grid container&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;
+In general, layout containers and UI components have same attributes like the web design such as spacing, padding and margin. Hence, if you already know how to design a webpage, it would be easier to understand the layouts in Xamarin.Forms.
+&lt;/p&gt;
+&lt;blockquote&gt;&lt;h2 class=&quot;section-heading&quot;&gt;Happy Coding!&lt;/h2&gt;&lt;/blockquote&gt;</content><author><name></name></author><category term="Xamarin" /><category term="C#" /><category term="Mobile" /><summary type="html">Korean Version Please let me know if there is any incorrect information because this is what I summarized what I understood. In order to build up a well-made app, it is important to keep the same look on every devices. Therefore, Xamarin.Forms provides flexible layout containers. These containers calculate positions and sizes of UI components automatically and re-calculate them when a user rotates a device or changes a view size also automatically. These layout containers that Xamarin.Forms provides are StackLayout, Grid, AbsoluteLayout and RelativeLayout and StackLayout and Grid are popular among them. Types of layout container You can use WidthRequest and HeightRequest attributes to set width and height ot each UI component instead of width and height that are normally used in general because Xamarin.Forms doesn't guarantee exact sizes as they are re-calculated based on which platform the app is run. For alignment, you can use VerticalOptions and HorizontalOptions attributes. Width and height attributes of UI component Each platform has different way to translate sizes and resolutions so if you set WidthRequest and HeightRequest, then although absolute sizes might not be same but would have the same look. Resolution method on major platforms. Windows Phone – Effective pixels iPhone – Points Androind – Density-independent pixels UI component size on each platform Let's look into two popular layout containers, StackLayout and Grid. StackLayout is just to stack up UI components in vertical way. As it is very simple, it is also used for building up prototypes. StackLayout container Grid is similar to table. You can set the size of rows and columns in &amp;lt;Grid&amp;gt; tag and can set where each UI component locates by Grid.Row and Grid.Column. Besides, You can make the layout flexible using attributes like RowSpan and ColumnSpan in HTML. Grid container In general, layout containers and UI components have same attributes like the web design such as spacing, padding and margin. Hence, if you already know how to design a webpage, it would be easier to understand the layouts in Xamarin.Forms. Happy Coding!</summary></entry><entry><title type="html">Xamarin.Forms 레이아웃</title><link href="https://bradkwon.github.io/tech/2017/12/15/layouts-in-xamarin-forms-kr/" rel="alternate" type="text/html" title="Xamarin.Forms 레이아웃" /><published>2017-12-15T00:00:00+01:00</published><updated>2017-12-15T00:00:00+01:00</updated><id>https://bradkwon.github.io/tech/2017/12/15/layouts-in-xamarin-forms-kr</id><content type="html" xml:base="https://bradkwon.github.io/tech/2017/12/15/layouts-in-xamarin-forms-kr/">&lt;blockquote&gt;
+&lt;a href=&quot;/tech/2017/12/15/layouts-in-xamarin-forms/&quot;&gt;영문 버전&lt;/a&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;
+&lt;u&gt;&lt;small&gt;이 글은 저도 Xamarin 을 배우는 입장에서 공부한 내용을 정리해 놓은 글이기 때문에 혹시 틀린 내용이 있으면 지적해 주시면 감사하겠습니다.&lt;/small&gt;&lt;/u&gt;
+&lt;/p&gt;
+&lt;p&gt;
+앱을 제대로 만드려면 화면 크기나 해상도가 다른 여러 기기 모두에서 동일한 디자인을 유지해야 하는데 이를 위해 Xamarin.Forms 에서는 유연한 레이아웃 컨테이너들을 제공한다. 이 컴포넌트들은 UI 컨트롤들의 크기 및 위치를 자동으로 계산해주고, 사용자가 기기를 회전하거나 화면 크기를 변경할 경우 자동 재계산 해준다. 이러한 레이아웃 컨테이너에는 StackLayout, Grid, AbsoluteLayout, RelativeLayout 이 있는데 그 중 StackLayout 과 Grid 이 가장 많이 사용된다.
+&lt;/p&gt;
+&lt;p&gt;&lt;a class=&quot;popupImg&quot;&gt;
+    &lt;img src=&quot;/tech/img/20171215/1.png&quot; alt=&quot;레이아웃 컨테이너 종류&quot; /&gt;
+&lt;/a&gt;
+&lt;span class=&quot;caption text-muted&quot;&gt;레이아웃 컨테이너 종류&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;
+Xamarin.Forms 에서 제공하는 레이아웃 컨테이너들은 자동 계산이 되기 때문에 각각 UI 컨트롤의 크기를 지정할 때 일반적인 Width, Height 가 아닌 WidthRequest, HeightRequest 속성을 사용하여 크기를 지정하게 된다. 그리고 컨트롤들의 가로, 세로 정렬을 위해 VerticalOptions, HorizontalOptions 속성이 제공된다.
+&lt;/p&gt;
+&lt;p&gt;&lt;a class=&quot;popupImg&quot;&gt;
+    &lt;img src=&quot;/tech/img/20171215/2.png&quot; alt=&quot;컨트롤 가로, 세로 속성&quot; /&gt;
+&lt;/a&gt;
+&lt;span class=&quot;caption text-muted&quot;&gt;컨트롤 가로, 세로 속성&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;
+플랫폼들마다 사용하는 해상도 처리 방식이 아래와 같이 틀리기 때문에 아래와 같이 WidthRequest, HeightRequest 를 지정하면 화면 비율 및 플랫폼에 따라 크기가 틀려지지만 동일한 디자인을 유지하게 된다.
+&lt;/p&gt;
+&lt;p&gt;해상도 처리방식&lt;/p&gt;
+&lt;ul&gt;
+    &lt;li&gt;윈도우폰 – Effective pixels&lt;/li&gt;
+    &lt;li&gt;아이폰 – Points&lt;/li&gt;
+    &lt;li&gt;안드로이드 – Density-independent pixels&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;a class=&quot;popupImg&quot;&gt;
+    &lt;img src=&quot;/tech/img/20171215/4.png&quot; alt=&quot;플랫폼별 컨트롤 크기&quot; /&gt;
+&lt;/a&gt;
+&lt;span class=&quot;caption text-muted&quot;&gt;플랫폼별 컨트롤 크기&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;
+많이 사용되어지는 StackLayout 과 Grid 에 대해 잠깐 살펴보겠다.
+&lt;/p&gt;
+&lt;p&gt;
+StackLayout 은 아래와 같이 UI 컨트롤들을 세로 방향으로 추가해 가는 방식인데 간단하여 프로토타이핑에 많이 사용되어진다.
+&lt;/p&gt;
+&lt;p&gt;&lt;a class=&quot;popupImg&quot;&gt;
+    &lt;img src=&quot;/tech/img/20171215/5.png&quot; alt=&quot;StackLayout 방식&quot; /&gt;
+&lt;/a&gt;
+&lt;span class=&quot;caption text-muted&quot;&gt;StackLayout 방식&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;
+Grid 는 테이블과 동일하다고 생각하면 될 듯하다. &lt;code&gt;&amp;lt;Grid&amp;gt;&lt;/code&gt; 태그 안에 각 행, 열의 크기를 미리 지정할 수도 있고 각 UI 컨트롤이 들어갈 셀의 위치를 Grid.Row, Grid.Column 으로 지정하면 된다. HTML 의 RowSpan, ColumnSpan 등과 같은 속성들을 사용하여 유연하게 컨트롤들을 배치시킬 수 있다.
+&lt;/p&gt;
+&lt;p&gt;&lt;a class=&quot;popupImg&quot;&gt;
+    &lt;img src=&quot;/tech/img/20171215/6.png&quot; alt=&quot;Grid 방식&quot; /&gt;
+&lt;/a&gt;
+&lt;span class=&quot;caption text-muted&quot;&gt;Grid 방식&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;
+전반적인 레이아웃 컨테이너 및 컨트롤들에 Spacing, Padding, Margin 과 같은 화면 디자인에 필요한 속성들도 사용할 수 있는 걸로 보아 웹 디자인을 간단하게 이해하고 있으면 이해가 더 수월하리라 생각된다.
+&lt;/p&gt;
+&lt;blockquote&gt;&lt;h2 class=&quot;section-heading&quot;&gt;Happy Coding!&lt;/h2&gt;&lt;/blockquote&gt;</content><author><name></name></author><category term="Xamarin" /><category term="C#" /><category term="Mobile" /><summary type="html">영문 버전 이 글은 저도 Xamarin 을 배우는 입장에서 공부한 내용을 정리해 놓은 글이기 때문에 혹시 틀린 내용이 있으면 지적해 주시면 감사하겠습니다. 앱을 제대로 만드려면 화면 크기나 해상도가 다른 여러 기기 모두에서 동일한 디자인을 유지해야 하는데 이를 위해 Xamarin.Forms 에서는 유연한 레이아웃 컨테이너들을 제공한다. 이 컴포넌트들은 UI 컨트롤들의 크기 및 위치를 자동으로 계산해주고, 사용자가 기기를 회전하거나 화면 크기를 변경할 경우 자동 재계산 해준다. 이러한 레이아웃 컨테이너에는 StackLayout, Grid, AbsoluteLayout, RelativeLayout 이 있는데 그 중 StackLayout 과 Grid 이 가장 많이 사용된다. 레이아웃 컨테이너 종류 Xamarin.Forms 에서 제공하는 레이아웃 컨테이너들은 자동 계산이 되기 때문에 각각 UI 컨트롤의 크기를 지정할 때 일반적인 Width, Height 가 아닌 WidthRequest, HeightRequest 속성을 사용하여 크기를 지정하게 된다. 그리고 컨트롤들의 가로, 세로 정렬을 위해 VerticalOptions, HorizontalOptions 속성이 제공된다. 컨트롤 가로, 세로 속성 플랫폼들마다 사용하는 해상도 처리 방식이 아래와 같이 틀리기 때문에 아래와 같이 WidthRequest, HeightRequest 를 지정하면 화면 비율 및 플랫폼에 따라 크기가 틀려지지만 동일한 디자인을 유지하게 된다. 해상도 처리방식 윈도우폰 – Effective pixels 아이폰 – Points 안드로이드 – Density-independent pixels 플랫폼별 컨트롤 크기 많이 사용되어지는 StackLayout 과 Grid 에 대해 잠깐 살펴보겠다. StackLayout 은 아래와 같이 UI 컨트롤들을 세로 방향으로 추가해 가는 방식인데 간단하여 프로토타이핑에 많이 사용되어진다. StackLayout 방식 Grid 는 테이블과 동일하다고 생각하면 될 듯하다. &amp;lt;Grid&amp;gt; 태그 안에 각 행, 열의 크기를 미리 지정할 수도 있고 각 UI 컨트롤이 들어갈 셀의 위치를 Grid.Row, Grid.Column 으로 지정하면 된다. HTML 의 RowSpan, ColumnSpan 등과 같은 속성들을 사용하여 유연하게 컨트롤들을 배치시킬 수 있다. Grid 방식 전반적인 레이아웃 컨테이너 및 컨트롤들에 Spacing, Padding, Margin 과 같은 화면 디자인에 필요한 속성들도 사용할 수 있는 걸로 보아 웹 디자인을 간단하게 이해하고 있으면 이해가 더 수월하리라 생각된다. Happy Coding!</summary></entry><entry><title type="html">XAML in Xamarin</title><link href="https://bradkwon.github.io/tech/2017/12/10/xaml-in-xamarin/" rel="alternate" type="text/html" title="XAML in Xamarin" /><published>2017-12-10T00:00:00+01:00</published><updated>2017-12-10T00:00:00+01:00</updated><id>https://bradkwon.github.io/tech/2017/12/10/xaml-in-xamarin</id><content type="html" xml:base="https://bradkwon.github.io/tech/2017/12/10/xaml-in-xamarin/">&lt;blockquote&gt;
 &lt;a href=&quot;/tech/2017/12/10/xaml-in-xamarin-kr/&quot;&gt;Korean Version&lt;/a&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;
@@ -300,213 +406,4 @@ Xamarin.Forms 에서 사용가능한 컴포넌트 리스트는 &lt;a href=&quot;
 &lt;p&gt;
 그러면 공통적으로 사용할 수 없는 플랫폼 의존적인 기능들은 어떻게 구현할까? 이는 Xamarin 에서 제공하는 DependencyService 등이나 인터페이스나 추상 클래스를 사용하여 상위 클래스를 만든 후 Dependency Injection (DI) 패턴을 적용하여 각각의 플랫폼에서 자기 코드를 넘겨서 처리하는 방법이 있다. 여기선 Xamarin.Forms 가 어떤건지 개념을 잡기 위해 훑어만 보는 수준이므로 (나도 아직 잘 모름..) 실제 적용방법은 &lt;a href=&quot;https://university.xamarin.com/welcome&quot; target=&quot;_blank&quot;&gt;Xamarin University&lt;/a&gt; 등에서 각자 알아서 찾아보기로…
 &lt;/p&gt;
-&lt;blockquote&gt;&lt;h2 class=&quot;section-heading&quot;&gt;Happy Coding!&lt;/h2&gt;&lt;/blockquote&gt;</content><author><name></name></author><category term="Xamarin" /><category term="C#" /><category term="Mobile" /><summary type="html">영문 버전 이 글은 저도 Xamarin 을 배우는 입장에서 공부한 내용을 정리해 놓은 글이기 때문에 혹시 틀린 내용이 있으면 지적해 주시면 감사하겠습니다. Xamarin.Forms 는 이전 장인 Code Sharing 으로 가능했던 비즈니스 로직 재사용 방법처럼 공통적으로 쓰이는 UI 컴포넌트들을 재사용할 수 있게 해준다. 예를 들면, 페이지, 레이아웃, 입력 상자, 버튼 그리고 라벨과 같은 컴포넌트들은 모든 플랫폼에서 공통적으로 사용할 수 있기 때문에 이를 Xamarin.Forms 에서 모든 플랫폼에 동일하게 생성하여 개발 및 관리를 쉽게 해준다. Xamarin.Forms 에서 사용가능한 컴포넌트 리스트는 이 링크를 통해 확인 가능하다. 코드와 화면으로 어떻게 구현이 되는지 한 번 확인해 보면 다음과 같은 하나의 코드로 안드로이드, 아이폰, 윈도우폰에 동일한 컴포넌트, 기능을 구현할 수 있다. ```csharp public class MainPage : ContentPage { Entry phoneNumberText; Button translateButton; Button callButton; string translatedNumber;</summary></entry><entry><title type="html">Xamarin Code Sharing</title><link href="https://bradkwon.github.io/tech/2017/12/01/xamarin-code-sharing/" rel="alternate" type="text/html" title="Xamarin Code Sharing" /><published>2017-12-01T00:00:00+01:00</published><updated>2017-12-01T00:00:00+01:00</updated><id>https://bradkwon.github.io/tech/2017/12/01/xamarin-code-sharing</id><content type="html" xml:base="https://bradkwon.github.io/tech/2017/12/01/xamarin-code-sharing/">&lt;blockquote&gt;
-&lt;a href=&quot;/tech/2017/12/01/xamarin-code-sharing-kr/&quot;&gt;Korean Version&lt;/a&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;
-&lt;u&gt;&lt;small&gt;
-Please let me know if there is any incorrect information because this is what I summarized what I understood.
-&lt;/small&gt;&lt;/u&gt;
-&lt;/p&gt;
-&lt;p&gt;
-The aim of Xamain is to write a function once, run on every platform. However, it seems impossible pragmatically.
-Therefore, this code sharing approach came out to reuse common code except for platform-specific code.
-There are two ways in this approach. One is shared projects and the other is shared compiled binaries.
-&lt;/p&gt;
-&lt;p&gt;
-I quoted the part which explains the reason why you use or consider Xamarin from the lecture in Xamarin University.
-&lt;/p&gt;
-&lt;blockquote&gt;
-One of the reasons you are probably either using or evaluating Xamarin is because it allows you to write your core logic 
-once in a familiar .NET language and then share it across all the popular mobile platforms. This means we fix bugs once, 
-implement new features once and reduce our maintenance and testable surfaces because we have less code to maintain
-&lt;/blockquote&gt;
-&lt;p&gt;
-I think it would be better to watch lectures in &lt;a href=&quot;https://university.xamarin.com/welcome&quot; target=&quot;_blank&quot;&gt;Xamarin University&lt;/a&gt; and build up exercise projects in them so I am going to sum up basic concepts here.
-&lt;/p&gt;
-&lt;p&gt;
-Shared projects is to create an additional project in the solution and, in turn, to have other mobile platform projects, such as android, iOS, windows phone and universal windows app (UWP), refer to it. In the conventional way, this kind of project can be compied as binary file and being refered to other projects in the form of DLL, however this shared project is included to other mobile platform projects in the form of code and compiled together at compile time like partial feature in C#. The include feature in web development.
-I captured the picture that depicts well of this concept.
-&lt;/p&gt;
-&lt;p&gt;&lt;a class=&quot;popupImg&quot;&gt;
-    &lt;img src=&quot;/tech/img/20171201/3.png&quot; alt=&quot;Concept of shared projects&quot; /&gt;
-&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;
-Shared compiled binaries is to refer as a DLL like the conventional way.
-There are also two approaches. One is to create portable class library (PCL) project and refer it.
-In order to run on multiple platforms, you have to configure which platform are you going to run in the profile of this PCL project.
-For example, such as .Net Framework 4.5, Windows Universal 10.0, Windows Phone 8.1, Xamarin.Android, Xamarin.iOS, Xamarin.iOS (Classic).
-&lt;/p&gt;
-&lt;p&gt;
-The other is to create .Net Standard Library project and refer it.
-This is the .Net API library that can be commonly used in every .Net platform and it has rolled out up to version 2.0 from initial version 1.0. The lower version you choose, the less APIs you can use. You can choose which version you want to set in the project property.
-&lt;/p&gt;
-&lt;p&gt;
-As these two approaches hasa pros and cons respectively, you can choose either one that fits on your development environment.
-Xamarin University recommends to use shared projects if the size of your dev team is small and should be in the same solution with other projects and to use shared compiled binaries if the size of dev team is big or should be controlled in the form of component.
-
-I brought the summaries of each approach's pros and cons below.
-&lt;/p&gt;
-&lt;p&gt;
-    &lt;span&gt;&lt;b&gt;Shared Projects&lt;/b&gt;&lt;/span&gt;
-    &lt;table class=&quot;table table-bordered table-condensed&quot;&gt;
-    &lt;thead&gt;
-        &lt;th width=&quot;50%&quot; style=&quot;text-align:center;&quot;&gt;Pros&lt;/th&gt;
-        &lt;th width=&quot;50%&quot; style=&quot;text-align:center;&quot;&gt;Cons&lt;/th&gt;
-    &lt;/thead&gt;
-    &lt;tbody&gt;
-    &lt;tr&gt;
-        &lt;td&gt;All APIs available&lt;/td&gt;
-        &lt;td&gt;Can lead to spaghetti code&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-        &lt;td&gt;Platform-specific logic can be added directly&lt;/td&gt;
-        &lt;td&gt;Difficult to unit test conditional code&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-        &lt;td&gt;All file types can be shared&lt;/td&gt;
-        &lt;td&gt;Must be shipped in source form&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-        &lt;td&gt;Smaller package sizes/platform-specific optimizations&lt;/td&gt;
-        &lt;td&gt;&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;/tbody&gt;
-    &lt;/table&gt;
-&lt;/p&gt;
-&lt;p&gt;
-    &lt;span&gt;&lt;b&gt;Shared Compiled Binaries&lt;/b&gt;&lt;/span&gt;
-    &lt;table class=&quot;table table-bordered table-condensed&quot;&gt;
-    &lt;thead&gt;
-        &lt;th width=&quot;50%&quot; style=&quot;text-align:center;&quot;&gt;Pros&lt;/th&gt;
-        &lt;th width=&quot;50%&quot; style=&quot;text-align:center;&quot;&gt;Cons&lt;/th&gt;
-    &lt;/thead&gt;
-    &lt;tbody&gt;
-    &lt;tr&gt;
-        &lt;td&gt;Enforces architectural design&lt;/td&gt;
-        &lt;td&gt;Limited APIs available&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-        &lt;td&gt;Can be unit tested separately&lt;/td&gt;
-        &lt;td&gt;Difficult to share non-code files&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-        &lt;td&gt;Can be shipped in binary form (NuGet)&lt;/td&gt;
-        &lt;td&gt;Limited to target platforms or APIs&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-        &lt;td&gt;&lt;/td&gt;
-        &lt;td&gt;Requires more work to integrate platform-specific code&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;/tbody&gt;
-    &lt;/table&gt;
-&lt;/p&gt;
-&lt;blockquote&gt;&lt;h2 class=&quot;section-heading&quot;&gt;Happy Coding!&lt;/h2&gt;&lt;/blockquote&gt;</content><author><name></name></author><category term="Xamarin" /><category term="C#" /><category term="Mobile" /><summary type="html">Korean Version Please let me know if there is any incorrect information because this is what I summarized what I understood. The aim of Xamain is to write a function once, run on every platform. However, it seems impossible pragmatically. Therefore, this code sharing approach came out to reuse common code except for platform-specific code. There are two ways in this approach. One is shared projects and the other is shared compiled binaries. I quoted the part which explains the reason why you use or consider Xamarin from the lecture in Xamarin University. One of the reasons you are probably either using or evaluating Xamarin is because it allows you to write your core logic once in a familiar .NET language and then share it across all the popular mobile platforms. This means we fix bugs once, implement new features once and reduce our maintenance and testable surfaces because we have less code to maintain I think it would be better to watch lectures in Xamarin University and build up exercise projects in them so I am going to sum up basic concepts here. Shared projects is to create an additional project in the solution and, in turn, to have other mobile platform projects, such as android, iOS, windows phone and universal windows app (UWP), refer to it. In the conventional way, this kind of project can be compied as binary file and being refered to other projects in the form of DLL, however this shared project is included to other mobile platform projects in the form of code and compiled together at compile time like partial feature in C#. The include feature in web development. I captured the picture that depicts well of this concept. Shared compiled binaries is to refer as a DLL like the conventional way. There are also two approaches. One is to create portable class library (PCL) project and refer it. In order to run on multiple platforms, you have to configure which platform are you going to run in the profile of this PCL project. For example, such as .Net Framework 4.5, Windows Universal 10.0, Windows Phone 8.1, Xamarin.Android, Xamarin.iOS, Xamarin.iOS (Classic). The other is to create .Net Standard Library project and refer it. This is the .Net API library that can be commonly used in every .Net platform and it has rolled out up to version 2.0 from initial version 1.0. The lower version you choose, the less APIs you can use. You can choose which version you want to set in the project property. As these two approaches hasa pros and cons respectively, you can choose either one that fits on your development environment. Xamarin University recommends to use shared projects if the size of your dev team is small and should be in the same solution with other projects and to use shared compiled binaries if the size of dev team is big or should be controlled in the form of component.</summary></entry><entry><title type="html">Xamarin 코드 공유</title><link href="https://bradkwon.github.io/tech/2017/12/01/xamarin-code-sharing-kr/" rel="alternate" type="text/html" title="Xamarin 코드 공유" /><published>2017-12-01T00:00:00+01:00</published><updated>2017-12-01T00:00:00+01:00</updated><id>https://bradkwon.github.io/tech/2017/12/01/xamarin-code-sharing-kr</id><content type="html" xml:base="https://bradkwon.github.io/tech/2017/12/01/xamarin-code-sharing-kr/">&lt;blockquote&gt;
-&lt;a href=&quot;/tech/2017/12/01/xamarin-code-sharing/&quot;&gt;영문 버전&lt;/a&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;
-&lt;u&gt;&lt;small&gt;이 글은 저도 Xamarin 을 배우는 입장에서 공부한 내용을 정리해 놓은 글이기 때문에 혹시 틀린 내용이 있으면 지적해 주시면 감사하겠습니다.&lt;/small&gt;&lt;/u&gt;
-&lt;/p&gt;
-&lt;p&gt;
-Xamarin 이 지향하는 게 동일한 기능을 안드로이드, 아이폰, 윈도우폰과 같은 각각의 플랫폼에 맞게 다시 작성하는 게 아닌 
-한 번 작성된 코드로 위 세 플랫폼 모두에서 동작할 수 있도록 하는 것이지만 현실적으로는 이게 불가능하다. 
-그래서 나오게 된 솔루션이 플랫폼 제한적인 코드를 제외한 공통적인 코드들을 재사용하기 위한 방법으로 나온 Code Sharing 방식이다. 
-여기에는 크게 두 가지 방식이 있는데 첫째는 Shared Projects 이고 다른 하나는 Shared Compiled Binaries 이다. 
-&lt;/p&gt;
-&lt;p&gt;
-Xamarin University 강의 중 Xamarin 을 사용하는 이유에 대한 설명이 있어 옮겨와 번역을 해 보았다.
-&lt;/p&gt;
-&lt;blockquote&gt;
-One of the reasons you are probably either using or evaluating Xamarin is because it allows you to write your core logic 
-once in a familiar .NET language and then share it across all the popular mobile platforms. This means we fix bugs once, 
-implement new features once and reduce our maintenance and testable surfaces because we have less code to maintain
-&lt;/blockquote&gt;
-&lt;blockquote&gt;
-아마 당신이 Xamarin 을 사용하거나 고려하고 있는 이유들 중 하나는 핵심 로직을 익숙한 .Net 언어로 한 번만 작성한 뒤 주요 모바일 플랫폼들에서 
-사용할 수 있다는 것일 것이다. 이 말은 버그를 한 번만 고치면 되고, 새로운 기능을 한 번만 만들면 되므로 적은 양의 코드를 가지게 되어 유지보수 
-및 테스트할 부분이 줄어든다는 것이다.
-&lt;/blockquote&gt;
-&lt;p&gt;
-구체적인 구현 방법은 &lt;a href=&quot;https://university.xamarin.com/welcome&quot; target=&quot;_blank&quot;&gt;Xamarin University&lt;/a&gt;에 가면 
-따라해 볼 수 있는 강의가 있으니 직접 강의를 보고 구현해 보는게 좋을 듯 하여 여기서는 간단히 개념만 정리해 보려고 한다.
-&lt;/p&gt;
-&lt;p&gt;
-Shared Projects 방식은, 별도의 Shared Project 를 하나 만들어서 안드로이드나 아이폰, 그리고 윈도우폰과 Universal Windows App(UWP) 
-프로젝트들에 프로젝트 참조하여 사용하는 방식이다. 보통은 이렇게 별도의 프로젝트를 만들어서 다른 프로젝트에 참조를 하게 되면 이미 컴파일된 
-바이너리 파일인 DLL 라이브러리로 참조가 되어 사용할 수 있는데 반해, 이 Shared Project 는 C# 의 Partial 기능처럼 컴파일 시점에 각각의 
-참조된 플랫폼 프로젝트에 Shared Project 소스가 포함되서 컴파일이 된다는 점이다. 웹으로 치면 Include 와 동일하다. 
-간단한 그림을 강의에서 캡쳐해서 나타내 보았다.
-&lt;/p&gt;
-&lt;p&gt;&lt;a class=&quot;popupImg&quot;&gt;
-    &lt;img src=&quot;/tech/img/20171201/3.png&quot; alt=&quot;Shared 프로젝트 개념&quot; /&gt;
-&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;
-Shared Compiled Binaries 방식은, 기존 방식처럼 별도의 라이브러리 프로젝트를 DLL 로 참조하는 것이다. 
-여기에는 두 가지 방법이 있는데 첫째는, Portable Class Library (PCL) 프로젝트를 만들어 바이너리로 참조하게 하는 것이다. 
-각각 플랫폼들에서 공통적으로 실행되기 때문에 실행될 플랫폼들의 프로파일을 설정해 줘야 한다. 
-예를 들면, .Net Framework 4.5, Windows Universal 10.0, Windows Phone 8.1, Xamarin.Android, Xamarin.iOS, Xamarin.iOS (Classic) 과 
-같은 것들을 말이다.
-&lt;/p&gt;
-&lt;p&gt;
-두번째는, .Net Standard Library 프로젝트를 만들어 바이너리로 참조하게 하는 것이다. 이건 모든 닷넷 플랫폼에서 공통적으로 사용할 수 있는 .Net API 라이브러리인데 1.0, 1.1, 1.2 … 현재 2.0 까지 버전이 나왔고 버전이 낮아질수록 사용할 수 있는 API 가 적어진다. 프로젝트 속성에서 버전을 선택할 수 있다. 
-&lt;/p&gt;
-&lt;p&gt;
-두 가지 방식 모두 장단점이 있기 때문에 개발환경에 맞게 선택해서 사용하면 되며, Shared Projects 방식은 같은 솔루션에 포함되어야 하기에 작은 규모의 앱이나 개발팀에 적합하며, 규모가 크거나 컴포넌트 형식으로 관리되어야 한다면 Shared Compiled Libraries 방식이 적합할 것이다.
-
-역시 Xamarin University 강의에 각각 방식의 장단점을 정리해 놓은게 있어 옮겨와 번역을 해 보았다.
-&lt;/p&gt;
-&lt;p&gt;
-    &lt;span&gt;&lt;b&gt;Shared Projects&lt;/b&gt;&lt;/span&gt;
-    &lt;table class=&quot;table table-bordered table-condensed&quot;&gt;
-    &lt;thead&gt;
-        &lt;th width=&quot;50%&quot; style=&quot;text-align:center;&quot;&gt;Pros&lt;/th&gt;
-        &lt;th width=&quot;50%&quot; style=&quot;text-align:center;&quot;&gt;Cons&lt;/th&gt;
-    &lt;/thead&gt;
-    &lt;tbody&gt;
-    &lt;tr&gt;
-        &lt;td&gt;모든 API 사용가능&lt;/td&gt;
-        &lt;td&gt;스파게티 소스가 될 가능성&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-        &lt;td&gt;플랫폼 제한적인 로직 직접 추가 가능&lt;/td&gt;
-        &lt;td&gt;플랫폼 제한적인 로직 유닛 테스팅 어려움&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-        &lt;td&gt;모든 파일 종류 공유 가능&lt;/td&gt;
-        &lt;td&gt;반드시 소스 형식으로 제공되어야 함&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-        &lt;td&gt;작은 패키지 크기/플랫폼별 최적화&lt;/td&gt;
-        &lt;td&gt;&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;/tbody&gt;
-    &lt;/table&gt;
-&lt;/p&gt;
-&lt;p&gt;
-    &lt;span&gt;&lt;b&gt;Shared Compiled Binaries&lt;/b&gt;&lt;/span&gt;
-    &lt;table class=&quot;table table-bordered table-condensed&quot;&gt;
-    &lt;thead&gt;
-        &lt;th width=&quot;50%&quot; style=&quot;text-align:center;&quot;&gt;Pros&lt;/th&gt;
-        &lt;th width=&quot;50%&quot; style=&quot;text-align:center;&quot;&gt;Cons&lt;/th&gt;
-    &lt;/thead&gt;
-    &lt;tbody&gt;
-    &lt;tr&gt;
-        &lt;td&gt;구조적 디자인 강제&lt;/td&gt;
-        &lt;td&gt;제한적인 API&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-        &lt;td&gt;독립적으로 유닛 테스팅 가능&lt;/td&gt;
-        &lt;td&gt;코드성 파일외 공유의 어려움&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-        &lt;td&gt;바이너리 형식으로 배포 가능 (NuGet)&lt;/td&gt;
-        &lt;td&gt;제한된 타겟 플랫폼 또는 API&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-        &lt;td&gt;&lt;/td&gt;
-        &lt;td&gt;플랫폼 제한적인 코드 통합에 추가 작업 필요&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;/tbody&gt;
-    &lt;/table&gt;
-&lt;/p&gt;
-&lt;blockquote&gt;&lt;h2 class=&quot;section-heading&quot;&gt;Happy Coding!&lt;/h2&gt;&lt;/blockquote&gt;</content><author><name></name></author><category term="Xamarin" /><category term="C#" /><category term="Mobile" /><summary type="html">영문 버전 이 글은 저도 Xamarin 을 배우는 입장에서 공부한 내용을 정리해 놓은 글이기 때문에 혹시 틀린 내용이 있으면 지적해 주시면 감사하겠습니다. Xamarin 이 지향하는 게 동일한 기능을 안드로이드, 아이폰, 윈도우폰과 같은 각각의 플랫폼에 맞게 다시 작성하는 게 아닌 한 번 작성된 코드로 위 세 플랫폼 모두에서 동작할 수 있도록 하는 것이지만 현실적으로는 이게 불가능하다. 그래서 나오게 된 솔루션이 플랫폼 제한적인 코드를 제외한 공통적인 코드들을 재사용하기 위한 방법으로 나온 Code Sharing 방식이다. 여기에는 크게 두 가지 방식이 있는데 첫째는 Shared Projects 이고 다른 하나는 Shared Compiled Binaries 이다. Xamarin University 강의 중 Xamarin 을 사용하는 이유에 대한 설명이 있어 옮겨와 번역을 해 보았다. One of the reasons you are probably either using or evaluating Xamarin is because it allows you to write your core logic once in a familiar .NET language and then share it across all the popular mobile platforms. This means we fix bugs once, implement new features once and reduce our maintenance and testable surfaces because we have less code to maintain 아마 당신이 Xamarin 을 사용하거나 고려하고 있는 이유들 중 하나는 핵심 로직을 익숙한 .Net 언어로 한 번만 작성한 뒤 주요 모바일 플랫폼들에서 사용할 수 있다는 것일 것이다. 이 말은 버그를 한 번만 고치면 되고, 새로운 기능을 한 번만 만들면 되므로 적은 양의 코드를 가지게 되어 유지보수 및 테스트할 부분이 줄어든다는 것이다. 구체적인 구현 방법은 Xamarin University에 가면 따라해 볼 수 있는 강의가 있으니 직접 강의를 보고 구현해 보는게 좋을 듯 하여 여기서는 간단히 개념만 정리해 보려고 한다. Shared Projects 방식은, 별도의 Shared Project 를 하나 만들어서 안드로이드나 아이폰, 그리고 윈도우폰과 Universal Windows App(UWP) 프로젝트들에 프로젝트 참조하여 사용하는 방식이다. 보통은 이렇게 별도의 프로젝트를 만들어서 다른 프로젝트에 참조를 하게 되면 이미 컴파일된 바이너리 파일인 DLL 라이브러리로 참조가 되어 사용할 수 있는데 반해, 이 Shared Project 는 C# 의 Partial 기능처럼 컴파일 시점에 각각의 참조된 플랫폼 프로젝트에 Shared Project 소스가 포함되서 컴파일이 된다는 점이다. 웹으로 치면 Include 와 동일하다. 간단한 그림을 강의에서 캡쳐해서 나타내 보았다. Shared Compiled Binaries 방식은, 기존 방식처럼 별도의 라이브러리 프로젝트를 DLL 로 참조하는 것이다. 여기에는 두 가지 방법이 있는데 첫째는, Portable Class Library (PCL) 프로젝트를 만들어 바이너리로 참조하게 하는 것이다. 각각 플랫폼들에서 공통적으로 실행되기 때문에 실행될 플랫폼들의 프로파일을 설정해 줘야 한다. 예를 들면, .Net Framework 4.5, Windows Universal 10.0, Windows Phone 8.1, Xamarin.Android, Xamarin.iOS, Xamarin.iOS (Classic) 과 같은 것들을 말이다. 두번째는, .Net Standard Library 프로젝트를 만들어 바이너리로 참조하게 하는 것이다. 이건 모든 닷넷 플랫폼에서 공통적으로 사용할 수 있는 .Net API 라이브러리인데 1.0, 1.1, 1.2 … 현재 2.0 까지 버전이 나왔고 버전이 낮아질수록 사용할 수 있는 API 가 적어진다. 프로젝트 속성에서 버전을 선택할 수 있다. 두 가지 방식 모두 장단점이 있기 때문에 개발환경에 맞게 선택해서 사용하면 되며, Shared Projects 방식은 같은 솔루션에 포함되어야 하기에 작은 규모의 앱이나 개발팀에 적합하며, 규모가 크거나 컴포넌트 형식으로 관리되어야 한다면 Shared Compiled Libraries 방식이 적합할 것이다.</summary></entry></feed>
+&lt;blockquote&gt;&lt;h2 class=&quot;section-heading&quot;&gt;Happy Coding!&lt;/h2&gt;&lt;/blockquote&gt;</content><author><name></name></author><category term="Xamarin" /><category term="C#" /><category term="Mobile" /><summary type="html">영문 버전 이 글은 저도 Xamarin 을 배우는 입장에서 공부한 내용을 정리해 놓은 글이기 때문에 혹시 틀린 내용이 있으면 지적해 주시면 감사하겠습니다. Xamarin.Forms 는 이전 장인 Code Sharing 으로 가능했던 비즈니스 로직 재사용 방법처럼 공통적으로 쓰이는 UI 컴포넌트들을 재사용할 수 있게 해준다. 예를 들면, 페이지, 레이아웃, 입력 상자, 버튼 그리고 라벨과 같은 컴포넌트들은 모든 플랫폼에서 공통적으로 사용할 수 있기 때문에 이를 Xamarin.Forms 에서 모든 플랫폼에 동일하게 생성하여 개발 및 관리를 쉽게 해준다. Xamarin.Forms 에서 사용가능한 컴포넌트 리스트는 이 링크를 통해 확인 가능하다. 코드와 화면으로 어떻게 구현이 되는지 한 번 확인해 보면 다음과 같은 하나의 코드로 안드로이드, 아이폰, 윈도우폰에 동일한 컴포넌트, 기능을 구현할 수 있다. ```csharp public class MainPage : ContentPage { Entry phoneNumberText; Button translateButton; Button callButton; string translatedNumber;</summary></entry></feed>
