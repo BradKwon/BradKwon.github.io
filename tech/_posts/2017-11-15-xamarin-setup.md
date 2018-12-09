@@ -10,7 +10,7 @@ tags:       [Xamarin,  Visual Studio, C#, Mobile, Android]
 </blockquote>
 <p>
 I've recently started to learn Xamarin to build any mobile app with C# because I've mainly used C# for programming. 
-The concept of Xamarin which is write-once, run everywhere seemed quite attractive so I decided to learn it.  
+The concept of Xamarin which is "write-once, run everywhere" seemed quite attractive so I decided to learn it.  
 </p>
 <p>
 What I had to do at first is to set up Xamarin development environment. 
@@ -18,6 +18,7 @@ I chose a Visual Studio 2017 community version.
 For iOS deployment, I have to use either an iMac or a Macbook. 
 As I only have Windows environment, so I decided to go with android first and try out the <a href="https://www.xamarin.com/live" target="_blank">Xamarin Live Player</a> app for iOS deployment. 
 The live player function enables developers to deploy iOS apps to their actual iPhones via the live player app.
+_(* This feature has changed to test apps on Android devices. For iOS, Mac host is still needed..[Link](https://docs.microsoft.com/en-us/xamarin/tools/live-player/))_
 </p>
 <p>
 To install the Visual Studio 2017 was easy as well as Xamarin development tools. 
@@ -31,7 +32,7 @@ I could choose whatever tools I want to install on the workload while installing
 The problem was when I tried to deploy an Android project to an emulator. 
 I found out that there are two types of emulators. One is using Android SDK and another is using Visual Studio Emulator for Android. 
 After taking a closer look on them, I found out that Visual Studio Emulator for Android is much faster than Android SDK 
-so I installed it through Visual Studio installer again. 
+so I installed it through Visual Studio installer again. _(* Versions after Marshmallow are not supported on this emulator and the website recommends Google emulator for the latest verions instead. [Link](https://visualstudio.microsoft.com/vs/msft-android-emulator/))_
 You can select it to install in the Individual components > Emulators menu.
 </p>
 <a class="popupImg">
