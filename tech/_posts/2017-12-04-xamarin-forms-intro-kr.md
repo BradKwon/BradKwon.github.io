@@ -3,6 +3,7 @@ layout:     post
 title:      "Xamarin.Forms 소개"
 header-img: "tech/img/20171115/xamarin-android-emulator-setup.jpg"
 tags:       [Xamarin, C#, Mobile]
+category:   tech
 ---
 <blockquote>
 <a href="{{ site.baseurl }}/tech/2017/12/04/xamarin-forms-intro/">영문 버전</a>

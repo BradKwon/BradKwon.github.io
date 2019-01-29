@@ -26,10 +26,11 @@ plugins: [jekyll-paginate-v2, jekyll-feed, jekyll-octicons, jekyll-seo-tag, jeky
 
 pagination:
   enabled: true
-  per_page: 10
-  permalink: '/page/:num/'
+  per_page: 2
+  permalink: '/page/:num'
   sort_field: 'date'
   sort_reverse: true
   extension: html
   indexpage: 'index'
   title: ':title'
+  debug: true

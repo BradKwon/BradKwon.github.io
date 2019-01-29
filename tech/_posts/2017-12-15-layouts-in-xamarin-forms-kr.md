@@ -3,6 +3,7 @@ layout:     post
 title:      "Xamarin.Forms 레이아웃"
 header-img: "tech/img/20171115/xamarin-android-emulator-setup.jpg"
 tags:       [Xamarin, C#, Mobile]
+category:   tech
 ---
 <blockquote>
 <a href="{{ site.baseurl }}/tech/2017/12/15/layouts-in-xamarin-forms/">영문 버전</a>

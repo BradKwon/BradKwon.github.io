@@ -2,6 +2,7 @@
 layout:     post
 title:      "Layouts in Xamarin.Forms"
 header-img: "tech/img/20171115/xamarin-android-emulator-setup.jpg"
+category:   tech
 tags:       [Xamarin, C#, Mobile]
 ---
 <blockquote>

@@ -4,6 +4,7 @@ title:      "Xamarin Android Emulator Setup in Visual Studio 2017"
 subtitle:   "with Visual Studio Emulator for Android"
 header-img: "tech/img/20171115/xamarin-android-emulator-setup.jpg"
 tags:       [Xamarin,  Visual Studio, C#, Mobile, Android]
+category:   tech
 ---
 <blockquote>
 <a href="{{ site.baseurl }}/tech/2017/11/15/xamarin-setup-kr/">Korean Version</a>

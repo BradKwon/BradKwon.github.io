@@ -3,6 +3,7 @@ layout:     post
 title:      "Xamarin 코드 공유"
 header-img: "tech/img/20171115/xamarin-android-emulator-setup.jpg"
 tags:       [Xamarin, C#, Mobile]
+category:   tech
 ---
 <blockquote>
 <a href="{{ site.baseurl }}/tech/2017/12/01/xamarin-code-sharing/">영문 버전</a>

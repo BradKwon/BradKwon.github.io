@@ -4,6 +4,7 @@ title:      "Visual Studio 2017 에서 Xamarin 안드로이드 에뮬레이터 �
 subtitle:   "Visual Studio Emulator for Android"
 header-img: "tech/img/20171115/xamarin-android-emulator-setup.jpg"
 tags:       [Xamarin,  Visual Studio, C#, Mobile, Android]
+category:   tech
 ---
 <blockquote>
 <a href="{{ site.baseurl }}/tech/2017/11/15/xamarin-setup/">영문 버전</a>

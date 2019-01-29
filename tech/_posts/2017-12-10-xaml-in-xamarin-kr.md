@@ -3,6 +3,7 @@ layout:     post
 title:      "XAML in Xamarin (한글)"
 header-img: "tech/img/20171115/xamarin-android-emulator-setup.jpg"
 tags:       [Xamarin, C#, Mobile]
+category:   tech
 ---
 <blockquote>
 <a href="{{ site.baseurl }}/tech/2017/12/10/xaml-in-xamarin/">영문 버전</a>

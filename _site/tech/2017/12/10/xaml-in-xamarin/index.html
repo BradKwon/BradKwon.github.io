@@ -11,7 +11,7 @@
 
     <title>XAML in Xamarin - Brad Kwon</title>
 
-    <link rel="canonical" href="https://BradKwon.github.io/tech/2017/12/10/xaml-in-xamarin/">
+    <link rel="canonical" href="http://localhost:4000/tech/2017/12/10/xaml-in-xamarin/">
 
     <!-- Bootstrap Core CSS -->
     <link rel="stylesheet" href="/css/bootstrap.min.css">
@@ -35,7 +35,7 @@
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
 
-    <link type="application/atom+xml" rel="alternate" href="https://bradkwon.github.io/feed.xml" title="Brad Kwon" />
+    <link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="Brad Kwon" />
 
     <style>
         .back-to-top {
@@ -55,19 +55,20 @@
 
 </head>
 
-<!-- Begin Jekyll SEO tag v2.3.0 -->
+<!-- Begin Jekyll SEO tag v2.5.0 -->
 <title>XAML in Xamarin | Brad Kwon</title>
+<meta name="generator" content="Jekyll v3.8.5" />
 <meta property="og:title" content="XAML in Xamarin" />
 <meta property="og:locale" content="en_US" />
 <meta name="description" content="Korean Version Please let me know if there is any incorrect information because this is what I summarized what I understood. What isi XAML? It is an acronym for eXtensible Application Markup Language and is used to seperate UI and functional codes. UI codes can be placed in the behind C# codes and can be controlled there, however that would cause difficulties to work on view designs and function implementations repectively because they are mixed up in one file. (of course, for dynamic generation of UI componenets helplessly should be implemented in this way) The key point of popular patterns or approaches thesedays in development such as MVC, MVVM and DI is to seperate each role or interest as a component and make it independent. After that, to mix and match those components to complete a product like machinary assembly. It went a bit far. By the way, due to the benefits we could get from modularization, I think UI and functions should also be seperated but it might depend on situations. XAML code and behind code can be mapped like this. Mapping between UI code and XAML code XAML is used in WPF, Silverlight, UWP and Windows Workflow. Xamarin.Forms also uses the same grammar like others but it has unique grammars so it cannot be same like others. Here, I think just knowing XAML is used in those technologies is enough. Like HTML tags, each XAML tags can take event handlers. Add an TextChanged event handler in XAML code In Xamarin.Forms XAML, it supports Markup Extension for flexible settings of UI control attributes and for settings for respective mobile platforms, it provides the Device.OS property. Besides, it provides the reusable capsulation of components, which is called ContentView, so that it could be used in another UI like the user control feature in WinForms. When it comes to this feature, it would be better to check it out from Xamarin University Happy Coding!" />
 <meta property="og:description" content="Korean Version Please let me know if there is any incorrect information because this is what I summarized what I understood. What isi XAML? It is an acronym for eXtensible Application Markup Language and is used to seperate UI and functional codes. UI codes can be placed in the behind C# codes and can be controlled there, however that would cause difficulties to work on view designs and function implementations repectively because they are mixed up in one file. (of course, for dynamic generation of UI componenets helplessly should be implemented in this way) The key point of popular patterns or approaches thesedays in development such as MVC, MVVM and DI is to seperate each role or interest as a component and make it independent. After that, to mix and match those components to complete a product like machinary assembly. It went a bit far. By the way, due to the benefits we could get from modularization, I think UI and functions should also be seperated but it might depend on situations. XAML code and behind code can be mapped like this. Mapping between UI code and XAML code XAML is used in WPF, Silverlight, UWP and Windows Workflow. Xamarin.Forms also uses the same grammar like others but it has unique grammars so it cannot be same like others. Here, I think just knowing XAML is used in those technologies is enough. Like HTML tags, each XAML tags can take event handlers. Add an TextChanged event handler in XAML code In Xamarin.Forms XAML, it supports Markup Extension for flexible settings of UI control attributes and for settings for respective mobile platforms, it provides the Device.OS property. Besides, it provides the reusable capsulation of components, which is called ContentView, so that it could be used in another UI like the user control feature in WinForms. When it comes to this feature, it would be better to check it out from Xamarin University Happy Coding!" />
-<link rel="canonical" href="https://bradkwon.github.io/tech/2017/12/10/xaml-in-xamarin/" />
-<meta property="og:url" content="https://bradkwon.github.io/tech/2017/12/10/xaml-in-xamarin/" />
+<link rel="canonical" href="http://localhost:4000/tech/2017/12/10/xaml-in-xamarin/" />
+<meta property="og:url" content="http://localhost:4000/tech/2017/12/10/xaml-in-xamarin/" />
 <meta property="og:site_name" content="Brad Kwon" />
 <meta property="og:type" content="article" />
 <meta property="article:published_time" content="2017-12-10T00:00:00+01:00" />
 <script type="application/ld+json">
-{"name":null,"description":"Korean Version Please let me know if there is any incorrect information because this is what I summarized what I understood. What isi XAML? It is an acronym for eXtensible Application Markup Language and is used to seperate UI and functional codes. UI codes can be placed in the behind C# codes and can be controlled there, however that would cause difficulties to work on view designs and function implementations repectively because they are mixed up in one file. (of course, for dynamic generation of UI componenets helplessly should be implemented in this way) The key point of popular patterns or approaches thesedays in development such as MVC, MVVM and DI is to seperate each role or interest as a component and make it independent. After that, to mix and match those components to complete a product like machinary assembly. It went a bit far. By the way, due to the benefits we could get from modularization, I think UI and functions should also be seperated but it might depend on situations. XAML code and behind code can be mapped like this. Mapping between UI code and XAML code XAML is used in WPF, Silverlight, UWP and Windows Workflow. Xamarin.Forms also uses the same grammar like others but it has unique grammars so it cannot be same like others. Here, I think just knowing XAML is used in those technologies is enough. Like HTML tags, each XAML tags can take event handlers. Add an TextChanged event handler in XAML code In Xamarin.Forms XAML, it supports Markup Extension for flexible settings of UI control attributes and for settings for respective mobile platforms, it provides the Device.OS property. Besides, it provides the reusable capsulation of components, which is called ContentView, so that it could be used in another UI like the user control feature in WinForms. When it comes to this feature, it would be better to check it out from Xamarin University Happy Coding!","author":null,"@type":"BlogPosting","url":"https://bradkwon.github.io/tech/2017/12/10/xaml-in-xamarin/","publisher":null,"image":null,"headline":"XAML in Xamarin","dateModified":"2017-12-10T00:00:00+01:00","datePublished":"2017-12-10T00:00:00+01:00","sameAs":null,"mainEntityOfPage":{"@type":"WebPage","@id":"https://bradkwon.github.io/tech/2017/12/10/xaml-in-xamarin/"},"@context":"http://schema.org"}</script>
+{"description":"Korean Version Please let me know if there is any incorrect information because this is what I summarized what I understood. What isi XAML? It is an acronym for eXtensible Application Markup Language and is used to seperate UI and functional codes. UI codes can be placed in the behind C# codes and can be controlled there, however that would cause difficulties to work on view designs and function implementations repectively because they are mixed up in one file. (of course, for dynamic generation of UI componenets helplessly should be implemented in this way) The key point of popular patterns or approaches thesedays in development such as MVC, MVVM and DI is to seperate each role or interest as a component and make it independent. After that, to mix and match those components to complete a product like machinary assembly. It went a bit far. By the way, due to the benefits we could get from modularization, I think UI and functions should also be seperated but it might depend on situations. XAML code and behind code can be mapped like this. Mapping between UI code and XAML code XAML is used in WPF, Silverlight, UWP and Windows Workflow. Xamarin.Forms also uses the same grammar like others but it has unique grammars so it cannot be same like others. Here, I think just knowing XAML is used in those technologies is enough. Like HTML tags, each XAML tags can take event handlers. Add an TextChanged event handler in XAML code In Xamarin.Forms XAML, it supports Markup Extension for flexible settings of UI control attributes and for settings for respective mobile platforms, it provides the Device.OS property. Besides, it provides the reusable capsulation of components, which is called ContentView, so that it could be used in another UI like the user control feature in WinForms. When it comes to this feature, it would be better to check it out from Xamarin University Happy Coding!","@type":"BlogPosting","url":"http://localhost:4000/tech/2017/12/10/xaml-in-xamarin/","headline":"XAML in Xamarin","dateModified":"2017-12-10T00:00:00+01:00","datePublished":"2017-12-10T00:00:00+01:00","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/tech/2017/12/10/xaml-in-xamarin/"},"@context":"http://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -129,13 +130,49 @@
                 
 				
                 <li>
+                    <a href="/blog/index.html">Blog</a>
+                </li>
+				
+                
+				
+                <li>
+                    <a href="/blog/page/2index.html">Blog</a>
+                </li>
+				
+                
+				
+                <li>
+                    <a href="/blog/page/3index.html">Blog</a>
+                </li>
+				
+                
+				
+                <li>
                     <a href="/tech/index.html">Tech</a>
                 </li>
 				
                 
 				
                 <li>
-                    <a href="/blog/index.html">Blog</a>
+                    <a href="/tech/page/2index.html">Tech</a>
+                </li>
+				
+                
+				
+                <li>
+                    <a href="/tech/page/3index.html">Tech</a>
+                </li>
+				
+                
+				
+                <li>
+                    <a href="/tech/page/4index.html">Tech</a>
+                </li>
+				
+                
+				
+                <li>
+                    <a href="/tech/page/5index.html">Tech</a>
                 </li>
 				
                  -->
@@ -315,7 +352,7 @@ In Xamarin.Forms XAML, it supports Markup Extension for flexible settings of UI 
                     </li>
                     
                 </ul>
-                <p class="copyright text-muted">Copyright &copy; Brad Kwon 2018</p>
+                <p class="copyright text-muted">Copyright &copy; Brad Kwon 2019</p>
             </div>
         </div>
     </div>

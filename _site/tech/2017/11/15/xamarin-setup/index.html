@@ -11,7 +11,7 @@
 
     <title>Xamarin Android Emulator Setup in Visual Studio 2017 - Brad Kwon</title>
 
-    <link rel="canonical" href="https://BradKwon.github.io/tech/2017/11/15/xamarin-setup/">
+    <link rel="canonical" href="http://localhost:4000/tech/2017/11/15/xamarin-setup/">
 
     <!-- Bootstrap Core CSS -->
     <link rel="stylesheet" href="/css/bootstrap.min.css">
@@ -35,7 +35,7 @@
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
 
-    <link type="application/atom+xml" rel="alternate" href="https://bradkwon.github.io/feed.xml" title="Brad Kwon" />
+    <link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="Brad Kwon" />
 
     <style>
         .back-to-top {
@@ -55,19 +55,20 @@
 
 </head>
 
-<!-- Begin Jekyll SEO tag v2.3.0 -->
+<!-- Begin Jekyll SEO tag v2.5.0 -->
 <title>Xamarin Android Emulator Setup in Visual Studio 2017 | Brad Kwon</title>
+<meta name="generator" content="Jekyll v3.8.5" />
 <meta property="og:title" content="Xamarin Android Emulator Setup in Visual Studio 2017" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="Korean Version I&#39;ve recently started to learn Xamarin to build any mobile app with C# because I&#39;ve mainly used C# for programming. The concept of Xamarin which is write-once, run everywhere seemed quite attractive so I decided to learn it. What I had to do at first is to set up Xamarin development environment. I chose a Visual Studio 2017 community version. For iOS deployment, I have to use either an iMac or a Macbook. As I only have Windows environment, so I decided to go with android first and try out the Xamarin Live Player app for iOS deployment. The live player function enables developers to deploy iOS apps to their actual iPhones via the live player app. To install the Visual Studio 2017 was easy as well as Xamarin development tools. I could choose whatever tools I want to install on the workload while installing. Visual Studio Installer Workloads View The problem was when I tried to deploy an Android project to an emulator. I found out that there are two types of emulators. One is using Android SDK and another is using Visual Studio Emulator for Android. After taking a closer look on them, I found out that Visual Studio Emulator for Android is much faster than Android SDK so I installed it through Visual Studio installer again. You can select it to install in the Individual components &gt; Emulators menu. Choose Visual Studio Emulator for Android under Emulators if it is not selected. I installed that emulator on my computer and tried to deploy again. But this time, I couldn’t see anything running on the emulator although everything looked fine. Everything seems fine. So I googled what went wrong and finally reached this page. https://forums.xamarin.com/discussion/62307/xamarin-android-projects-failed-to-deploy-in-visual-studio-emulator-for-android My case came under both the CPU compatibility and the registry. My CPU was Intel i7-6600U and its code name is SkyLake and this CPU has an issue with Hyper-V that the Visual Studio Emulator for Android depends on. In order to sort this out, I followed this step. Open the Hyper-V Manager and go to settings of the virtual device. Right-click on the emulator you want to set up and choose settings. Check off “Migrate to a physical computer with a different processor version” in the Processor &gt; Compatibility menu. Secondly, for the registry for Android SDK Tools path, I created a new “Android SDK Tools” key under HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\ because there wasn’t existing key like others. Then I added a string value with “Path” for name and the Android SDK full path on my computer for data. I could get the Android SDK full path from Visual Studio &gt; Tools &gt; Options &gt; Xamarin &gt; Android Settings &gt; Android SDK Location Copy and paste it to the registry. Eventually, I could see something different on the output window after executing debugging. Deployment Success!! Happy Coding!" />
-<meta property="og:description" content="Korean Version I&#39;ve recently started to learn Xamarin to build any mobile app with C# because I&#39;ve mainly used C# for programming. The concept of Xamarin which is write-once, run everywhere seemed quite attractive so I decided to learn it. What I had to do at first is to set up Xamarin development environment. I chose a Visual Studio 2017 community version. For iOS deployment, I have to use either an iMac or a Macbook. As I only have Windows environment, so I decided to go with android first and try out the Xamarin Live Player app for iOS deployment. The live player function enables developers to deploy iOS apps to their actual iPhones via the live player app. To install the Visual Studio 2017 was easy as well as Xamarin development tools. I could choose whatever tools I want to install on the workload while installing. Visual Studio Installer Workloads View The problem was when I tried to deploy an Android project to an emulator. I found out that there are two types of emulators. One is using Android SDK and another is using Visual Studio Emulator for Android. After taking a closer look on them, I found out that Visual Studio Emulator for Android is much faster than Android SDK so I installed it through Visual Studio installer again. You can select it to install in the Individual components &gt; Emulators menu. Choose Visual Studio Emulator for Android under Emulators if it is not selected. I installed that emulator on my computer and tried to deploy again. But this time, I couldn’t see anything running on the emulator although everything looked fine. Everything seems fine. So I googled what went wrong and finally reached this page. https://forums.xamarin.com/discussion/62307/xamarin-android-projects-failed-to-deploy-in-visual-studio-emulator-for-android My case came under both the CPU compatibility and the registry. My CPU was Intel i7-6600U and its code name is SkyLake and this CPU has an issue with Hyper-V that the Visual Studio Emulator for Android depends on. In order to sort this out, I followed this step. Open the Hyper-V Manager and go to settings of the virtual device. Right-click on the emulator you want to set up and choose settings. Check off “Migrate to a physical computer with a different processor version” in the Processor &gt; Compatibility menu. Secondly, for the registry for Android SDK Tools path, I created a new “Android SDK Tools” key under HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\ because there wasn’t existing key like others. Then I added a string value with “Path” for name and the Android SDK full path on my computer for data. I could get the Android SDK full path from Visual Studio &gt; Tools &gt; Options &gt; Xamarin &gt; Android Settings &gt; Android SDK Location Copy and paste it to the registry. Eventually, I could see something different on the output window after executing debugging. Deployment Success!! Happy Coding!" />
-<link rel="canonical" href="https://bradkwon.github.io/tech/2017/11/15/xamarin-setup/" />
-<meta property="og:url" content="https://bradkwon.github.io/tech/2017/11/15/xamarin-setup/" />
+<meta name="description" content="Korean Version I&#39;ve recently started to learn Xamarin to build any mobile app with C# because I&#39;ve mainly used C# for programming. The concept of Xamarin which is &quot;write-once, run everywhere&quot; seemed quite attractive so I decided to learn it. What I had to do at first is to set up Xamarin development environment. I chose a Visual Studio 2017 community version. For iOS deployment, I have to use either an iMac or a Macbook. As I only have Windows environment, so I decided to go with android first and try out the Xamarin Live Player app for iOS deployment. The live player function enables developers to deploy iOS apps to their actual iPhones via the live player app. _(* This feature has changed to test apps on Android devices. For iOS, Mac host is still needed..[Link](https://docs.microsoft.com/en-us/xamarin/tools/live-player/))_ To install the Visual Studio 2017 was easy as well as Xamarin development tools. I could choose whatever tools I want to install on the workload while installing. Visual Studio Installer Workloads View The problem was when I tried to deploy an Android project to an emulator. I found out that there are two types of emulators. One is using Android SDK and another is using Visual Studio Emulator for Android. After taking a closer look on them, I found out that Visual Studio Emulator for Android is much faster than Android SDK so I installed it through Visual Studio installer again. _(* Versions after Marshmallow are not supported on this emulator and the website recommends Google emulator for the latest verions instead. [Link](https://visualstudio.microsoft.com/vs/msft-android-emulator/))_ You can select it to install in the Individual components &gt; Emulators menu. Choose Visual Studio Emulator for Android under Emulators if it is not selected. I installed that emulator on my computer and tried to deploy again. But this time, I couldn’t see anything running on the emulator although everything looked fine. Everything seems fine. So I googled what went wrong and finally reached this page. https://forums.xamarin.com/discussion/62307/xamarin-android-projects-failed-to-deploy-in-visual-studio-emulator-for-android My case came under both the CPU compatibility and the registry. My CPU was Intel i7-6600U and its code name is SkyLake and this CPU has an issue with Hyper-V that the Visual Studio Emulator for Android depends on. In order to sort this out, I followed this step. Open the Hyper-V Manager and go to settings of the virtual device. Right-click on the emulator you want to set up and choose settings. Check off “Migrate to a physical computer with a different processor version” in the Processor &gt; Compatibility menu. Secondly, for the registry for Android SDK Tools path, I created a new “Android SDK Tools” key under HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\ because there wasn’t existing key like others. Then I added a string value with “Path” for name and the Android SDK full path on my computer for data. I could get the Android SDK full path from Visual Studio &gt; Tools &gt; Options &gt; Xamarin &gt; Android Settings &gt; Android SDK Location Copy and paste it to the registry. Eventually, I could see something different on the output window after executing debugging. Deployment Success!! Happy Coding!" />
+<meta property="og:description" content="Korean Version I&#39;ve recently started to learn Xamarin to build any mobile app with C# because I&#39;ve mainly used C# for programming. The concept of Xamarin which is &quot;write-once, run everywhere&quot; seemed quite attractive so I decided to learn it. What I had to do at first is to set up Xamarin development environment. I chose a Visual Studio 2017 community version. For iOS deployment, I have to use either an iMac or a Macbook. As I only have Windows environment, so I decided to go with android first and try out the Xamarin Live Player app for iOS deployment. The live player function enables developers to deploy iOS apps to their actual iPhones via the live player app. _(* This feature has changed to test apps on Android devices. For iOS, Mac host is still needed..[Link](https://docs.microsoft.com/en-us/xamarin/tools/live-player/))_ To install the Visual Studio 2017 was easy as well as Xamarin development tools. I could choose whatever tools I want to install on the workload while installing. Visual Studio Installer Workloads View The problem was when I tried to deploy an Android project to an emulator. I found out that there are two types of emulators. One is using Android SDK and another is using Visual Studio Emulator for Android. After taking a closer look on them, I found out that Visual Studio Emulator for Android is much faster than Android SDK so I installed it through Visual Studio installer again. _(* Versions after Marshmallow are not supported on this emulator and the website recommends Google emulator for the latest verions instead. [Link](https://visualstudio.microsoft.com/vs/msft-android-emulator/))_ You can select it to install in the Individual components &gt; Emulators menu. Choose Visual Studio Emulator for Android under Emulators if it is not selected. I installed that emulator on my computer and tried to deploy again. But this time, I couldn’t see anything running on the emulator although everything looked fine. Everything seems fine. So I googled what went wrong and finally reached this page. https://forums.xamarin.com/discussion/62307/xamarin-android-projects-failed-to-deploy-in-visual-studio-emulator-for-android My case came under both the CPU compatibility and the registry. My CPU was Intel i7-6600U and its code name is SkyLake and this CPU has an issue with Hyper-V that the Visual Studio Emulator for Android depends on. In order to sort this out, I followed this step. Open the Hyper-V Manager and go to settings of the virtual device. Right-click on the emulator you want to set up and choose settings. Check off “Migrate to a physical computer with a different processor version” in the Processor &gt; Compatibility menu. Secondly, for the registry for Android SDK Tools path, I created a new “Android SDK Tools” key under HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\ because there wasn’t existing key like others. Then I added a string value with “Path” for name and the Android SDK full path on my computer for data. I could get the Android SDK full path from Visual Studio &gt; Tools &gt; Options &gt; Xamarin &gt; Android Settings &gt; Android SDK Location Copy and paste it to the registry. Eventually, I could see something different on the output window after executing debugging. Deployment Success!! Happy Coding!" />
+<link rel="canonical" href="http://localhost:4000/tech/2017/11/15/xamarin-setup/" />
+<meta property="og:url" content="http://localhost:4000/tech/2017/11/15/xamarin-setup/" />
 <meta property="og:site_name" content="Brad Kwon" />
 <meta property="og:type" content="article" />
 <meta property="article:published_time" content="2017-11-15T00:00:00+01:00" />
 <script type="application/ld+json">
-{"name":null,"description":"Korean Version I&#39;ve recently started to learn Xamarin to build any mobile app with C# because I&#39;ve mainly used C# for programming. The concept of Xamarin which is write-once, run everywhere seemed quite attractive so I decided to learn it. What I had to do at first is to set up Xamarin development environment. I chose a Visual Studio 2017 community version. For iOS deployment, I have to use either an iMac or a Macbook. As I only have Windows environment, so I decided to go with android first and try out the Xamarin Live Player app for iOS deployment. The live player function enables developers to deploy iOS apps to their actual iPhones via the live player app. To install the Visual Studio 2017 was easy as well as Xamarin development tools. I could choose whatever tools I want to install on the workload while installing. Visual Studio Installer Workloads View The problem was when I tried to deploy an Android project to an emulator. I found out that there are two types of emulators. One is using Android SDK and another is using Visual Studio Emulator for Android. After taking a closer look on them, I found out that Visual Studio Emulator for Android is much faster than Android SDK so I installed it through Visual Studio installer again. You can select it to install in the Individual components &gt; Emulators menu. Choose Visual Studio Emulator for Android under Emulators if it is not selected. I installed that emulator on my computer and tried to deploy again. But this time, I couldn’t see anything running on the emulator although everything looked fine. Everything seems fine. So I googled what went wrong and finally reached this page. https://forums.xamarin.com/discussion/62307/xamarin-android-projects-failed-to-deploy-in-visual-studio-emulator-for-android My case came under both the CPU compatibility and the registry. My CPU was Intel i7-6600U and its code name is SkyLake and this CPU has an issue with Hyper-V that the Visual Studio Emulator for Android depends on. In order to sort this out, I followed this step. Open the Hyper-V Manager and go to settings of the virtual device. Right-click on the emulator you want to set up and choose settings. Check off “Migrate to a physical computer with a different processor version” in the Processor &gt; Compatibility menu. Secondly, for the registry for Android SDK Tools path, I created a new “Android SDK Tools” key under HKEY_LOCAL_MACHINE\\SOFTWARE\\WOW6432Node\\ because there wasn’t existing key like others. Then I added a string value with “Path” for name and the Android SDK full path on my computer for data. I could get the Android SDK full path from Visual Studio &gt; Tools &gt; Options &gt; Xamarin &gt; Android Settings &gt; Android SDK Location Copy and paste it to the registry. Eventually, I could see something different on the output window after executing debugging. Deployment Success!! Happy Coding!","author":null,"@type":"BlogPosting","url":"https://bradkwon.github.io/tech/2017/11/15/xamarin-setup/","publisher":null,"image":null,"headline":"Xamarin Android Emulator Setup in Visual Studio 2017","dateModified":"2017-11-15T00:00:00+01:00","datePublished":"2017-11-15T00:00:00+01:00","sameAs":null,"mainEntityOfPage":{"@type":"WebPage","@id":"https://bradkwon.github.io/tech/2017/11/15/xamarin-setup/"},"@context":"http://schema.org"}</script>
+{"description":"Korean Version I&#39;ve recently started to learn Xamarin to build any mobile app with C# because I&#39;ve mainly used C# for programming. The concept of Xamarin which is &quot;write-once, run everywhere&quot; seemed quite attractive so I decided to learn it. What I had to do at first is to set up Xamarin development environment. I chose a Visual Studio 2017 community version. For iOS deployment, I have to use either an iMac or a Macbook. As I only have Windows environment, so I decided to go with android first and try out the Xamarin Live Player app for iOS deployment. The live player function enables developers to deploy iOS apps to their actual iPhones via the live player app. _(* This feature has changed to test apps on Android devices. For iOS, Mac host is still needed..[Link](https://docs.microsoft.com/en-us/xamarin/tools/live-player/))_ To install the Visual Studio 2017 was easy as well as Xamarin development tools. I could choose whatever tools I want to install on the workload while installing. Visual Studio Installer Workloads View The problem was when I tried to deploy an Android project to an emulator. I found out that there are two types of emulators. One is using Android SDK and another is using Visual Studio Emulator for Android. After taking a closer look on them, I found out that Visual Studio Emulator for Android is much faster than Android SDK so I installed it through Visual Studio installer again. _(* Versions after Marshmallow are not supported on this emulator and the website recommends Google emulator for the latest verions instead. [Link](https://visualstudio.microsoft.com/vs/msft-android-emulator/))_ You can select it to install in the Individual components &gt; Emulators menu. Choose Visual Studio Emulator for Android under Emulators if it is not selected. I installed that emulator on my computer and tried to deploy again. But this time, I couldn’t see anything running on the emulator although everything looked fine. Everything seems fine. So I googled what went wrong and finally reached this page. https://forums.xamarin.com/discussion/62307/xamarin-android-projects-failed-to-deploy-in-visual-studio-emulator-for-android My case came under both the CPU compatibility and the registry. My CPU was Intel i7-6600U and its code name is SkyLake and this CPU has an issue with Hyper-V that the Visual Studio Emulator for Android depends on. In order to sort this out, I followed this step. Open the Hyper-V Manager and go to settings of the virtual device. Right-click on the emulator you want to set up and choose settings. Check off “Migrate to a physical computer with a different processor version” in the Processor &gt; Compatibility menu. Secondly, for the registry for Android SDK Tools path, I created a new “Android SDK Tools” key under HKEY_LOCAL_MACHINE\\SOFTWARE\\WOW6432Node\\ because there wasn’t existing key like others. Then I added a string value with “Path” for name and the Android SDK full path on my computer for data. I could get the Android SDK full path from Visual Studio &gt; Tools &gt; Options &gt; Xamarin &gt; Android Settings &gt; Android SDK Location Copy and paste it to the registry. Eventually, I could see something different on the output window after executing debugging. Deployment Success!! Happy Coding!","@type":"BlogPosting","url":"http://localhost:4000/tech/2017/11/15/xamarin-setup/","headline":"Xamarin Android Emulator Setup in Visual Studio 2017","dateModified":"2017-11-15T00:00:00+01:00","datePublished":"2017-11-15T00:00:00+01:00","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/tech/2017/11/15/xamarin-setup/"},"@context":"http://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -129,13 +130,49 @@
                 
 				
                 <li>
+                    <a href="/blog/index.html">Blog</a>
+                </li>
+				
+                
+				
+                <li>
+                    <a href="/blog/page/2index.html">Blog</a>
+                </li>
+				
+                
+				
+                <li>
+                    <a href="/blog/page/3index.html">Blog</a>
+                </li>
+				
+                
+				
+                <li>
                     <a href="/tech/index.html">Tech</a>
                 </li>
 				
                 
 				
                 <li>
-                    <a href="/blog/index.html">Blog</a>
+                    <a href="/tech/page/2index.html">Tech</a>
+                </li>
+				
+                
+				
+                <li>
+                    <a href="/tech/page/3index.html">Tech</a>
+                </li>
+				
+                
+				
+                <li>
+                    <a href="/tech/page/4index.html">Tech</a>
+                </li>
+				
+                
+				
+                <li>
+                    <a href="/tech/page/5index.html">Tech</a>
                 </li>
 				
                  -->
@@ -190,7 +227,7 @@
 </blockquote>
 <p>
 I've recently started to learn Xamarin to build any mobile app with C# because I've mainly used C# for programming. 
-The concept of Xamarin which is write-once, run everywhere seemed quite attractive so I decided to learn it.  
+The concept of Xamarin which is "write-once, run everywhere" seemed quite attractive so I decided to learn it.  
 </p>
 <p>
 What I had to do at first is to set up Xamarin development environment. 
@@ -198,6 +235,7 @@ I chose a Visual Studio 2017 community version.
 For iOS deployment, I have to use either an iMac or a Macbook. 
 As I only have Windows environment, so I decided to go with android first and try out the <a href="https://www.xamarin.com/live" target="_blank">Xamarin Live Player</a> app for iOS deployment. 
 The live player function enables developers to deploy iOS apps to their actual iPhones via the live player app.
+_(* This feature has changed to test apps on Android devices. For iOS, Mac host is still needed..[Link](https://docs.microsoft.com/en-us/xamarin/tools/live-player/))_
 </p>
 <p>
 To install the Visual Studio 2017 was easy as well as Xamarin development tools. 
@@ -211,7 +249,7 @@ I could choose whatever tools I want to install on the workload while installing
 The problem was when I tried to deploy an Android project to an emulator. 
 I found out that there are two types of emulators. One is using Android SDK and another is using Visual Studio Emulator for Android. 
 After taking a closer look on them, I found out that Visual Studio Emulator for Android is much faster than Android SDK 
-so I installed it through Visual Studio installer again. 
+so I installed it through Visual Studio installer again. _(* Versions after Marshmallow are not supported on this emulator and the website recommends Google emulator for the latest verions instead. [Link](https://visualstudio.microsoft.com/vs/msft-android-emulator/))_
 You can select it to install in the Individual components &gt; Emulators menu.
 </p>
 <p><a class="popupImg">
@@ -366,7 +404,7 @@ Eventually, I could see something different on the output window after executing
                     </li>
                     
                 </ul>
-                <p class="copyright text-muted">Copyright &copy; Brad Kwon 2018</p>
+                <p class="copyright text-muted">Copyright &copy; Brad Kwon 2019</p>
             </div>
         </div>
     </div>
