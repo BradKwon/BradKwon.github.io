@@ -26,7 +26,7 @@ plugins: [jekyll-paginate-v2, jekyll-feed, jekyll-octicons, jekyll-seo-tag, jeky
 
 pagination:
   enabled: true
-  per_page: 2
+  per_page: 5
   permalink: '/page/:num'
   sort_field: 'date'
   sort_reverse: true
