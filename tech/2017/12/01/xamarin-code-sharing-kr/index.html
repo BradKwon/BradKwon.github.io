@@ -11,7 +11,7 @@
 
     <title>Xamarin 코드 공유 - Brad Kwon</title>
 
-    <link rel="canonical" href="https://BradKwon.github.io/tech/2017/12/01/xamarin-code-sharing-kr/">
+    <link rel="canonical" href="http://localhost:4000/tech/2017/12/01/xamarin-code-sharing-kr/">
 
     <!-- Bootstrap Core CSS -->
     <link rel="stylesheet" href="/css/bootstrap.min.css">
@@ -35,7 +35,7 @@
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
 
-    <link type="application/atom+xml" rel="alternate" href="https://bradkwon.github.io/feed.xml" title="Brad Kwon" />
+    <link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="Brad Kwon" />
 
     <style>
         .back-to-top {
@@ -55,19 +55,20 @@
 
 </head>
 
-<!-- Begin Jekyll SEO tag v2.3.0 -->
+<!-- Begin Jekyll SEO tag v2.5.0 -->
 <title>Xamarin 코드 공유 | Brad Kwon</title>
+<meta name="generator" content="Jekyll v3.8.5" />
 <meta property="og:title" content="Xamarin 코드 공유" />
 <meta property="og:locale" content="en_US" />
 <meta name="description" content="영문 버전 이 글은 저도 Xamarin 을 배우는 입장에서 공부한 내용을 정리해 놓은 글이기 때문에 혹시 틀린 내용이 있으면 지적해 주시면 감사하겠습니다. Xamarin 이 지향하는 게 동일한 기능을 안드로이드, 아이폰, 윈도우폰과 같은 각각의 플랫폼에 맞게 다시 작성하는 게 아닌 한 번 작성된 코드로 위 세 플랫폼 모두에서 동작할 수 있도록 하는 것이지만 현실적으로는 이게 불가능하다. 그래서 나오게 된 솔루션이 플랫폼 제한적인 코드를 제외한 공통적인 코드들을 재사용하기 위한 방법으로 나온 Code Sharing 방식이다. 여기에는 크게 두 가지 방식이 있는데 첫째는 Shared Projects 이고 다른 하나는 Shared Compiled Binaries 이다. Xamarin University 강의 중 Xamarin 을 사용하는 이유에 대한 설명이 있어 옮겨와 번역을 해 보았다. One of the reasons you are probably either using or evaluating Xamarin is because it allows you to write your core logic once in a familiar .NET language and then share it across all the popular mobile platforms. This means we fix bugs once, implement new features once and reduce our maintenance and testable surfaces because we have less code to maintain 아마 당신이 Xamarin 을 사용하거나 고려하고 있는 이유들 중 하나는 핵심 로직을 익숙한 .Net 언어로 한 번만 작성한 뒤 주요 모바일 플랫폼들에서 사용할 수 있다는 것일 것이다. 이 말은 버그를 한 번만 고치면 되고, 새로운 기능을 한 번만 만들면 되므로 적은 양의 코드를 가지게 되어 유지보수 및 테스트할 부분이 줄어든다는 것이다. 구체적인 구현 방법은 Xamarin University에 가면 따라해 볼 수 있는 강의가 있으니 직접 강의를 보고 구현해 보는게 좋을 듯 하여 여기서는 간단히 개념만 정리해 보려고 한다. Shared Projects 방식은, 별도의 Shared Project 를 하나 만들어서 안드로이드나 아이폰, 그리고 윈도우폰과 Universal Windows App(UWP) 프로젝트들에 프로젝트 참조하여 사용하는 방식이다. 보통은 이렇게 별도의 프로젝트를 만들어서 다른 프로젝트에 참조를 하게 되면 이미 컴파일된 바이너리 파일인 DLL 라이브러리로 참조가 되어 사용할 수 있는데 반해, 이 Shared Project 는 C# 의 Partial 기능처럼 컴파일 시점에 각각의 참조된 플랫폼 프로젝트에 Shared Project 소스가 포함되서 컴파일이 된다는 점이다. 웹으로 치면 Include 와 동일하다. 간단한 그림을 강의에서 캡쳐해서 나타내 보았다. Shared Compiled Binaries 방식은, 기존 방식처럼 별도의 라이브러리 프로젝트를 DLL 로 참조하는 것이다. 여기에는 두 가지 방법이 있는데 첫째는, Portable Class Library (PCL) 프로젝트를 만들어 바이너리로 참조하게 하는 것이다. 각각 플랫폼들에서 공통적으로 실행되기 때문에 실행될 플랫폼들의 프로파일을 설정해 줘야 한다. 예를 들면, .Net Framework 4.5, Windows Universal 10.0, Windows Phone 8.1, Xamarin.Android, Xamarin.iOS, Xamarin.iOS (Classic) 과 같은 것들을 말이다. 두번째는, .Net Standard Library 프로젝트를 만들어 바이너리로 참조하게 하는 것이다. 이건 모든 닷넷 플랫폼에서 공통적으로 사용할 수 있는 .Net API 라이브러리인데 1.0, 1.1, 1.2 … 현재 2.0 까지 버전이 나왔고 버전이 낮아질수록 사용할 수 있는 API 가 적어진다. 프로젝트 속성에서 버전을 선택할 수 있다. 두 가지 방식 모두 장단점이 있기 때문에 개발환경에 맞게 선택해서 사용하면 되며, Shared Projects 방식은 같은 솔루션에 포함되어야 하기에 작은 규모의 앱이나 개발팀에 적합하며, 규모가 크거나 컴포넌트 형식으로 관리되어야 한다면 Shared Compiled Libraries 방식이 적합할 것이다." />
 <meta property="og:description" content="영문 버전 이 글은 저도 Xamarin 을 배우는 입장에서 공부한 내용을 정리해 놓은 글이기 때문에 혹시 틀린 내용이 있으면 지적해 주시면 감사하겠습니다. Xamarin 이 지향하는 게 동일한 기능을 안드로이드, 아이폰, 윈도우폰과 같은 각각의 플랫폼에 맞게 다시 작성하는 게 아닌 한 번 작성된 코드로 위 세 플랫폼 모두에서 동작할 수 있도록 하는 것이지만 현실적으로는 이게 불가능하다. 그래서 나오게 된 솔루션이 플랫폼 제한적인 코드를 제외한 공통적인 코드들을 재사용하기 위한 방법으로 나온 Code Sharing 방식이다. 여기에는 크게 두 가지 방식이 있는데 첫째는 Shared Projects 이고 다른 하나는 Shared Compiled Binaries 이다. Xamarin University 강의 중 Xamarin 을 사용하는 이유에 대한 설명이 있어 옮겨와 번역을 해 보았다. One of the reasons you are probably either using or evaluating Xamarin is because it allows you to write your core logic once in a familiar .NET language and then share it across all the popular mobile platforms. This means we fix bugs once, implement new features once and reduce our maintenance and testable surfaces because we have less code to maintain 아마 당신이 Xamarin 을 사용하거나 고려하고 있는 이유들 중 하나는 핵심 로직을 익숙한 .Net 언어로 한 번만 작성한 뒤 주요 모바일 플랫폼들에서 사용할 수 있다는 것일 것이다. 이 말은 버그를 한 번만 고치면 되고, 새로운 기능을 한 번만 만들면 되므로 적은 양의 코드를 가지게 되어 유지보수 및 테스트할 부분이 줄어든다는 것이다. 구체적인 구현 방법은 Xamarin University에 가면 따라해 볼 수 있는 강의가 있으니 직접 강의를 보고 구현해 보는게 좋을 듯 하여 여기서는 간단히 개념만 정리해 보려고 한다. Shared Projects 방식은, 별도의 Shared Project 를 하나 만들어서 안드로이드나 아이폰, 그리고 윈도우폰과 Universal Windows App(UWP) 프로젝트들에 프로젝트 참조하여 사용하는 방식이다. 보통은 이렇게 별도의 프로젝트를 만들어서 다른 프로젝트에 참조를 하게 되면 이미 컴파일된 바이너리 파일인 DLL 라이브러리로 참조가 되어 사용할 수 있는데 반해, 이 Shared Project 는 C# 의 Partial 기능처럼 컴파일 시점에 각각의 참조된 플랫폼 프로젝트에 Shared Project 소스가 포함되서 컴파일이 된다는 점이다. 웹으로 치면 Include 와 동일하다. 간단한 그림을 강의에서 캡쳐해서 나타내 보았다. Shared Compiled Binaries 방식은, 기존 방식처럼 별도의 라이브러리 프로젝트를 DLL 로 참조하는 것이다. 여기에는 두 가지 방법이 있는데 첫째는, Portable Class Library (PCL) 프로젝트를 만들어 바이너리로 참조하게 하는 것이다. 각각 플랫폼들에서 공통적으로 실행되기 때문에 실행될 플랫폼들의 프로파일을 설정해 줘야 한다. 예를 들면, .Net Framework 4.5, Windows Universal 10.0, Windows Phone 8.1, Xamarin.Android, Xamarin.iOS, Xamarin.iOS (Classic) 과 같은 것들을 말이다. 두번째는, .Net Standard Library 프로젝트를 만들어 바이너리로 참조하게 하는 것이다. 이건 모든 닷넷 플랫폼에서 공통적으로 사용할 수 있는 .Net API 라이브러리인데 1.0, 1.1, 1.2 … 현재 2.0 까지 버전이 나왔고 버전이 낮아질수록 사용할 수 있는 API 가 적어진다. 프로젝트 속성에서 버전을 선택할 수 있다. 두 가지 방식 모두 장단점이 있기 때문에 개발환경에 맞게 선택해서 사용하면 되며, Shared Projects 방식은 같은 솔루션에 포함되어야 하기에 작은 규모의 앱이나 개발팀에 적합하며, 규모가 크거나 컴포넌트 형식으로 관리되어야 한다면 Shared Compiled Libraries 방식이 적합할 것이다." />
-<link rel="canonical" href="https://bradkwon.github.io/tech/2017/12/01/xamarin-code-sharing-kr/" />
-<meta property="og:url" content="https://bradkwon.github.io/tech/2017/12/01/xamarin-code-sharing-kr/" />
+<link rel="canonical" href="http://localhost:4000/tech/2017/12/01/xamarin-code-sharing-kr/" />
+<meta property="og:url" content="http://localhost:4000/tech/2017/12/01/xamarin-code-sharing-kr/" />
 <meta property="og:site_name" content="Brad Kwon" />
 <meta property="og:type" content="article" />
 <meta property="article:published_time" content="2017-12-01T00:00:00+01:00" />
 <script type="application/ld+json">
-{"name":null,"description":"영문 버전 이 글은 저도 Xamarin 을 배우는 입장에서 공부한 내용을 정리해 놓은 글이기 때문에 혹시 틀린 내용이 있으면 지적해 주시면 감사하겠습니다. Xamarin 이 지향하는 게 동일한 기능을 안드로이드, 아이폰, 윈도우폰과 같은 각각의 플랫폼에 맞게 다시 작성하는 게 아닌 한 번 작성된 코드로 위 세 플랫폼 모두에서 동작할 수 있도록 하는 것이지만 현실적으로는 이게 불가능하다. 그래서 나오게 된 솔루션이 플랫폼 제한적인 코드를 제외한 공통적인 코드들을 재사용하기 위한 방법으로 나온 Code Sharing 방식이다. 여기에는 크게 두 가지 방식이 있는데 첫째는 Shared Projects 이고 다른 하나는 Shared Compiled Binaries 이다. Xamarin University 강의 중 Xamarin 을 사용하는 이유에 대한 설명이 있어 옮겨와 번역을 해 보았다. One of the reasons you are probably either using or evaluating Xamarin is because it allows you to write your core logic once in a familiar .NET language and then share it across all the popular mobile platforms. This means we fix bugs once, implement new features once and reduce our maintenance and testable surfaces because we have less code to maintain 아마 당신이 Xamarin 을 사용하거나 고려하고 있는 이유들 중 하나는 핵심 로직을 익숙한 .Net 언어로 한 번만 작성한 뒤 주요 모바일 플랫폼들에서 사용할 수 있다는 것일 것이다. 이 말은 버그를 한 번만 고치면 되고, 새로운 기능을 한 번만 만들면 되므로 적은 양의 코드를 가지게 되어 유지보수 및 테스트할 부분이 줄어든다는 것이다. 구체적인 구현 방법은 Xamarin University에 가면 따라해 볼 수 있는 강의가 있으니 직접 강의를 보고 구현해 보는게 좋을 듯 하여 여기서는 간단히 개념만 정리해 보려고 한다. Shared Projects 방식은, 별도의 Shared Project 를 하나 만들어서 안드로이드나 아이폰, 그리고 윈도우폰과 Universal Windows App(UWP) 프로젝트들에 프로젝트 참조하여 사용하는 방식이다. 보통은 이렇게 별도의 프로젝트를 만들어서 다른 프로젝트에 참조를 하게 되면 이미 컴파일된 바이너리 파일인 DLL 라이브러리로 참조가 되어 사용할 수 있는데 반해, 이 Shared Project 는 C# 의 Partial 기능처럼 컴파일 시점에 각각의 참조된 플랫폼 프로젝트에 Shared Project 소스가 포함되서 컴파일이 된다는 점이다. 웹으로 치면 Include 와 동일하다. 간단한 그림을 강의에서 캡쳐해서 나타내 보았다. Shared Compiled Binaries 방식은, 기존 방식처럼 별도의 라이브러리 프로젝트를 DLL 로 참조하는 것이다. 여기에는 두 가지 방법이 있는데 첫째는, Portable Class Library (PCL) 프로젝트를 만들어 바이너리로 참조하게 하는 것이다. 각각 플랫폼들에서 공통적으로 실행되기 때문에 실행될 플랫폼들의 프로파일을 설정해 줘야 한다. 예를 들면, .Net Framework 4.5, Windows Universal 10.0, Windows Phone 8.1, Xamarin.Android, Xamarin.iOS, Xamarin.iOS (Classic) 과 같은 것들을 말이다. 두번째는, .Net Standard Library 프로젝트를 만들어 바이너리로 참조하게 하는 것이다. 이건 모든 닷넷 플랫폼에서 공통적으로 사용할 수 있는 .Net API 라이브러리인데 1.0, 1.1, 1.2 … 현재 2.0 까지 버전이 나왔고 버전이 낮아질수록 사용할 수 있는 API 가 적어진다. 프로젝트 속성에서 버전을 선택할 수 있다. 두 가지 방식 모두 장단점이 있기 때문에 개발환경에 맞게 선택해서 사용하면 되며, Shared Projects 방식은 같은 솔루션에 포함되어야 하기에 작은 규모의 앱이나 개발팀에 적합하며, 규모가 크거나 컴포넌트 형식으로 관리되어야 한다면 Shared Compiled Libraries 방식이 적합할 것이다.","author":null,"@type":"BlogPosting","url":"https://bradkwon.github.io/tech/2017/12/01/xamarin-code-sharing-kr/","publisher":null,"image":null,"headline":"Xamarin 코드 공유","dateModified":"2017-12-01T00:00:00+01:00","datePublished":"2017-12-01T00:00:00+01:00","sameAs":null,"mainEntityOfPage":{"@type":"WebPage","@id":"https://bradkwon.github.io/tech/2017/12/01/xamarin-code-sharing-kr/"},"@context":"http://schema.org"}</script>
+{"description":"영문 버전 이 글은 저도 Xamarin 을 배우는 입장에서 공부한 내용을 정리해 놓은 글이기 때문에 혹시 틀린 내용이 있으면 지적해 주시면 감사하겠습니다. Xamarin 이 지향하는 게 동일한 기능을 안드로이드, 아이폰, 윈도우폰과 같은 각각의 플랫폼에 맞게 다시 작성하는 게 아닌 한 번 작성된 코드로 위 세 플랫폼 모두에서 동작할 수 있도록 하는 것이지만 현실적으로는 이게 불가능하다. 그래서 나오게 된 솔루션이 플랫폼 제한적인 코드를 제외한 공통적인 코드들을 재사용하기 위한 방법으로 나온 Code Sharing 방식이다. 여기에는 크게 두 가지 방식이 있는데 첫째는 Shared Projects 이고 다른 하나는 Shared Compiled Binaries 이다. Xamarin University 강의 중 Xamarin 을 사용하는 이유에 대한 설명이 있어 옮겨와 번역을 해 보았다. One of the reasons you are probably either using or evaluating Xamarin is because it allows you to write your core logic once in a familiar .NET language and then share it across all the popular mobile platforms. This means we fix bugs once, implement new features once and reduce our maintenance and testable surfaces because we have less code to maintain 아마 당신이 Xamarin 을 사용하거나 고려하고 있는 이유들 중 하나는 핵심 로직을 익숙한 .Net 언어로 한 번만 작성한 뒤 주요 모바일 플랫폼들에서 사용할 수 있다는 것일 것이다. 이 말은 버그를 한 번만 고치면 되고, 새로운 기능을 한 번만 만들면 되므로 적은 양의 코드를 가지게 되어 유지보수 및 테스트할 부분이 줄어든다는 것이다. 구체적인 구현 방법은 Xamarin University에 가면 따라해 볼 수 있는 강의가 있으니 직접 강의를 보고 구현해 보는게 좋을 듯 하여 여기서는 간단히 개념만 정리해 보려고 한다. Shared Projects 방식은, 별도의 Shared Project 를 하나 만들어서 안드로이드나 아이폰, 그리고 윈도우폰과 Universal Windows App(UWP) 프로젝트들에 프로젝트 참조하여 사용하는 방식이다. 보통은 이렇게 별도의 프로젝트를 만들어서 다른 프로젝트에 참조를 하게 되면 이미 컴파일된 바이너리 파일인 DLL 라이브러리로 참조가 되어 사용할 수 있는데 반해, 이 Shared Project 는 C# 의 Partial 기능처럼 컴파일 시점에 각각의 참조된 플랫폼 프로젝트에 Shared Project 소스가 포함되서 컴파일이 된다는 점이다. 웹으로 치면 Include 와 동일하다. 간단한 그림을 강의에서 캡쳐해서 나타내 보았다. Shared Compiled Binaries 방식은, 기존 방식처럼 별도의 라이브러리 프로젝트를 DLL 로 참조하는 것이다. 여기에는 두 가지 방법이 있는데 첫째는, Portable Class Library (PCL) 프로젝트를 만들어 바이너리로 참조하게 하는 것이다. 각각 플랫폼들에서 공통적으로 실행되기 때문에 실행될 플랫폼들의 프로파일을 설정해 줘야 한다. 예를 들면, .Net Framework 4.5, Windows Universal 10.0, Windows Phone 8.1, Xamarin.Android, Xamarin.iOS, Xamarin.iOS (Classic) 과 같은 것들을 말이다. 두번째는, .Net Standard Library 프로젝트를 만들어 바이너리로 참조하게 하는 것이다. 이건 모든 닷넷 플랫폼에서 공통적으로 사용할 수 있는 .Net API 라이브러리인데 1.0, 1.1, 1.2 … 현재 2.0 까지 버전이 나왔고 버전이 낮아질수록 사용할 수 있는 API 가 적어진다. 프로젝트 속성에서 버전을 선택할 수 있다. 두 가지 방식 모두 장단점이 있기 때문에 개발환경에 맞게 선택해서 사용하면 되며, Shared Projects 방식은 같은 솔루션에 포함되어야 하기에 작은 규모의 앱이나 개발팀에 적합하며, 규모가 크거나 컴포넌트 형식으로 관리되어야 한다면 Shared Compiled Libraries 방식이 적합할 것이다.","@type":"BlogPosting","url":"http://localhost:4000/tech/2017/12/01/xamarin-code-sharing-kr/","headline":"Xamarin 코드 공유","dateModified":"2017-12-01T00:00:00+01:00","datePublished":"2017-12-01T00:00:00+01:00","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/tech/2017/12/01/xamarin-code-sharing-kr/"},"@context":"http://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -129,13 +130,49 @@
                 
 				
                 <li>
+                    <a href="/blog/index.html">Blog</a>
+                </li>
+				
+                
+				
+                <li>
+                    <a href="/blog/page/2index.html">Blog</a>
+                </li>
+				
+                
+				
+                <li>
+                    <a href="/blog/page/3index.html">Blog</a>
+                </li>
+				
+                
+				
+                <li>
                     <a href="/tech/index.html">Tech</a>
                 </li>
 				
                 
 				
                 <li>
-                    <a href="/blog/index.html">Blog</a>
+                    <a href="/tech/page/2index.html">Tech</a>
+                </li>
+				
+                
+				
+                <li>
+                    <a href="/tech/page/3index.html">Tech</a>
+                </li>
+				
+                
+				
+                <li>
+                    <a href="/tech/page/4index.html">Tech</a>
+                </li>
+				
+                
+				
+                <li>
+                    <a href="/tech/page/5index.html">Tech</a>
                 </li>
 				
                  -->
@@ -391,7 +428,7 @@ Shared Compiled Binaries 방식은, 기존 방식처럼 별도의 라이브러�
                     </li>
                     
                 </ul>
-                <p class="copyright text-muted">Copyright &copy; Brad Kwon 2018</p>
+                <p class="copyright text-muted">Copyright &copy; Brad Kwon 2019</p>
             </div>
         </div>
     </div>
