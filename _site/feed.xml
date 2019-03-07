@@ -1,4 +1,135 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2019-01-29T12:26:59+01:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Brad Kwon</title><subtitle>Brad Kwon's personal website. The introduction, the portfolio and blogs about programming and life of Brad Hyeongu Kwon.</subtitle><entry><title type="html">책 꾸뻬씨의 행복여행 독서 후기 두번째</title><link href="http://localhost:4000/blog/2018/01/02/hector-book-review/" rel="alternate" type="text/html" title="책 꾸뻬씨의 행복여행 독서 후기 두번째" /><published>2018-01-02T00:00:00+01:00</published><updated>2018-01-02T00:00:00+01:00</updated><id>http://localhost:4000/blog/2018/01/02/hector-book-review</id><content type="html" xml:base="http://localhost:4000/blog/2018/01/02/hector-book-review/">&lt;blockquote&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2019-03-07T23:49:54+01:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Brad Kwon</title><subtitle>Brad Kwon's personal website. The introduction, the portfolio and blogs about programming and life of Brad Hyeongu Kwon.</subtitle><entry><title type="html">Singleton pattern VS Static class in C#</title><link href="http://localhost:4000/tech/2019/03/07/singleton-vs-static/" rel="alternate" type="text/html" title="Singleton pattern VS Static class in C#" /><published>2019-03-07T00:00:00+01:00</published><updated>2019-03-07T00:00:00+01:00</updated><id>http://localhost:4000/tech/2019/03/07/singleton-vs-static</id><content type="html" xml:base="http://localhost:4000/tech/2019/03/07/singleton-vs-static/">&lt;p&gt;
+I had spent one or two days to try to understand which one of these two approaches I should use for exactly what kind of usage.
+&lt;/p&gt;
+&lt;p&gt;
+Thus, I here wrap up big features among what I have understood.
+&lt;/p&gt;
+&lt;p&gt;
+Common:
+&lt;ul&gt;
+    &lt;li&gt;
+    Static classes and members are stored in a special memory area called “High-Frequency Heap” and this area is excluded from Garbage Collector (GC). Classes that implement the Singleton pattern (let’s say Singleton class) also have static members so these are also excluded from GC. Therefore, these resources are released when a corresponding process or AppDomain end.
+    &lt;/li&gt;
+    &lt;br /&gt;
+    &lt;li&gt;
+    Both cannot be instantiated so share only one reference throughout an application.
+    &lt;/li&gt;
+&lt;/ul&gt;
+&lt;/p&gt;
+&lt;p&gt;
+Difference:
+&lt;ul&gt;
+    &lt;li&gt;
+    The static class cannot implement an interface or inherit other class. But it is possible for the Singleton class.
+    &lt;/li&gt;
+    &lt;br /&gt;
+    &lt;li&gt;
+    Developers can handle the point of time of instantiation by how they implement the laziness). On the other hand, the static class is dependent on Common Language Runtime (CLR).
+    &lt;/li&gt;
+    &lt;br /&gt;
+    &lt;li&gt;
+    The Singleton class can be written Thread-Unsafe, which means developers should handle this.
+    &lt;/li&gt;
+&lt;/ul&gt;
+&lt;/p&gt;
+&lt;p&gt;
+In the course of googling, I have seen some said using the Singleton pattern is not good in terms of performance while some said using the static class is not good at performance. So I could not find the answer that says “This is it!”. However, I by myself have concluded like below.
+&lt;/p&gt;
+&lt;p&gt;
+When to use the Singleton pattern:
+&lt;ul&gt;
+    &lt;li&gt;
+    With the common sense, if only one instance is needed over an application. (Logging, caching, DB connection pool and hardware related jobs such as camera and sensor.
+    &lt;/li&gt;
+&lt;/ul&gt;
+&lt;/p&gt;
+&lt;p&gt;
+When to use the static class:
+&lt;ul&gt;
+    &lt;li&gt;
+    For simple utility-kind classes, global variables, an instance creation class of the Factory pattern, etc…. Mostly, things that can be resolved by using the static class.
+    &lt;/li&gt;
+&lt;/ul&gt;
+&lt;/p&gt;
+&lt;p&gt;
+References:
+&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://dotnettutorials.net/lesson/singleton-vs-static-class/&quot;&gt;Singleton VS Static class in C#&lt;/a&gt;
+&lt;br /&gt;
+&lt;a href=&quot;http://csharpindepth.com/articles/Singleton&quot;&gt;Implementing the Singleton Pattern in C#&lt;/a&gt;
+&lt;br /&gt;
+&lt;a href=&quot;https://docs.microsoft.com/en-us/previous-versions/msp-n-p/ff650316(v%3dpandp.10)&quot;&gt;Implementing Singleton in C#&lt;/a&gt;
+&lt;br /&gt;
+&lt;a href=&quot;http://csharpindepth.com/articles/BeforeFieldInit&quot;&gt;C# and beforefieldinit&lt;/a&gt;
+&lt;br /&gt;
+&lt;a href=&quot;https://codeblog.jonskeet.uk/2010/01/26/type-initialization-changes-in-net-4-0/&quot;&gt;TYPE INITIALIZATION CHANGES IN .NET 4.0&lt;/a&gt;
+&lt;br /&gt;&lt;/p&gt;
+&lt;blockquote&gt;&lt;h2 class=&quot;section-heading&quot;&gt;Happy Coding!&lt;/h2&gt;&lt;/blockquote&gt;</content><author><name></name></author><category term="tech" /><category term="C#" /><category term="Singleton" /><category term="Static" /><category term="Design Pattern" /><summary type="html">I had spent one or two days to try to understand which one of these two approaches I should use for exactly what kind of usage. Thus, I here wrap up big features among what I have understood. Common: Static classes and members are stored in a special memory area called “High-Frequency Heap” and this area is excluded from Garbage Collector (GC). Classes that implement the Singleton pattern (let’s say Singleton class) also have static members so these are also excluded from GC. Therefore, these resources are released when a corresponding process or AppDomain end. Both cannot be instantiated so share only one reference throughout an application. Difference: The static class cannot implement an interface or inherit other class. But it is possible for the Singleton class. Developers can handle the point of time of instantiation by how they implement the laziness). On the other hand, the static class is dependent on Common Language Runtime (CLR). The Singleton class can be written Thread-Unsafe, which means developers should handle this. In the course of googling, I have seen some said using the Singleton pattern is not good in terms of performance while some said using the static class is not good at performance. So I could not find the answer that says “This is it!”. However, I by myself have concluded like below. When to use the Singleton pattern: With the common sense, if only one instance is needed over an application. (Logging, caching, DB connection pool and hardware related jobs such as camera and sensor. When to use the static class: For simple utility-kind classes, global variables, an instance creation class of the Factory pattern, etc…. Mostly, things that can be resolved by using the static class. References: Singleton VS Static class in C# Implementing the Singleton Pattern in C# Implementing Singleton in C# C# and beforefieldinit TYPE INITIALIZATION CHANGES IN .NET 4.0 Happy Coding!</summary></entry><entry><title type="html">싱글턴 패턴 VS Static 클래스 in C#</title><link href="http://localhost:4000/tech/2019/03/07/singleton-vs-static-kr/" rel="alternate" type="text/html" title="싱글턴 패턴 VS Static 클래스 in C#" /><published>2019-03-07T00:00:00+01:00</published><updated>2019-03-07T00:00:00+01:00</updated><id>http://localhost:4000/tech/2019/03/07/singleton-vs-static-kr</id><content type="html" xml:base="http://localhost:4000/tech/2019/03/07/singleton-vs-static-kr/">&lt;p&gt;
+몇일에 걸쳐 이 두가지 방법 중 정확히 어떤 걸 어떤 용도로 써야 하는지 이해를 하려고 노력했습니다.
+
+이해한 내용 중 큰 특징들만 간단히 정리하자면,
+&lt;/p&gt;
+&lt;p&gt;
+공통점:
+&lt;ul&gt;
+    &lt;li&gt;
+    Static 클래스/멤버는 특수한 메모리 영역인 High-Frequency Heap 에 저장되고 이 영역은 Garbage Collector(이하 GC) 의 청소 대상이 아니다.  싱글턴 패턴을 구현한 클래스(이하 싱글턴 클래스) 역시 static 멤버를 가지고 있으므로 GC 의 청소 대상이 아니다. 따라서, 해당 프로세스나 AppDomain 이 종료될 때 해제된다.
+    &lt;/li&gt;
+    &lt;br /&gt;
+    &lt;li&gt;
+    둘 다 객체를 생성할 수 없고 하나의 레퍼런스만을 앱 전체에서 공유한다.
+    &lt;/li&gt;
+&lt;/ul&gt;
+&lt;/p&gt;
+&lt;p&gt;
+차이점:
+&lt;ul&gt;
+    &lt;li&gt;
+    Static 클래스는 인터페이스 구현 및 클래스 상속이 안 된다. 싱글턴 클래스는 된다.
+    &lt;/li&gt;
+    &lt;br /&gt;
+    &lt;li&gt;
+    싱글턴 클래스는 레퍼런스 생성 시점을 컨트롤 할 수 있다 (구현 방법에 따라 Laziness 조절 가능). Static 클래스는 Common Language Runtime (CLR) 에 의존적이다.
+    &lt;/li&gt;
+    &lt;br /&gt;
+    &lt;li&gt;
+    싱글턴 클래스는 Thread-Unsafe 하게 작성할 수도 있다. (즉, 개발자가 이를 컨트롤 해줘야 한다.)
+    &lt;/li&gt;
+&lt;/ul&gt;
+&lt;/p&gt;
+&lt;p&gt;
+구글링을 하다보니 싱글턴 클래스를 쓰는 게 성능 입장에서는 좋지 않다. 라는 얘기도 있고 Static 클래스가 성능 입장에서 좋지 않다. 라는 글도 있고 해서 명확하게 딱 이거다! 라고 할 만한 답을 찾지는 못했습니다만, 이해한 바를 토대로 아래와 같이 쓰면 되겠다는 결론을 내렸습니다.
+&lt;/p&gt;
+&lt;p&gt;
+싱글턴 클래스를 쓰는 경우:
+&lt;ul&gt;
+    &lt;li&gt;
+    상식적으로 생각했을 때, 하나의 인스턴스만 있어야 하는 경우 (로깅, 캐싱, DB 커넥션 풀, 카메라, 센서 등 하드웨어 관련 작업 클래스)
+    &lt;/li&gt;
+&lt;/ul&gt;
+&lt;/p&gt;
+&lt;p&gt;
+Static 클래스를 쓰는 경우: 
+&lt;ul&gt;
+    &lt;li&gt;
+    간단하게 Utility 용도로 사용되는 함수나 글로벌 변수, 팩토리 패턴 중 생성 클래스 등등.. 주로 Static 만으로 간단히 해결할 수 있는 것들
+    &lt;/li&gt;
+&lt;/ul&gt;
+&lt;/p&gt;
+&lt;p&gt;
+참고 자료:
+&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://dotnettutorials.net/lesson/singleton-vs-static-class/&quot;&gt;Singleton VS Static class in C#&lt;/a&gt;
+&lt;br /&gt;
+&lt;a href=&quot;http://csharpindepth.com/articles/Singleton&quot;&gt;Implementing the Singleton Pattern in C#&lt;/a&gt;
+&lt;br /&gt;
+&lt;a href=&quot;https://docs.microsoft.com/en-us/previous-versions/msp-n-p/ff650316(v%3dpandp.10)&quot;&gt;Implementing Singleton in C#&lt;/a&gt;
+&lt;br /&gt;
+&lt;a href=&quot;http://csharpindepth.com/articles/BeforeFieldInit&quot;&gt;C# and beforefieldinit&lt;/a&gt;
+&lt;br /&gt;
+&lt;a href=&quot;https://codeblog.jonskeet.uk/2010/01/26/type-initialization-changes-in-net-4-0/&quot;&gt;TYPE INITIALIZATION CHANGES IN .NET 4.0&lt;/a&gt;
+&lt;br /&gt;&lt;/p&gt;
+&lt;blockquote&gt;&lt;h2 class=&quot;section-heading&quot;&gt;Happy Coding!&lt;/h2&gt;&lt;/blockquote&gt;</content><author><name></name></author><category term="tech" /><category term="C#" /><category term="Singleton" /><category term="Static" /><category term="Design Pattern" /><summary type="html">몇일에 걸쳐 이 두가지 방법 중 정확히 어떤 걸 어떤 용도로 써야 하는지 이해를 하려고 노력했습니다.</summary></entry><entry><title type="html">책 꾸뻬씨의 행복여행 독서 후기 두번째</title><link href="http://localhost:4000/blog/2018/01/02/hector-book-review/" rel="alternate" type="text/html" title="책 꾸뻬씨의 행복여행 독서 후기 두번째" /><published>2018-01-02T00:00:00+01:00</published><updated>2018-01-02T00:00:00+01:00</updated><id>http://localhost:4000/blog/2018/01/02/hector-book-review</id><content type="html" xml:base="http://localhost:4000/blog/2018/01/02/hector-book-review/">&lt;blockquote&gt;
 &lt;a href=&quot;/blog/2017/06/27/hector-book-review/&quot;&gt;이전 후기&lt;/a&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;
@@ -58,13 +189,7 @@
 &lt;/p&gt;
 &lt;p&gt;
 속도는 엄청 느리겠지만 적어도 안 읽는 것보단 나을거라 생각한다.
-&lt;/p&gt;</content><author><name></name></author><category term="Book" /><category term="Reading" /><summary type="html">나는 책을 읽을 때 주로 속으로 글을 읽으면서 읽는다. 속발음이라고 하는 것 같은데 속도가 무척 느리다. 그러다보니 책 한 권을 다 읽는데 시간이 너무 오래 걸리고 흐름이 잘 끊겨서 스토리가 잘 생각이 안 나는 경우가 허다하다. 보통의 경우 속으로 소리내어 읽지 않고 눈으로만 읽는다고 하는데, 이를 묵독이라고 한다, 글쎄, 시도는 해 보았지만 잘 되지 않는다. 속독을 해 보려는 시도는 번번이 실패한다. 그래서 그냥 있는 그대로 자연스럽게 읽기로 했다. 대신 책을 다 읽고나면 후기를 꼭 남겨서 다시 한 번 되새겨 보는 걸로 책 읽는 방법에 대한 나의 오래된 고민을 해결하려 한다. 속도는 엄청 느리겠지만 적어도 안 읽는 것보단 나을거라 생각한다.</summary></entry><entry><title type="html">Layouts in Xamarin.Forms</title><link href="http://localhost:4000/tech/2017/12/15/layouts-in-xamarin-forms/" rel="alternate" type="text/html" title="Layouts in Xamarin.Forms" /><published>2017-12-15T00:00:00+01:00</published><updated>2017-12-15T00:00:00+01:00</updated><id>http://localhost:4000/tech/2017/12/15/layouts-in-xamarin-forms</id><content type="html" xml:base="http://localhost:4000/tech/2017/12/15/layouts-in-xamarin-forms/">&lt;blockquote&gt;
-&lt;a href=&quot;/tech/2017/12/15/layouts-in-xamarin-forms-kr/&quot;&gt;Korean Version&lt;/a&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;
-&lt;u&gt;&lt;small&gt;Please let me know if there is any incorrect information because this is what I summarized what I understood.&lt;/small&gt;&lt;/u&gt;
-&lt;/p&gt;
-&lt;p&gt;
+&lt;/p&gt;</content><author><name></name></author><category term="Book" /><category term="Reading" /><summary type="html">나는 책을 읽을 때 주로 속으로 글을 읽으면서 읽는다. 속발음이라고 하는 것 같은데 속도가 무척 느리다. 그러다보니 책 한 권을 다 읽는데 시간이 너무 오래 걸리고 흐름이 잘 끊겨서 스토리가 잘 생각이 안 나는 경우가 허다하다. 보통의 경우 속으로 소리내어 읽지 않고 눈으로만 읽는다고 하는데, 이를 묵독이라고 한다, 글쎄, 시도는 해 보았지만 잘 되지 않는다. 속독을 해 보려는 시도는 번번이 실패한다. 그래서 그냥 있는 그대로 자연스럽게 읽기로 했다. 대신 책을 다 읽고나면 후기를 꼭 남겨서 다시 한 번 되새겨 보는 걸로 책 읽는 방법에 대한 나의 오래된 고민을 해결하려 한다. 속도는 엄청 느리겠지만 적어도 안 읽는 것보단 나을거라 생각한다.</summary></entry><entry><title type="html">Layouts in Xamarin.Forms</title><link href="http://localhost:4000/tech/2017/12/15/layouts-in-xamarin-forms/" rel="alternate" type="text/html" title="Layouts in Xamarin.Forms" /><published>2017-12-15T00:00:00+01:00</published><updated>2017-12-15T00:00:00+01:00</updated><id>http://localhost:4000/tech/2017/12/15/layouts-in-xamarin-forms</id><content type="html" xml:base="http://localhost:4000/tech/2017/12/15/layouts-in-xamarin-forms/">&lt;p&gt;
 In order to build up a well-made app, it is important to keep the same look on every devices. Therefore, Xamarin.Forms provides flexible layout containers. These containers calculate positions and sizes of UI components automatically and re-calculate them when a user rotates a device or changes a view size also automatically. These layout containers that Xamarin.Forms provides are StackLayout, Grid, AbsoluteLayout and RelativeLayout and StackLayout and Grid are popular among them.
 &lt;/p&gt;
 &lt;p&gt;&lt;a class=&quot;popupImg&quot;&gt;
@@ -111,13 +236,7 @@ Grid is similar to table. You can set the size of rows and columns in &lt;code&g
 &lt;p&gt;
 In general, layout containers and UI components have same attributes like the web design such as spacing, padding and margin. Hence, if you already know how to design a webpage, it would be easier to understand the layouts in Xamarin.Forms.
 &lt;/p&gt;
-&lt;blockquote&gt;&lt;h2 class=&quot;section-heading&quot;&gt;Happy Coding!&lt;/h2&gt;&lt;/blockquote&gt;</content><author><name></name></author><category term="tech" /><category term="Xamarin" /><category term="C#" /><category term="Mobile" /><summary type="html">Korean Version Please let me know if there is any incorrect information because this is what I summarized what I understood. In order to build up a well-made app, it is important to keep the same look on every devices. Therefore, Xamarin.Forms provides flexible layout containers. These containers calculate positions and sizes of UI components automatically and re-calculate them when a user rotates a device or changes a view size also automatically. These layout containers that Xamarin.Forms provides are StackLayout, Grid, AbsoluteLayout and RelativeLayout and StackLayout and Grid are popular among them. Types of layout container You can use WidthRequest and HeightRequest attributes to set width and height ot each UI component instead of width and height that are normally used in general because Xamarin.Forms doesn't guarantee exact sizes as they are re-calculated based on which platform the app is run. For alignment, you can use VerticalOptions and HorizontalOptions attributes. Width and height attributes of UI component Each platform has different way to translate sizes and resolutions so if you set WidthRequest and HeightRequest, then although absolute sizes might not be same but would have the same look. Resolution method on major platforms. Windows Phone – Effective pixels iPhone – Points Androind – Density-independent pixels UI component size on each platform Let's look into two popular layout containers, StackLayout and Grid. StackLayout is just to stack up UI components in vertical way. As it is very simple, it is also used for building up prototypes. StackLayout container Grid is similar to table. You can set the size of rows and columns in &amp;lt;Grid&amp;gt; tag and can set where each UI component locates by Grid.Row and Grid.Column. Besides, You can make the layout flexible using attributes like RowSpan and ColumnSpan in HTML. Grid container In general, layout containers and UI components have same attributes like the web design such as spacing, padding and margin. Hence, if you already know how to design a webpage, it would be easier to understand the layouts in Xamarin.Forms. Happy Coding!</summary></entry><entry><title type="html">Xamarin.Forms 레이아웃</title><link href="http://localhost:4000/tech/2017/12/15/layouts-in-xamarin-forms-kr/" rel="alternate" type="text/html" title="Xamarin.Forms 레이아웃" /><published>2017-12-15T00:00:00+01:00</published><updated>2017-12-15T00:00:00+01:00</updated><id>http://localhost:4000/tech/2017/12/15/layouts-in-xamarin-forms-kr</id><content type="html" xml:base="http://localhost:4000/tech/2017/12/15/layouts-in-xamarin-forms-kr/">&lt;blockquote&gt;
-&lt;a href=&quot;/tech/2017/12/15/layouts-in-xamarin-forms/&quot;&gt;영문 버전&lt;/a&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;
-&lt;u&gt;&lt;small&gt;이 글은 저도 Xamarin 을 배우는 입장에서 공부한 내용을 정리해 놓은 글이기 때문에 혹시 틀린 내용이 있으면 지적해 주시면 감사하겠습니다.&lt;/small&gt;&lt;/u&gt;
-&lt;/p&gt;
-&lt;p&gt;
+&lt;blockquote&gt;&lt;h2 class=&quot;section-heading&quot;&gt;Happy Coding!&lt;/h2&gt;&lt;/blockquote&gt;</content><author><name></name></author><category term="tech" /><category term="Xamarin" /><category term="C#" /><category term="Mobile" /><summary type="html">In order to build up a well-made app, it is important to keep the same look on every devices. Therefore, Xamarin.Forms provides flexible layout containers. These containers calculate positions and sizes of UI components automatically and re-calculate them when a user rotates a device or changes a view size also automatically. These layout containers that Xamarin.Forms provides are StackLayout, Grid, AbsoluteLayout and RelativeLayout and StackLayout and Grid are popular among them. Types of layout container You can use WidthRequest and HeightRequest attributes to set width and height ot each UI component instead of width and height that are normally used in general because Xamarin.Forms doesn't guarantee exact sizes as they are re-calculated based on which platform the app is run. For alignment, you can use VerticalOptions and HorizontalOptions attributes. Width and height attributes of UI component Each platform has different way to translate sizes and resolutions so if you set WidthRequest and HeightRequest, then although absolute sizes might not be same but would have the same look. Resolution method on major platforms. Windows Phone – Effective pixels iPhone – Points Androind – Density-independent pixels UI component size on each platform Let's look into two popular layout containers, StackLayout and Grid. StackLayout is just to stack up UI components in vertical way. As it is very simple, it is also used for building up prototypes. StackLayout container Grid is similar to table. You can set the size of rows and columns in &amp;lt;Grid&amp;gt; tag and can set where each UI component locates by Grid.Row and Grid.Column. Besides, You can make the layout flexible using attributes like RowSpan and ColumnSpan in HTML. Grid container In general, layout containers and UI components have same attributes like the web design such as spacing, padding and margin. Hence, if you already know how to design a webpage, it would be easier to understand the layouts in Xamarin.Forms. Happy Coding!</summary></entry><entry><title type="html">Xamarin.Forms 레이아웃</title><link href="http://localhost:4000/tech/2017/12/15/layouts-in-xamarin-forms-kr/" rel="alternate" type="text/html" title="Xamarin.Forms 레이아웃" /><published>2017-12-15T00:00:00+01:00</published><updated>2017-12-15T00:00:00+01:00</updated><id>http://localhost:4000/tech/2017/12/15/layouts-in-xamarin-forms-kr</id><content type="html" xml:base="http://localhost:4000/tech/2017/12/15/layouts-in-xamarin-forms-kr/">&lt;p&gt;
 앱을 제대로 만드려면 화면 크기나 해상도가 다른 여러 기기 모두에서 동일한 디자인을 유지해야 하는데 이를 위해 Xamarin.Forms 에서는 유연한 레이아웃 컨테이너들을 제공한다. 이 컴포넌트들은 UI 컨트롤들의 크기 및 위치를 자동으로 계산해주고, 사용자가 기기를 회전하거나 화면 크기를 변경할 경우 자동 재계산 해준다. 이러한 레이아웃 컨테이너에는 StackLayout, Grid, AbsoluteLayout, RelativeLayout 이 있는데 그 중 StackLayout 과 Grid 이 가장 많이 사용된다.
 &lt;/p&gt;
 &lt;p&gt;&lt;a class=&quot;popupImg&quot;&gt;
@@ -164,13 +283,7 @@ Grid 는 테이블과 동일하다고 생각하면 될 듯하다. &lt;code&gt;&a
 &lt;p&gt;
 전반적인 레이아웃 컨테이너 및 컨트롤들에 Spacing, Padding, Margin 과 같은 화면 디자인에 필요한 속성들도 사용할 수 있는 걸로 보아 웹 디자인을 간단하게 이해하고 있으면 이해가 더 수월하리라 생각된다.
 &lt;/p&gt;
-&lt;blockquote&gt;&lt;h2 class=&quot;section-heading&quot;&gt;Happy Coding!&lt;/h2&gt;&lt;/blockquote&gt;</content><author><name></name></author><category term="tech" /><category term="Xamarin" /><category term="C#" /><category term="Mobile" /><summary type="html">영문 버전 이 글은 저도 Xamarin 을 배우는 입장에서 공부한 내용을 정리해 놓은 글이기 때문에 혹시 틀린 내용이 있으면 지적해 주시면 감사하겠습니다. 앱을 제대로 만드려면 화면 크기나 해상도가 다른 여러 기기 모두에서 동일한 디자인을 유지해야 하는데 이를 위해 Xamarin.Forms 에서는 유연한 레이아웃 컨테이너들을 제공한다. 이 컴포넌트들은 UI 컨트롤들의 크기 및 위치를 자동으로 계산해주고, 사용자가 기기를 회전하거나 화면 크기를 변경할 경우 자동 재계산 해준다. 이러한 레이아웃 컨테이너에는 StackLayout, Grid, AbsoluteLayout, RelativeLayout 이 있는데 그 중 StackLayout 과 Grid 이 가장 많이 사용된다. 레이아웃 컨테이너 종류 Xamarin.Forms 에서 제공하는 레이아웃 컨테이너들은 자동 계산이 되기 때문에 각각 UI 컨트롤의 크기를 지정할 때 일반적인 Width, Height 가 아닌 WidthRequest, HeightRequest 속성을 사용하여 크기를 지정하게 된다. 그리고 컨트롤들의 가로, 세로 정렬을 위해 VerticalOptions, HorizontalOptions 속성이 제공된다. 컨트롤 가로, 세로 속성 플랫폼들마다 사용하는 해상도 처리 방식이 아래와 같이 틀리기 때문에 아래와 같이 WidthRequest, HeightRequest 를 지정하면 화면 비율 및 플랫폼에 따라 크기가 틀려지지만 동일한 디자인을 유지하게 된다. 해상도 처리방식 윈도우폰 – Effective pixels 아이폰 – Points 안드로이드 – Density-independent pixels 플랫폼별 컨트롤 크기 많이 사용되어지는 StackLayout 과 Grid 에 대해 잠깐 살펴보겠다. StackLayout 은 아래와 같이 UI 컨트롤들을 세로 방향으로 추가해 가는 방식인데 간단하여 프로토타이핑에 많이 사용되어진다. StackLayout 방식 Grid 는 테이블과 동일하다고 생각하면 될 듯하다. &amp;lt;Grid&amp;gt; 태그 안에 각 행, 열의 크기를 미리 지정할 수도 있고 각 UI 컨트롤이 들어갈 셀의 위치를 Grid.Row, Grid.Column 으로 지정하면 된다. HTML 의 RowSpan, ColumnSpan 등과 같은 속성들을 사용하여 유연하게 컨트롤들을 배치시킬 수 있다. Grid 방식 전반적인 레이아웃 컨테이너 및 컨트롤들에 Spacing, Padding, Margin 과 같은 화면 디자인에 필요한 속성들도 사용할 수 있는 걸로 보아 웹 디자인을 간단하게 이해하고 있으면 이해가 더 수월하리라 생각된다. Happy Coding!</summary></entry><entry><title type="html">XAML in Xamarin</title><link href="http://localhost:4000/tech/2017/12/10/xaml-in-xamarin/" rel="alternate" type="text/html" title="XAML in Xamarin" /><published>2017-12-10T00:00:00+01:00</published><updated>2017-12-10T00:00:00+01:00</updated><id>http://localhost:4000/tech/2017/12/10/xaml-in-xamarin</id><content type="html" xml:base="http://localhost:4000/tech/2017/12/10/xaml-in-xamarin/">&lt;blockquote&gt;
-&lt;a href=&quot;/tech/2017/12/10/xaml-in-xamarin-kr/&quot;&gt;Korean Version&lt;/a&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;
-&lt;u&gt;&lt;small&gt;Please let me know if there is any incorrect information because this is what I summarized what I understood.&lt;/small&gt;&lt;/u&gt;
-&lt;/p&gt;
-&lt;p&gt;
+&lt;blockquote&gt;&lt;h2 class=&quot;section-heading&quot;&gt;Happy Coding!&lt;/h2&gt;&lt;/blockquote&gt;</content><author><name></name></author><category term="tech" /><category term="Xamarin" /><category term="C#" /><category term="Mobile" /><summary type="html">앱을 제대로 만드려면 화면 크기나 해상도가 다른 여러 기기 모두에서 동일한 디자인을 유지해야 하는데 이를 위해 Xamarin.Forms 에서는 유연한 레이아웃 컨테이너들을 제공한다. 이 컴포넌트들은 UI 컨트롤들의 크기 및 위치를 자동으로 계산해주고, 사용자가 기기를 회전하거나 화면 크기를 변경할 경우 자동 재계산 해준다. 이러한 레이아웃 컨테이너에는 StackLayout, Grid, AbsoluteLayout, RelativeLayout 이 있는데 그 중 StackLayout 과 Grid 이 가장 많이 사용된다. 레이아웃 컨테이너 종류 Xamarin.Forms 에서 제공하는 레이아웃 컨테이너들은 자동 계산이 되기 때문에 각각 UI 컨트롤의 크기를 지정할 때 일반적인 Width, Height 가 아닌 WidthRequest, HeightRequest 속성을 사용하여 크기를 지정하게 된다. 그리고 컨트롤들의 가로, 세로 정렬을 위해 VerticalOptions, HorizontalOptions 속성이 제공된다. 컨트롤 가로, 세로 속성 플랫폼들마다 사용하는 해상도 처리 방식이 아래와 같이 틀리기 때문에 아래와 같이 WidthRequest, HeightRequest 를 지정하면 화면 비율 및 플랫폼에 따라 크기가 틀려지지만 동일한 디자인을 유지하게 된다. 해상도 처리방식 윈도우폰 – Effective pixels 아이폰 – Points 안드로이드 – Density-independent pixels 플랫폼별 컨트롤 크기 많이 사용되어지는 StackLayout 과 Grid 에 대해 잠깐 살펴보겠다. StackLayout 은 아래와 같이 UI 컨트롤들을 세로 방향으로 추가해 가는 방식인데 간단하여 프로토타이핑에 많이 사용되어진다. StackLayout 방식 Grid 는 테이블과 동일하다고 생각하면 될 듯하다. &amp;lt;Grid&amp;gt; 태그 안에 각 행, 열의 크기를 미리 지정할 수도 있고 각 UI 컨트롤이 들어갈 셀의 위치를 Grid.Row, Grid.Column 으로 지정하면 된다. HTML 의 RowSpan, ColumnSpan 등과 같은 속성들을 사용하여 유연하게 컨트롤들을 배치시킬 수 있다. Grid 방식 전반적인 레이아웃 컨테이너 및 컨트롤들에 Spacing, Padding, Margin 과 같은 화면 디자인에 필요한 속성들도 사용할 수 있는 걸로 보아 웹 디자인을 간단하게 이해하고 있으면 이해가 더 수월하리라 생각된다. Happy Coding!</summary></entry><entry><title type="html">XAML in Xamarin</title><link href="http://localhost:4000/tech/2017/12/10/xaml-in-xamarin/" rel="alternate" type="text/html" title="XAML in Xamarin" /><published>2017-12-10T00:00:00+01:00</published><updated>2017-12-10T00:00:00+01:00</updated><id>http://localhost:4000/tech/2017/12/10/xaml-in-xamarin</id><content type="html" xml:base="http://localhost:4000/tech/2017/12/10/xaml-in-xamarin/">&lt;p&gt;
 What isi XAML? It is an acronym for eXtensible Application Markup Language and is used to seperate UI and functional codes. UI codes can be placed in the behind C# codes and can be controlled there, however that would cause difficulties to work on view designs and function implementations repectively because they are mixed up in one file. (of course, for dynamic generation of UI componenets helplessly should be implemented in this way)
 &lt;/p&gt;
 &lt;p&gt;
@@ -196,13 +309,7 @@ Like HTML tags, each XAML tags can take event handlers.
 &lt;p&gt;
 In Xamarin.Forms XAML, it supports Markup Extension for flexible settings of UI control attributes and for settings for respective mobile platforms, it provides the Device.OS property. Besides, it provides the reusable capsulation of components, which is called ContentView, so that it could be used in another UI like the user control feature in WinForms. When it comes to this feature, it would be better to check it out from &lt;a href=&quot;https://university.xamarin.com/welcome&quot; target=&quot;_blank&quot;&gt;Xamarin University&lt;/a&gt;
 &lt;/p&gt;
-&lt;blockquote&gt;&lt;h2 class=&quot;section-heading&quot;&gt;Happy Coding!&lt;/h2&gt;&lt;/blockquote&gt;</content><author><name></name></author><category term="tech" /><category term="Xamarin" /><category term="C#" /><category term="Mobile" /><summary type="html">Korean Version Please let me know if there is any incorrect information because this is what I summarized what I understood. What isi XAML? It is an acronym for eXtensible Application Markup Language and is used to seperate UI and functional codes. UI codes can be placed in the behind C# codes and can be controlled there, however that would cause difficulties to work on view designs and function implementations repectively because they are mixed up in one file. (of course, for dynamic generation of UI componenets helplessly should be implemented in this way) The key point of popular patterns or approaches thesedays in development such as MVC, MVVM and DI is to seperate each role or interest as a component and make it independent. After that, to mix and match those components to complete a product like machinary assembly. It went a bit far. By the way, due to the benefits we could get from modularization, I think UI and functions should also be seperated but it might depend on situations. XAML code and behind code can be mapped like this. Mapping between UI code and XAML code XAML is used in WPF, Silverlight, UWP and Windows Workflow. Xamarin.Forms also uses the same grammar like others but it has unique grammars so it cannot be same like others. Here, I think just knowing XAML is used in those technologies is enough. Like HTML tags, each XAML tags can take event handlers. Add an TextChanged event handler in XAML code In Xamarin.Forms XAML, it supports Markup Extension for flexible settings of UI control attributes and for settings for respective mobile platforms, it provides the Device.OS property. Besides, it provides the reusable capsulation of components, which is called ContentView, so that it could be used in another UI like the user control feature in WinForms. When it comes to this feature, it would be better to check it out from Xamarin University Happy Coding!</summary></entry><entry><title type="html">XAML in Xamarin (한글)</title><link href="http://localhost:4000/tech/2017/12/10/xaml-in-xamarin-kr/" rel="alternate" type="text/html" title="XAML in Xamarin (한글)" /><published>2017-12-10T00:00:00+01:00</published><updated>2017-12-10T00:00:00+01:00</updated><id>http://localhost:4000/tech/2017/12/10/xaml-in-xamarin-kr</id><content type="html" xml:base="http://localhost:4000/tech/2017/12/10/xaml-in-xamarin-kr/">&lt;blockquote&gt;
-&lt;a href=&quot;/tech/2017/12/10/xaml-in-xamarin/&quot;&gt;영문 버전&lt;/a&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;
-&lt;u&gt;&lt;small&gt;이 글은 저도 Xamarin 을 배우는 입장에서 공부한 내용을 정리해 놓은 글이기 때문에 혹시 틀린 내용이 있으면 지적해 주시면 감사하겠습니다.&lt;/small&gt;&lt;/u&gt;
-&lt;/p&gt;
-&lt;p&gt;
+&lt;blockquote&gt;&lt;h2 class=&quot;section-heading&quot;&gt;Happy Coding!&lt;/h2&gt;&lt;/blockquote&gt;</content><author><name></name></author><category term="tech" /><category term="Xamarin" /><category term="C#" /><category term="Mobile" /><summary type="html">What isi XAML? It is an acronym for eXtensible Application Markup Language and is used to seperate UI and functional codes. UI codes can be placed in the behind C# codes and can be controlled there, however that would cause difficulties to work on view designs and function implementations repectively because they are mixed up in one file. (of course, for dynamic generation of UI componenets helplessly should be implemented in this way) The key point of popular patterns or approaches thesedays in development such as MVC, MVVM and DI is to seperate each role or interest as a component and make it independent. After that, to mix and match those components to complete a product like machinary assembly. It went a bit far. By the way, due to the benefits we could get from modularization, I think UI and functions should also be seperated but it might depend on situations. XAML code and behind code can be mapped like this. Mapping between UI code and XAML code XAML is used in WPF, Silverlight, UWP and Windows Workflow. Xamarin.Forms also uses the same grammar like others but it has unique grammars so it cannot be same like others. Here, I think just knowing XAML is used in those technologies is enough. Like HTML tags, each XAML tags can take event handlers. Add an TextChanged event handler in XAML code In Xamarin.Forms XAML, it supports Markup Extension for flexible settings of UI control attributes and for settings for respective mobile platforms, it provides the Device.OS property. Besides, it provides the reusable capsulation of components, which is called ContentView, so that it could be used in another UI like the user control feature in WinForms. When it comes to this feature, it would be better to check it out from Xamarin University Happy Coding!</summary></entry><entry><title type="html">XAML in Xamarin (한글)</title><link href="http://localhost:4000/tech/2017/12/10/xaml-in-xamarin-kr/" rel="alternate" type="text/html" title="XAML in Xamarin (한글)" /><published>2017-12-10T00:00:00+01:00</published><updated>2017-12-10T00:00:00+01:00</updated><id>http://localhost:4000/tech/2017/12/10/xaml-in-xamarin-kr</id><content type="html" xml:base="http://localhost:4000/tech/2017/12/10/xaml-in-xamarin-kr/">&lt;p&gt;
 XAML 이란? eXtensible Application Markup Language 의 약자로 Xamarin.Forms 에서는 UI 와 동작을 분리하기 위해 사용되어진다. 화면에 보여지게 될 컨트롤들은 C# 코드단에서도 생성하고 화면에 추가가 가능하지만 이 C# 코드단에는 해당 컨트롤들의 동작을 나타내는 코드들 또한 표시되므로 UI 와 동작이 한 파일안에 존재하게 되어 화면 디자인과 동작 로직을 나눠 작업하기가 어려워진다는 단점이 있다. (물론 동적으로 컨트롤들을 다뤄야할 경우엔 이 경우로 할 수 밖에 없는 경우가 많기는 하다)
 &lt;/p&gt;
 &lt;p&gt;
@@ -228,182 +335,4 @@ HTML 태그와 마찬가지로 아래와 같이 각 컨트롤 태그에 Event Ha
 &lt;p&gt;
 Xamarin.Forms XAML 에서는 UI 컨트롤들의 값을 유연하게 설정할 수 있도록 Markup Extension 을 지원하고, 모바일 플랫폼별로 설정을 할 수 있도록 Device.OS 프로퍼티를 지원하며, 기존 Winforms 의 User Control 처럼 (ASP.Net MVC 의 경우 PartialView) 특정 UI 컨트롤들을 ContentView 라는 컴포넌트로 만들어 여러 화면에서 재사용 가능하도록 하는 기능도 지원한다. 여기에 대해서는 &lt;a href=&quot;https://university.xamarin.com/welcome&quot; target=&quot;_blank&quot;&gt;Xamarin University&lt;/a&gt; 를 통해 확인해 보는 것이 좋을 듯 하다.
 &lt;/p&gt;
-&lt;blockquote&gt;&lt;h2 class=&quot;section-heading&quot;&gt;Happy Coding!&lt;/h2&gt;&lt;/blockquote&gt;</content><author><name></name></author><category term="tech" /><category term="Xamarin" /><category term="C#" /><category term="Mobile" /><summary type="html">영문 버전 이 글은 저도 Xamarin 을 배우는 입장에서 공부한 내용을 정리해 놓은 글이기 때문에 혹시 틀린 내용이 있으면 지적해 주시면 감사하겠습니다. XAML 이란? eXtensible Application Markup Language 의 약자로 Xamarin.Forms 에서는 UI 와 동작을 분리하기 위해 사용되어진다. 화면에 보여지게 될 컨트롤들은 C# 코드단에서도 생성하고 화면에 추가가 가능하지만 이 C# 코드단에는 해당 컨트롤들의 동작을 나타내는 코드들 또한 표시되므로 UI 와 동작이 한 파일안에 존재하게 되어 화면 디자인과 동작 로직을 나눠 작업하기가 어려워진다는 단점이 있다. (물론 동적으로 컨트롤들을 다뤄야할 경우엔 이 경우로 할 수 밖에 없는 경우가 많기는 하다) 현재 많이 사용되어지고 있는 MVC, MVVM, DI 등을 보면 핵심은 각각 역할 또는 관심별로 코드를 분리시켜 부품화하여 하나의 독립적인 부품을 만든 후 다른 부품들과 조립하여 하나의 제품을 만들어내는 일종의 기계 조립과정과도 비슷하다고 할 수 있을 것이다. 얘기가 조금 장황해졌지만 이로 인해 얻는 장점들이 많기 때문에 이렇게 분리를 하므로 UI 와 동작 역시 분리되는 게 맞다는 생각이 들지만 상황에 맞게 잘 쓰면 될 것 같다. 우선, 아래 그림과 같이 UI 단 코드는 아래와 같이 매핑이 된다. UI 코드와 XAML 코드 매핑 XAML 은 WPF, 실버라이트, UWP, Windows Workflow 에서도 쓰이는데 Xamarin.Forms 에서 쓰이는 XAML 은 이들과 같은 문법을 쓰지만 고유의 문법이 존재하므로 같다고 볼 순 없다. 여기선 간단히 XAML 이 저런 데도 쓰이는 기술이다 까지만 알고 넘어가면 될 듯하다. HTML 태그와 마찬가지로 아래와 같이 각 컨트롤 태그에 Event Handler 를 설정해 줄 수 있다. XAML 코드에 이벤트 핸들러 추가 Xamarin.Forms XAML 에서는 UI 컨트롤들의 값을 유연하게 설정할 수 있도록 Markup Extension 을 지원하고, 모바일 플랫폼별로 설정을 할 수 있도록 Device.OS 프로퍼티를 지원하며, 기존 Winforms 의 User Control 처럼 (ASP.Net MVC 의 경우 PartialView) 특정 UI 컨트롤들을 ContentView 라는 컴포넌트로 만들어 여러 화면에서 재사용 가능하도록 하는 기능도 지원한다. 여기에 대해서는 Xamarin University 를 통해 확인해 보는 것이 좋을 듯 하다. Happy Coding!</summary></entry><entry><title type="html">Introduction to Xamarin.Forms</title><link href="http://localhost:4000/tech/2017/12/04/xamarin-forms-intro/" rel="alternate" type="text/html" title="Introduction to Xamarin.Forms" /><published>2017-12-04T00:00:00+01:00</published><updated>2017-12-04T00:00:00+01:00</updated><id>http://localhost:4000/tech/2017/12/04/xamarin-forms-intro</id><content type="html" xml:base="http://localhost:4000/tech/2017/12/04/xamarin-forms-intro/">&lt;blockquote&gt;
-&lt;a href=&quot;/tech/2017/12/04/xamarin-forms-intro-kr/&quot;&gt;Korean Version&lt;/a&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;
-&lt;u&gt;&lt;small&gt;Please let me know if there is any incorrect information because this is what I summarized what I understood.&lt;/small&gt;&lt;/u&gt;
-&lt;/p&gt;
-&lt;p&gt;
-Xamarin.Forms enables for users to reuse commonly used UI components as well as business logics that are possible by the &lt;a href=&quot;/tech/2017/12/01/xamarin-code-sharing/&quot; target=&quot;_blank&quot;&gt;code sharing&lt;/a&gt; feature that I dealt with before. For instance, components such as Page, Layout, Inputbox, Button and Label can be used in all platforms thus, we can write only one UI components generation code and then apply to all platforms through Xamarin.Forms.
-&lt;/p&gt;
-&lt;p&gt;
-You can see the list of available components in Xamarin.Forms through this &lt;a href=&quot;https://developer.xamarin.com/guides/xamarin-forms/user-interface/controls/views/&quot; target=&quot;_blank&quot;&gt;link&lt;/a&gt;.
-&lt;/p&gt;
-&lt;p&gt;
-If you take a look at how the code matches UI with below, you will notice that you can implement same components and functions on all platforms once you write the code once.
-&lt;/p&gt;
-&lt;div class=&quot;language-csharp highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;MainPage&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;ContentPage&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-    &lt;span class=&quot;n&quot;&gt;Entry&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;phoneNumberText&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-    &lt;span class=&quot;n&quot;&gt;Button&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;translateButton&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-    &lt;span class=&quot;n&quot;&gt;Button&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;callButton&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-    &lt;span class=&quot;kt&quot;&gt;string&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;translatedNumber&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-
-    &lt;span class=&quot;k&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;MainPage&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
-    &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-        &lt;span class=&quot;c1&quot;&gt;// Set padding in the page.&lt;/span&gt;
-        &lt;span class=&quot;k&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Padding&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;Thickness&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;20&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;20&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;20&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;20&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
-
-        &lt;span class=&quot;c1&quot;&gt;// Create a layout component for the page with the spacing setup.&lt;/span&gt;
-        &lt;span class=&quot;n&quot;&gt;StackLayout&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;panel&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;StackLayout&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Spacing&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;15&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;};&lt;/span&gt;
-
-        &lt;span class=&quot;c1&quot;&gt;// Add a label&lt;/span&gt;
-        &lt;span class=&quot;n&quot;&gt;panel&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Children&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;Add&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Label&lt;/span&gt;
-        &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-            &lt;span class=&quot;n&quot;&gt;Text&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;Enter a Phoneword:&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
-            &lt;span class=&quot;n&quot;&gt;FontSize&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Device&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;GetNamedSize&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;NamedSize&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Large&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;typeof&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Label&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;
-        &lt;span class=&quot;p&quot;&gt;});&lt;/span&gt;
-
-        &lt;span class=&quot;c1&quot;&gt;// Add a textbox for input&lt;/span&gt;
-        &lt;span class=&quot;n&quot;&gt;panel&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Children&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;Add&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;phoneNumberText&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Entry&lt;/span&gt;
-        &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-            &lt;span class=&quot;n&quot;&gt;Text&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;1-855-XAMARIN&quot;&lt;/span&gt;
-        &lt;span class=&quot;p&quot;&gt;});&lt;/span&gt;
-
-        &lt;span class=&quot;c1&quot;&gt;// Add the translate button&lt;/span&gt;
-        &lt;span class=&quot;n&quot;&gt;panel&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Children&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;Add&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;translateButton&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Button&lt;/span&gt;
-        &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-            &lt;span class=&quot;n&quot;&gt;Text&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;Translate&quot;&lt;/span&gt;
-        &lt;span class=&quot;p&quot;&gt;});&lt;/span&gt;
-
-        &lt;span class=&quot;c1&quot;&gt;// Add the call button&lt;/span&gt;
-        &lt;span class=&quot;n&quot;&gt;panel&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Children&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;Add&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;callButton&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Button&lt;/span&gt;
-        &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-            &lt;span class=&quot;n&quot;&gt;Text&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;Call&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
-            &lt;span class=&quot;n&quot;&gt;IsEnabled&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;false&lt;/span&gt;
-        &lt;span class=&quot;p&quot;&gt;});&lt;/span&gt;
-
-        &lt;span class=&quot;c1&quot;&gt;// Add a click event hander on the translate button&lt;/span&gt;
-        &lt;span class=&quot;n&quot;&gt;translateButton&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Clicked&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;+=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;s&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;e&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&amp;gt;&lt;/span&gt;
-        &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-            &lt;span class=&quot;kt&quot;&gt;string&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;enteredNumber&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;phoneNumberText&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Text&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-            &lt;span class=&quot;n&quot;&gt;translatedNumber&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;PhonewordTranslator&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;ToNumber&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;enteredNumber&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
-
-            &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(!&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;string&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;IsNullOrWhiteSpace&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;translatedNumber&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;
-            &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-                &lt;span class=&quot;n&quot;&gt;callButton&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;IsEnabled&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;true&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-                &lt;span class=&quot;n&quot;&gt;callButton&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Text&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;Call &quot;&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;translatedNumber&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-            &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-            &lt;span class=&quot;k&quot;&gt;else&lt;/span&gt;
-            &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-                &lt;span class=&quot;n&quot;&gt;callButton&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;IsEnabled&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;false&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-                &lt;span class=&quot;n&quot;&gt;callButton&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Text&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;Call&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-            &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-        &lt;span class=&quot;p&quot;&gt;};&lt;/span&gt;
-
-        &lt;span class=&quot;c1&quot;&gt;// Set the layout component to the page.&lt;/span&gt;
-        &lt;span class=&quot;k&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Content&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;panel&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-    &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;p&gt;&lt;a class=&quot;popupImg&quot;&gt;
-    &lt;img src=&quot;/tech/img/20171204/1.png&quot; alt=&quot;UI views on each mobile platform&quot; /&gt;
-&lt;/a&gt;
-&lt;span class=&quot;caption text-muted&quot;&gt;UI views on each mobile platform&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;
-If we look into how this works under the hood, button classes created and bound click event handlers in C# code is transformed to each language for each playform at compile tiem. If you want to see what do the code or files transformed to each platform look like, please do research on it by yourself because I am quite...lazy and am not curious... but it would be great to understand the inside of Xamarin for sure :)
-&lt;/p&gt;
-&lt;p&gt;
-Then how we can implement functions that are platform-specific? Xamarin provides several approach to resolve this such as DependencyService or applying the dependency injection (DI) pattern with super classes like interfaces or abstract classes and then each platform inject their methods into it. In this writing, we are just catching a glimpse in order to understand Xamarin concept (I don't know well either..), so I recommend you watch lectures in the &lt;a href=&quot;https://university.xamarin.com/welcome&quot; target=&quot;_blank&quot;&gt;Xamarin University&lt;/a&gt;.
-&lt;/p&gt;
-&lt;blockquote&gt;&lt;h2 class=&quot;section-heading&quot;&gt;Happy Coding!&lt;/h2&gt;&lt;/blockquote&gt;</content><author><name></name></author><category term="tech" /><category term="Xamarin" /><category term="C#" /><category term="Mobile" /><summary type="html">Korean Version Please let me know if there is any incorrect information because this is what I summarized what I understood. Xamarin.Forms enables for users to reuse commonly used UI components as well as business logics that are possible by the code sharing feature that I dealt with before. For instance, components such as Page, Layout, Inputbox, Button and Label can be used in all platforms thus, we can write only one UI components generation code and then apply to all platforms through Xamarin.Forms. You can see the list of available components in Xamarin.Forms through this link. If you take a look at how the code matches UI with below, you will notice that you can implement same components and functions on all platforms once you write the code once. ```csharp public class MainPage : ContentPage { Entry phoneNumberText; Button translateButton; Button callButton; string translatedNumber;</summary></entry><entry><title type="html">Xamarin.Forms 소개</title><link href="http://localhost:4000/tech/2017/12/04/xamarin-forms-intro-kr/" rel="alternate" type="text/html" title="Xamarin.Forms 소개" /><published>2017-12-04T00:00:00+01:00</published><updated>2017-12-04T00:00:00+01:00</updated><id>http://localhost:4000/tech/2017/12/04/xamarin-forms-intro-kr</id><content type="html" xml:base="http://localhost:4000/tech/2017/12/04/xamarin-forms-intro-kr/">&lt;blockquote&gt;
-&lt;a href=&quot;/tech/2017/12/04/xamarin-forms-intro/&quot;&gt;영문 버전&lt;/a&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;
-&lt;u&gt;&lt;small&gt;이 글은 저도 Xamarin 을 배우는 입장에서 공부한 내용을 정리해 놓은 글이기 때문에 혹시 틀린 내용이 있으면 지적해 주시면 감사하겠습니다.&lt;/small&gt;&lt;/u&gt;
-&lt;/p&gt;
-&lt;p&gt;
-Xamarin.Forms 는 이전 장인 &lt;a href=&quot;/tech/2017/12/01/xamarin-code-sharing-kr/&quot; target=&quot;_blank&quot;&gt;Code Sharing&lt;/a&gt; 으로 가능했던 비즈니스 로직 재사용 방법처럼 공통적으로 쓰이는 UI 컴포넌트들을 재사용할 수 있게 해준다. 예를 들면, 페이지, 레이아웃, 입력 상자, 버튼 그리고 라벨과 같은 컴포넌트들은 모든 플랫폼에서 공통적으로 사용할 수 있기 때문에 이를 Xamarin.Forms 에서 모든 플랫폼에 동일하게 생성하여 개발 및 관리를 쉽게 해준다. 
-&lt;/p&gt;
-&lt;p&gt;
-Xamarin.Forms 에서 사용가능한 컴포넌트 리스트는 &lt;a href=&quot;https://developer.xamarin.com/guides/xamarin-forms/user-interface/controls/views/&quot; target=&quot;_blank&quot;&gt;이 링크&lt;/a&gt;를 통해 확인 가능하다.
-&lt;/p&gt;
-&lt;p&gt;
-코드와 화면으로 어떻게 구현이 되는지 한 번 확인해 보면 다음과 같은 하나의 코드로 안드로이드, 아이폰, 윈도우폰에 동일한 컴포넌트, 기능을 구현할 수 있다.
-&lt;/p&gt;
-&lt;div class=&quot;language-csharp highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;MainPage&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;ContentPage&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-    &lt;span class=&quot;n&quot;&gt;Entry&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;phoneNumberText&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-    &lt;span class=&quot;n&quot;&gt;Button&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;translateButton&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-    &lt;span class=&quot;n&quot;&gt;Button&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;callButton&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-    &lt;span class=&quot;kt&quot;&gt;string&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;translatedNumber&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-
-    &lt;span class=&quot;k&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;MainPage&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
-    &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-        &lt;span class=&quot;c1&quot;&gt;// Set padding in the page.&lt;/span&gt;
-        &lt;span class=&quot;k&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Padding&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;Thickness&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;20&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;20&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;20&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;20&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
-
-        &lt;span class=&quot;c1&quot;&gt;// Create a layout component for the page with the spacing setup.&lt;/span&gt;
-        &lt;span class=&quot;n&quot;&gt;StackLayout&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;panel&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;StackLayout&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Spacing&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;15&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;};&lt;/span&gt;
-
-        &lt;span class=&quot;c1&quot;&gt;// Add a label&lt;/span&gt;
-        &lt;span class=&quot;n&quot;&gt;panel&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Children&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;Add&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Label&lt;/span&gt;
-        &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-            &lt;span class=&quot;n&quot;&gt;Text&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;Enter a Phoneword:&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
-            &lt;span class=&quot;n&quot;&gt;FontSize&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Device&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;GetNamedSize&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;NamedSize&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Large&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;typeof&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Label&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;
-        &lt;span class=&quot;p&quot;&gt;});&lt;/span&gt;
-
-        &lt;span class=&quot;c1&quot;&gt;// Add a textbox for input&lt;/span&gt;
-        &lt;span class=&quot;n&quot;&gt;panel&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Children&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;Add&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;phoneNumberText&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Entry&lt;/span&gt;
-        &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-            &lt;span class=&quot;n&quot;&gt;Text&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;1-855-XAMARIN&quot;&lt;/span&gt;
-        &lt;span class=&quot;p&quot;&gt;});&lt;/span&gt;
-
-        &lt;span class=&quot;c1&quot;&gt;// Add the translate button&lt;/span&gt;
-        &lt;span class=&quot;n&quot;&gt;panel&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Children&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;Add&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;translateButton&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Button&lt;/span&gt;
-        &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-            &lt;span class=&quot;n&quot;&gt;Text&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;Translate&quot;&lt;/span&gt;
-        &lt;span class=&quot;p&quot;&gt;});&lt;/span&gt;
-
-        &lt;span class=&quot;c1&quot;&gt;// Add the call button&lt;/span&gt;
-        &lt;span class=&quot;n&quot;&gt;panel&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Children&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;Add&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;callButton&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Button&lt;/span&gt;
-        &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-            &lt;span class=&quot;n&quot;&gt;Text&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;Call&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
-            &lt;span class=&quot;n&quot;&gt;IsEnabled&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;false&lt;/span&gt;
-        &lt;span class=&quot;p&quot;&gt;});&lt;/span&gt;
-
-        &lt;span class=&quot;c1&quot;&gt;// Add a click event hander on the translate button&lt;/span&gt;
-        &lt;span class=&quot;n&quot;&gt;translateButton&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Clicked&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;+=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;s&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;e&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&amp;gt;&lt;/span&gt;
-        &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-            &lt;span class=&quot;kt&quot;&gt;string&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;enteredNumber&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;phoneNumberText&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Text&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-            &lt;span class=&quot;n&quot;&gt;translatedNumber&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;PhonewordTranslator&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;ToNumber&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;enteredNumber&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
-
-            &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(!&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;string&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;IsNullOrWhiteSpace&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;translatedNumber&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;
-            &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-                &lt;span class=&quot;n&quot;&gt;callButton&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;IsEnabled&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;true&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-                &lt;span class=&quot;n&quot;&gt;callButton&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Text&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;Call &quot;&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;translatedNumber&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-            &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-            &lt;span class=&quot;k&quot;&gt;else&lt;/span&gt;
-            &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-                &lt;span class=&quot;n&quot;&gt;callButton&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;IsEnabled&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;false&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-                &lt;span class=&quot;n&quot;&gt;callButton&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Text&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;Call&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-            &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-        &lt;span class=&quot;p&quot;&gt;};&lt;/span&gt;
-
-        &lt;span class=&quot;c1&quot;&gt;// Set the layout component to the page.&lt;/span&gt;
-        &lt;span class=&quot;k&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Content&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;panel&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-    &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;p&gt;&lt;a class=&quot;popupImg&quot;&gt;
-    &lt;img src=&quot;/tech/img/20171204/1.png&quot; alt=&quot;각각 모바일 플랫폼별 화면&quot; /&gt;
-&lt;/a&gt;
-&lt;span class=&quot;caption text-muted&quot;&gt;각각 모바일 플랫폼별 화면&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;
-내부 동작 방식을 보면 버튼을 예로 들었을 때, 위의 코드에서와 같이 Button 클래스를 생성하고 click event handler 를 C# 으로 작성해서 컴파일을 하면 Xamarin 이 각각 플랫폼에 맞게 이를 변환한다고 보면 된다. 각각 플랫폼의 언어로 컴파일이 되었는지는 저는 궁금하지 않아서 보진 않았지만 궁금하신 분들은 한 번 찾아서 보면 좋을 것 같다.
-&lt;/p&gt;
-&lt;p&gt;
-그러면 공통적으로 사용할 수 없는 플랫폼 의존적인 기능들은 어떻게 구현할까? 이는 Xamarin 에서 제공하는 DependencyService 등이나 인터페이스나 추상 클래스를 사용하여 상위 클래스를 만든 후 Dependency Injection (DI) 패턴을 적용하여 각각의 플랫폼에서 자기 코드를 넘겨서 처리하는 방법이 있다. 여기선 Xamarin.Forms 가 어떤건지 개념을 잡기 위해 훑어만 보는 수준이므로 (나도 아직 잘 모름..) 실제 적용방법은 &lt;a href=&quot;https://university.xamarin.com/welcome&quot; target=&quot;_blank&quot;&gt;Xamarin University&lt;/a&gt; 등에서 각자 알아서 찾아보기로…
-&lt;/p&gt;
-&lt;blockquote&gt;&lt;h2 class=&quot;section-heading&quot;&gt;Happy Coding!&lt;/h2&gt;&lt;/blockquote&gt;</content><author><name></name></author><category term="tech" /><category term="Xamarin" /><category term="C#" /><category term="Mobile" /><summary type="html">영문 버전 이 글은 저도 Xamarin 을 배우는 입장에서 공부한 내용을 정리해 놓은 글이기 때문에 혹시 틀린 내용이 있으면 지적해 주시면 감사하겠습니다. Xamarin.Forms 는 이전 장인 Code Sharing 으로 가능했던 비즈니스 로직 재사용 방법처럼 공통적으로 쓰이는 UI 컴포넌트들을 재사용할 수 있게 해준다. 예를 들면, 페이지, 레이아웃, 입력 상자, 버튼 그리고 라벨과 같은 컴포넌트들은 모든 플랫폼에서 공통적으로 사용할 수 있기 때문에 이를 Xamarin.Forms 에서 모든 플랫폼에 동일하게 생성하여 개발 및 관리를 쉽게 해준다. Xamarin.Forms 에서 사용가능한 컴포넌트 리스트는 이 링크를 통해 확인 가능하다. 코드와 화면으로 어떻게 구현이 되는지 한 번 확인해 보면 다음과 같은 하나의 코드로 안드로이드, 아이폰, 윈도우폰에 동일한 컴포넌트, 기능을 구현할 수 있다. ```csharp public class MainPage : ContentPage { Entry phoneNumberText; Button translateButton; Button callButton; string translatedNumber;</summary></entry></feed>
+&lt;blockquote&gt;&lt;h2 class=&quot;section-heading&quot;&gt;Happy Coding!&lt;/h2&gt;&lt;/blockquote&gt;</content><author><name></name></author><category term="tech" /><category term="Xamarin" /><category term="C#" /><category term="Mobile" /><summary type="html">XAML 이란? eXtensible Application Markup Language 의 약자로 Xamarin.Forms 에서는 UI 와 동작을 분리하기 위해 사용되어진다. 화면에 보여지게 될 컨트롤들은 C# 코드단에서도 생성하고 화면에 추가가 가능하지만 이 C# 코드단에는 해당 컨트롤들의 동작을 나타내는 코드들 또한 표시되므로 UI 와 동작이 한 파일안에 존재하게 되어 화면 디자인과 동작 로직을 나눠 작업하기가 어려워진다는 단점이 있다. (물론 동적으로 컨트롤들을 다뤄야할 경우엔 이 경우로 할 수 밖에 없는 경우가 많기는 하다) 현재 많이 사용되어지고 있는 MVC, MVVM, DI 등을 보면 핵심은 각각 역할 또는 관심별로 코드를 분리시켜 부품화하여 하나의 독립적인 부품을 만든 후 다른 부품들과 조립하여 하나의 제품을 만들어내는 일종의 기계 조립과정과도 비슷하다고 할 수 있을 것이다. 얘기가 조금 장황해졌지만 이로 인해 얻는 장점들이 많기 때문에 이렇게 분리를 하므로 UI 와 동작 역시 분리되는 게 맞다는 생각이 들지만 상황에 맞게 잘 쓰면 될 것 같다. 우선, 아래 그림과 같이 UI 단 코드는 아래와 같이 매핑이 된다. UI 코드와 XAML 코드 매핑 XAML 은 WPF, 실버라이트, UWP, Windows Workflow 에서도 쓰이는데 Xamarin.Forms 에서 쓰이는 XAML 은 이들과 같은 문법을 쓰지만 고유의 문법이 존재하므로 같다고 볼 순 없다. 여기선 간단히 XAML 이 저런 데도 쓰이는 기술이다 까지만 알고 넘어가면 될 듯하다. HTML 태그와 마찬가지로 아래와 같이 각 컨트롤 태그에 Event Handler 를 설정해 줄 수 있다. XAML 코드에 이벤트 핸들러 추가 Xamarin.Forms XAML 에서는 UI 컨트롤들의 값을 유연하게 설정할 수 있도록 Markup Extension 을 지원하고, 모바일 플랫폼별로 설정을 할 수 있도록 Device.OS 프로퍼티를 지원하며, 기존 Winforms 의 User Control 처럼 (ASP.Net MVC 의 경우 PartialView) 특정 UI 컨트롤들을 ContentView 라는 컴포넌트로 만들어 여러 화면에서 재사용 가능하도록 하는 기능도 지원한다. 여기에 대해서는 Xamarin University 를 통해 확인해 보는 것이 좋을 듯 하다. Happy Coding!</summary></entry></feed>
