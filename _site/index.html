@@ -171,8 +171,8 @@
         position: fixed;
         top: 50%;
         left: 50%;
-        min-width: 30%;
-        min-height: 30%;
+        min-width: 100%;
+        min-height: 100%;
         width: auto;
         height: auto;
         z-index: -100;
@@ -330,10 +330,10 @@
 
     <script>
         $(document).ready(function(){
-            if (navigator.userAgent.match(/(iPod|iPhone|iPad|Android)/)) {
-                $('video.background').css('position','absolute').css('top','-11%');
-                $('div#mainContent').attr('style','');
-            }
+            // if (navigator.userAgent.match(/(iPod|iPhone|iPad|Android)/)) {
+            //     $('video.background').css('position','absolute').css('top','-11%');
+            //     $('div#mainContent').attr('style','');
+            // }
 
             $(window).scroll(function () {
                 if ($(this).scrollTop() > 50) {
