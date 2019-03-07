@@ -1,8 +1,9 @@
 ---
 layout:     post
 title:      "새로운 도전"
-published: false
+published: true
 header-img: "blog/img/20171112/frankfurtHbf.jpg"
+tags:   [Life, Blog, Germany]
 ---
 
 <p>
