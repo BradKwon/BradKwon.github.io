@@ -6,9 +6,6 @@ header-img: "tech/img/20171115/xamarin-android-emulator-setup.jpg"
 tags:       [Xamarin,  Visual Studio, C#, Mobile, Android]
 category:   tech
 ---
-<blockquote>
-<a href="{{ site.baseurl }}/tech/2017/11/15/xamarin-setup/">영문 버전</a>
-</blockquote>
 <p>
 C# 을 주로 사용해 왔기 때문에 C# 을 이용해 모바일 앱 개발을 할 수 있게 해 주는 Xamarin 을 최근에 배우기 시작했습니다. 
 Xamarin 의 컨셉인 "한 번의 작성으로 모든 곳에서 작동되게 한다." 가 꽤 매력적으로 들렸기 때문입니다.

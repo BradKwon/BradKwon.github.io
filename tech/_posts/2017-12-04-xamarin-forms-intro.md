@@ -5,12 +5,6 @@ header-img: "tech/img/20171115/xamarin-android-emulator-setup.jpg"
 tags:       [Xamarin, C#, Mobile]
 category:   tech
 ---
-<blockquote>
-<a href="{{ site.baseurl }}/tech/2017/12/04/xamarin-forms-intro-kr/">Korean Version</a>
-</blockquote>
-<p>
-<u><small>Please let me know if there is any incorrect information because this is what I summarized what I understood.</small></u>
-</p>
 <p>
 Xamarin.Forms enables for users to reuse commonly used UI components as well as business logics that are possible by the <a href="{{ site.baseurl }}/tech/2017/12/01/xamarin-code-sharing/" target="_blank">code sharing</a> feature that I dealt with before. For instance, components such as Page, Layout, Inputbox, Button and Label can be used in all platforms thus, we can write only one UI components generation code and then apply to all platforms through Xamarin.Forms.
 </p>

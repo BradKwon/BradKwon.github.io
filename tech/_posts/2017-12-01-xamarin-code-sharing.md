@@ -5,14 +5,6 @@ header-img: "tech/img/20171115/xamarin-android-emulator-setup.jpg"
 tags:       [Xamarin, C#, Mobile]
 category:   tech
 ---
-<blockquote>
-<a href="{{ site.baseurl }}/tech/2017/12/01/xamarin-code-sharing-kr/">Korean Version</a>
-</blockquote>
-<p>
-<u><small>
-Please let me know if there is any incorrect information because this is what I summarized what I understood.
-</small></u>
-</p>
 <p>
 The aim of Xamain is to write a function once, run on every platform. However, it seems impossible pragmatically.
 Therefore, this code sharing approach came out to reuse common code except for platform-specific code.

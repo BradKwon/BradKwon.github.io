@@ -5,12 +5,6 @@ header-img: "tech/img/20171115/xamarin-android-emulator-setup.jpg"
 tags:       [Xamarin, C#, Mobile]
 category:   tech
 ---
-<blockquote>
-<a href="{{ site.baseurl }}/tech/2017/12/15/layouts-in-xamarin-forms/">영문 버전</a>
-</blockquote>
-<p>
-<u><small>이 글은 저도 Xamarin 을 배우는 입장에서 공부한 내용을 정리해 놓은 글이기 때문에 혹시 틀린 내용이 있으면 지적해 주시면 감사하겠습니다.</small></u>
-</p>
 <p>
 앱을 제대로 만드려면 화면 크기나 해상도가 다른 여러 기기 모두에서 동일한 디자인을 유지해야 하는데 이를 위해 Xamarin.Forms 에서는 유연한 레이아웃 컨테이너들을 제공한다. 이 컴포넌트들은 UI 컨트롤들의 크기 및 위치를 자동으로 계산해주고, 사용자가 기기를 회전하거나 화면 크기를 변경할 경우 자동 재계산 해준다. 이러한 레이아웃 컨테이너에는 StackLayout, Grid, AbsoluteLayout, RelativeLayout 이 있는데 그 중 StackLayout 과 Grid 이 가장 많이 사용된다.
 </p>

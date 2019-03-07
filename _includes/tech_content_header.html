@@ -1,0 +1,19 @@
+{% if page.categories contains "tech" %}
+<blockquote>
+    {% if page.url contains "-kr" %}
+    {% assign link_url = page.url | replace_first: "-kr", "" %}
+    {% assign text = "영문 버전" %}
+    {% assign correct_me = "혹시 틀린 내용이 있으면 지적해 주시면 감사하겠습니다. :)" %}
+    {% else %}
+    {% assign page_url_cut_size = page.url.size | minus: 1 %}
+    {% assign link_url = page.url | slice: 0, page_url_cut_size | append: "-kr/" %}
+    {% assign text = "Korean Version" %}
+    {% assign correct_me = "Please let me know if there is any incorrect information. :)" %}
+    {% endif %}
+    
+    <a href="{{ site.baseurl }}{{ link_url }}">{{ text }}</a>
+</blockquote>
+<p>
+    <u><small>{{ correct_me }}</small></u>
+</p>
+{% endif %}

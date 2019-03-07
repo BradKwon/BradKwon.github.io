@@ -5,12 +5,6 @@ header-img: "tech/img/20171115/xamarin-android-emulator-setup.jpg"
 tags:       [Xamarin, C#, Mobile]
 category:   tech
 ---
-<blockquote>
-<a href="{{ site.baseurl }}/tech/2017/12/10/xaml-in-xamarin/">영문 버전</a>
-</blockquote>
-<p>
-<u><small>이 글은 저도 Xamarin 을 배우는 입장에서 공부한 내용을 정리해 놓은 글이기 때문에 혹시 틀린 내용이 있으면 지적해 주시면 감사하겠습니다.</small></u>
-</p>
 <p>
 XAML 이란? eXtensible Application Markup Language 의 약자로 Xamarin.Forms 에서는 UI 와 동작을 분리하기 위해 사용되어진다. 화면에 보여지게 될 컨트롤들은 C# 코드단에서도 생성하고 화면에 추가가 가능하지만 이 C# 코드단에는 해당 컨트롤들의 동작을 나타내는 코드들 또한 표시되므로 UI 와 동작이 한 파일안에 존재하게 되어 화면 디자인과 동작 로직을 나눠 작업하기가 어려워진다는 단점이 있다. (물론 동적으로 컨트롤들을 다뤄야할 경우엔 이 경우로 할 수 밖에 없는 경우가 많기는 하다)
 </p>

@@ -5,12 +5,6 @@ header-img: "tech/img/20171115/xamarin-android-emulator-setup.jpg"
 category:   tech
 tags:       [Xamarin, C#, Mobile]
 ---
-<blockquote>
-<a href="{{ site.baseurl }}/tech/2017/12/15/layouts-in-xamarin-forms-kr/">Korean Version</a>
-</blockquote>
-<p>
-<u><small>Please let me know if there is any incorrect information because this is what I summarized what I understood.</small></u>
-</p>
 <p>
 In order to build up a well-made app, it is important to keep the same look on every devices. Therefore, Xamarin.Forms provides flexible layout containers. These containers calculate positions and sizes of UI components automatically and re-calculate them when a user rotates a device or changes a view size also automatically. These layout containers that Xamarin.Forms provides are StackLayout, Grid, AbsoluteLayout and RelativeLayout and StackLayout and Grid are popular among them.
 </p>

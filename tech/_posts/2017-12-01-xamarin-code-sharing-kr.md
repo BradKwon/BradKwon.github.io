@@ -5,12 +5,6 @@ header-img: "tech/img/20171115/xamarin-android-emulator-setup.jpg"
 tags:       [Xamarin, C#, Mobile]
 category:   tech
 ---
-<blockquote>
-<a href="{{ site.baseurl }}/tech/2017/12/01/xamarin-code-sharing/">영문 버전</a>
-</blockquote>
-<p>
-<u><small>이 글은 저도 Xamarin 을 배우는 입장에서 공부한 내용을 정리해 놓은 글이기 때문에 혹시 틀린 내용이 있으면 지적해 주시면 감사하겠습니다.</small></u>
-</p>
 <p>
 Xamarin 이 지향하는 게 동일한 기능을 안드로이드, 아이폰, 윈도우폰과 같은 각각의 플랫폼에 맞게 다시 작성하는 게 아닌 
 한 번 작성된 코드로 위 세 플랫폼 모두에서 동작할 수 있도록 하는 것이지만 현실적으로는 이게 불가능하다. 

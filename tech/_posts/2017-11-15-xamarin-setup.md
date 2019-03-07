@@ -6,9 +6,6 @@ header-img: "tech/img/20171115/xamarin-android-emulator-setup.jpg"
 tags:       [Xamarin,  Visual Studio, C#, Mobile, Android]
 category:   tech
 ---
-<blockquote>
-<a href="{{ site.baseurl }}/tech/2017/11/15/xamarin-setup-kr/">Korean Version</a>
-</blockquote>
 <p>
 I've recently started to learn Xamarin to build any mobile app with C# because I've mainly used C# for programming. 
 The concept of Xamarin which is "write-once, run everywhere" seemed quite attractive so I decided to learn it.  

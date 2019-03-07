@@ -5,12 +5,6 @@ header-img: "tech/img/20171115/xamarin-android-emulator-setup.jpg"
 tags:       [Xamarin, C#, Mobile]
 category:   tech
 ---
-<blockquote>
-<a href="{{ site.baseurl }}/tech/2017/12/04/xamarin-forms-intro/">영문 버전</a>
-</blockquote>
-<p>
-<u><small>이 글은 저도 Xamarin 을 배우는 입장에서 공부한 내용을 정리해 놓은 글이기 때문에 혹시 틀린 내용이 있으면 지적해 주시면 감사하겠습니다.</small></u>
-</p>
 <p>
 Xamarin.Forms 는 이전 장인 <a href="{{ site.baseurl }}/tech/2017/12/01/xamarin-code-sharing-kr/" target="_blank">Code Sharing</a> 으로 가능했던 비즈니스 로직 재사용 방법처럼 공통적으로 쓰이는 UI 컴포넌트들을 재사용할 수 있게 해준다. 예를 들면, 페이지, 레이아웃, 입력 상자, 버튼 그리고 라벨과 같은 컴포넌트들은 모든 플랫폼에서 공통적으로 사용할 수 있기 때문에 이를 Xamarin.Forms 에서 모든 플랫폼에 동일하게 생성하여 개발 및 관리를 쉽게 해준다. 
 </p>

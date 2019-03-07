@@ -5,12 +5,6 @@ header-img: "tech/img/20171115/xamarin-android-emulator-setup.jpg"
 tags:       [Xamarin, C#, Mobile]
 category:   tech
 ---
-<blockquote>
-<a href="{{ site.baseurl }}/tech/2017/12/10/xaml-in-xamarin-kr/">Korean Version</a>
-</blockquote>
-<p>
-<u><small>Please let me know if there is any incorrect information because this is what I summarized what I understood.</small></u>
-</p>
 <p>
 What isi XAML? It is an acronym for eXtensible Application Markup Language and is used to seperate UI and functional codes. UI codes can be placed in the behind C# codes and can be controlled there, however that would cause difficulties to work on view designs and function implementations repectively because they are mixed up in one file. (of course, for dynamic generation of UI componenets helplessly should be implemented in this way)
 </p>
