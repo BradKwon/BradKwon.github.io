@@ -6,5 +6,6 @@ group :jekyll_plugins do
   gem "jekyll-paginate-v2"
   gem "jekyll-feed"
   gem "jekyll-octicons"
-  gem "jekyll"
+  gem "jekyll", '< 4.0'
+  gem 'kramdown-parser-gfm'
 end
