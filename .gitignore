@@ -1,4 +1,4 @@
 node_modules
-Gemfile.lock
+#Gemfile.lock
 .jekyll-cache
 _site
