@@ -22,7 +22,7 @@ highlighter: rouge
 permalink: pretty
 exclude: ["less","node_modules","Gruntfile.js","package.json","README.md"]
 
-plugins: [jekyll-paginate-v2, jekyll-feed, jekyll-octicons, jekyll-seo-tag, jekyll-sitemap]
+plugins: [jekyll-paginate-v2, jekyll-feed, jekyll-octicons, jekyll-seo-tag, jekyll-sitemap, jekyll-multiple-languages-plugin]
 
 pagination:
   enabled: true
@@ -34,3 +34,7 @@ pagination:
   indexpage: 'index'
   title: ':title'
   debug: true
+
+# jekyll-multiple-languages-plugin
+languages: ["en", "ko"]
+#exclude_from_localizations: ["javascript", "images", "css", "scripts", "favicon.ico"]
