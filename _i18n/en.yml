@@ -1,2 +1,23 @@
 descriptions:
-  index: "Life is either a daring adventure or nothing at all."
+  index: Life is either a daring adventure or nothing at all.
+  about: Self introduction
+  contact: You can send your e-mail to me here.
+  tech: This is what I do.
+  blog: Various pieces of my life.
+  tags: Please search your interesting topics here.
+
+titles:
+  index: Brad Kwon
+  about: Who am I
+  contact: Contact
+  tags: Tags
+  tech: Tech Blog
+  blog: Blog
+
+menus:
+  home: Home
+  about: Who Am I
+  contact: Contact
+  tech: Tech
+  blog: Blog
+  tags: Tags

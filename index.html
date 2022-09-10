@@ -1,5 +1,6 @@
 ---
 layout: page
+title: titles.index
 description: descriptions.index
 video:  /video/sea
 ---
@@ -7,7 +8,7 @@ video:  /video/sea
     const langArr = navigator.language.split("-");
     if (langArr.length > 0) {
         const lang = langArr[0];
-        if (lang != "en") {
+        if (lang != '{{ site.lang }}') {
             //window.location.replace("/$lang".replace("$lang", lang));
         }
     }
