@@ -4,13 +4,4 @@ title: titles.index
 description: descriptions.index
 video:  /video/sea
 ---
-<script>
-    const langArr = navigator.language.split("-");
-    if (langArr.length > 0) {
-        const lang = langArr[0];
-        if (lang != '{{ site.lang }}') {
-            //window.location.replace("/$lang".replace("$lang", lang));
-        }
-    }
-</script>
 {% translate_file index/index.md %}

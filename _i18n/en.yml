@@ -21,3 +21,8 @@ menus:
   tech: Tech
   blog: Blog
   tags: Tags
+
+global:
+  language: Language
+  english: EN
+  korean: KO

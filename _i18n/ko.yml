@@ -21,3 +21,8 @@ menus:
   tech: 기술
   blog: 블로그
   tags: 태그
+
+global:
+  language: 언어
+  english: 영어
+  korean: 한글
