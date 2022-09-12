@@ -39,4 +39,4 @@ pagination:
 # jekyll-multiple-languages-plugin
 languages: ["en", "ko"]
 default_locale_in_subfolder: false
-exclude_from_localizations: ["favicon.ico"]
+#exclude_from_localizations: ["favicon.ico"]
