@@ -8,8 +8,8 @@
 무언가를 주도적으로 해 나가는 걸 좋아하며 매사에 신중하려 하는 스타일이고 매일매일 발전해 나가는 제 모습을 보는 것을 좋아합니다.
 그래서 하루하루가 저에게는 늘 새로운 여행입니다.
 
-저에 대해 더 자세히 알고 싶으시다면 여기 [<button class="btn btn-default">{% t menus.about %}</button>](/about "얘는 뭐야?") 를 눌러주세요.
+저에 대해 더 자세히 알고 싶으시다면 여기 [<button class="btn btn-default">{% t menus.about %}</button>]({{site.baseurl}}/about "얘는 뭐야?") 를 눌러주세요.
 
-그냥 인사를 하고 싶으시거나 문의가 있으시면 [<button class="btn btn-default">{% t menus.contact %}</button>](/contact "이메일로 연락") 을 눌러주세요.
+그냥 인사를 하고 싶으시거나 문의가 있으시면 [<button class="btn btn-default">{% t menus.contact %}</button>]({{site.baseurl}}/contact "이메일로 연락") 을 눌러주세요.
 
 감사합니다!
