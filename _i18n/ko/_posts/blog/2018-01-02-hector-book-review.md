@@ -2,8 +2,11 @@
 layout: post
 title:  "책 꾸뻬씨의 행복여행 독서 후기 두번째"
 header-img: "blog/img/20170627/hector01.jpg"
-tags:   [Book, Review]
+tags:   [책, 책리뷰]
+category:   blog
 ---
+{% include block_lang_switch.html %}
+
 <blockquote>
 <a href="{{ site.baseurl }}/blog/2017/06/27/hector-book-review/">이전 후기</a>
 </blockquote>

@@ -2,7 +2,7 @@
 layout:     post
 title:      "Xamarin.Forms 레이아웃"
 header-img: "tech/img/20171115/xamarin-android-emulator-setup.jpg"
-tags:       [Xamarin, C#, Mobile]
+tags:       [Xamarin, C#, 모바일]
 category:   tech
 ---
 <p>

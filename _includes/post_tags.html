@@ -6,6 +6,6 @@
 {% if tags.size > 0 %}
 <span class="glyphicon glyphicon-tag" aria-hidden="true" aria-label="Tags" style="vertical-align:middle;"></span>
 {% for tag in tags %}
-<a href="/tags/#{{ tag | slugize }}"><small class="text-primary">{{ tag }}</small></a><small>{% unless forloop.last %}, {% endunless %}</small>
+<a href="{{site.baseurl}}/tags/#{{ tag | slugize }}"><small class="text-primary">{{ tag }}</small></a><small>{% unless forloop.last %}, {% endunless %}</small>
 {% endfor %}
 {% endif %}

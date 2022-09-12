@@ -1,0 +1,28 @@
+descriptions:
+  index: 모험과 도전이 없는 삶은 아무것도 아니다.
+  about: 저의 경력 소개입니다.
+  contact: 저한테 이메일을 보내주세요.
+  tech: 내가 하는 일.
+  blog: 내 삶의 다양한 조각들.
+  tags: 관심있는 주제를 골라보세요.
+
+titles:
+  index: 브래드 권
+  about: 자기소개
+  contact: 연락
+  tags: 태그
+  tech: 기술 블로그
+  blog: 블로그
+
+menus:
+  home: 홈
+  about: 자기소개
+  contact: 연락
+  tech: 기술
+  blog: 블로그
+  tags: 태그
+
+global:
+  language: 언어
+  english: 영어
+  korean: 한글
