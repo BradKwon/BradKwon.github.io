@@ -3,8 +3,10 @@ layout:     post
 title:      "새로운 도전"
 published: true
 header-img: "blog/img/20171112/frankfurtHbf.jpg"
-tags:   [Life, Blog, Germany]
+tags:   [삶, 블로그, 독일]
+category:   blog
 ---
+{% include block_lang_switch.html %}
 
 <p>
 미국 취업비자를 포기하고 독일로 오기로 결정한 뒤 프랑크푸르트 공항에 도착하기까지 걸린 기간 대략 3주 남짓. 

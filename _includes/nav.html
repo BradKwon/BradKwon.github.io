@@ -4,16 +4,16 @@
         <div class="nav navbar-nav" style="position: absolute;">
             <li style="display:inline-block">
                 {% if site.lang == 'en' %}
-                <a href="#" style="padding-right: 0px; color: black;">{% t global.english %}</a>
+                <a href="#" class="lang-switch" style="padding-right: 0px; color: black;">{% t global.english %}</a>
                 {% else %}
-                <a href="/en{{page.url}}" style="padding-right: 0px;">{% t global.english %}</a>
+                <a href="{{page.url}}" class="lang-switch" style="padding-right: 0px;">{% t global.english %}</a>
                 {% endif %}
             </li>
             <li style="display:inline-block">
                 {% if site.lang == 'ko' %}
-                <a href="#" style=" color: black;">{% t global.korean %}</a>
+                <a href="#" class="lang-switch" style="color: black;">{% t global.korean %}</a>
                 {% else %}
-                <a href="/ko{{page.url}}">{% t global.korean %}</a>
+                <a href="/ko{{page.url}}" class="lang-switch">{% t global.korean %}</a>
                 {% endif %}
             </li>
         </div>

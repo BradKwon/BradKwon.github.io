@@ -2,8 +2,11 @@
 layout: post
 title:  "책 누워서 읽는 알고리즘 독서 후기"
 header-img: "blog/img/20180102/algorithm01.png"
-tags:   [Book, Review]
+tags:   [책, 책리뷰]
+category:   blog
 ---
+{% include block_lang_switch.html %}
+
 <p>
 이러이러한 알고리즘이 있고 배경은 이렇다..까지만 이해할 수 있었다. 이 책을 읽으면서, 그리고 해외취업을 위해 외국 회사들에 기술 인터뷰를
 보면서 느꼈던 건 절망감이었다. 그동안 나는 무얼 한걸까? 기술 인터뷰에서의 내 모습은 그냥 대학에 처음 들어와 첫번째 중간고사 시험을

@@ -2,8 +2,11 @@
 layout: post
 title:  "책 읽기 방법에 대한 나의 결론"
 header-img: "blog/img/20180102/book-reading01.jpg"
-tags:   [Book, Reading]
+tags:   [책, 읽기]
+category:   blog
 ---
+{% include block_lang_switch.html %}
+
 <p>
 나는 책을 읽을 때 주로 속으로 글을 읽으면서 읽는다. 속발음이라고 하는 것 같은데 속도가 무척 느리다. 그러다보니 책 한 권을 다 읽는데
 시간이 너무 오래 걸리고 흐름이 잘 끊겨서 스토리가 잘 생각이 안 나는 경우가 허다하다.

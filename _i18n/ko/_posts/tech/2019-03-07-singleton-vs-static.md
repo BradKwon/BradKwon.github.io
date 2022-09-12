@@ -2,7 +2,7 @@
 layout:     post
 title:      "싱글턴 패턴 VS Static 클래스 in C#"
 header-img: "img/tech-bg.jpg"
-tags:       [C#, Singleton, Static, Design Pattern]
+tags:       [C#, Singleton, Static, 디자인 패턴]
 category:   tech
 ---
 <p>

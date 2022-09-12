@@ -14,7 +14,7 @@
         <h3 class="section-heading text-primary" id="#{{ tag_name | slugize }}">{{ tag_name }}</h3>
         {% for post in site.tags[tag_name] %}
             <ul>
-                <li><a href="{{ post.url }}">{{ post.title }}</a></li>
+                <li><a href="{{site.baseurl}}{{ post.url }}">{{ post.title }}</a></li>
             </ul>
         {% endfor %}
     </div>
