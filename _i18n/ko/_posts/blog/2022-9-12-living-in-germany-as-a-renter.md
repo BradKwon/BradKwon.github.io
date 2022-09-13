@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "독일에서 세입자로 살기"
-header-img: "img/home-bg.jpg"
+header-img: "blog/img/20220912/wohnung.jpg"
 tags:   [독일, 집구하기, 외국생활, 해외정착]
 category:   blog
 ---
