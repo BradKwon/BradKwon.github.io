@@ -1,106 +1,212 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+
+
 <url>
-<loc>https://bradkwon.github.io/blog/2017/06/27/hector-book-review/</loc>
-<lastmod>2017-06-27T00:00:00+02:00</lastmod>
+  <loc>https://bradkwon.github.io/</loc>
+  <lastmod>2022-09-13T20:49:43+00:00</lastmod>
+  <priority>1.00</priority>
 </url>
 <url>
-<loc>https://bradkwon.github.io/blog/2017/11/12/new-adventure/</loc>
-<lastmod>2017-11-12T00:00:00+01:00</lastmod>
+  <loc>https://bradkwon.github.io/ko/</loc>
+  <lastmod>2022-09-13T20:49:43+00:00</lastmod>
+  <priority>0.80</priority>
 </url>
 <url>
-<loc>https://bradkwon.github.io/tech/2017/11/15/xamarin-setup-kr/</loc>
-<lastmod>2017-11-15T00:00:00+01:00</lastmod>
+  <loc>https://bradkwon.github.io/about/</loc>
+  <lastmod>2022-09-13T20:49:43+00:00</lastmod>
+  <priority>0.80</priority>
 </url>
 <url>
-<loc>https://bradkwon.github.io/tech/2017/11/15/xamarin-setup/</loc>
-<lastmod>2017-11-15T00:00:00+01:00</lastmod>
+  <loc>https://bradkwon.github.io/contact/</loc>
+  <lastmod>2022-09-13T20:49:43+00:00</lastmod>
+  <priority>0.80</priority>
 </url>
 <url>
-<loc>https://bradkwon.github.io/tech/2017/12/01/xamarin-code-sharing-kr/</loc>
-<lastmod>2017-12-01T00:00:00+01:00</lastmod>
+  <loc>https://bradkwon.github.io/tech/</loc>
+  <lastmod>2022-09-13T20:49:43+00:00</lastmod>
+  <priority>0.80</priority>
 </url>
 <url>
-<loc>https://bradkwon.github.io/tech/2017/12/01/xamarin-code-sharing/</loc>
-<lastmod>2017-12-01T00:00:00+01:00</lastmod>
+  <loc>https://bradkwon.github.io/blog/</loc>
+  <lastmod>2022-09-13T20:49:43+00:00</lastmod>
+  <priority>0.80</priority>
 </url>
 <url>
-<loc>https://bradkwon.github.io/tech/2017/12/04/xamarin-forms-intro-kr/</loc>
-<lastmod>2017-12-04T00:00:00+01:00</lastmod>
+  <loc>https://bradkwon.github.io/tags/</loc>
+  <lastmod>2022-09-13T20:49:43+00:00</lastmod>
+  <priority>0.80</priority>
 </url>
 <url>
-<loc>https://bradkwon.github.io/tech/2017/12/04/xamarin-forms-intro/</loc>
-<lastmod>2017-12-04T00:00:00+01:00</lastmod>
+  <loc>https://bradkwon.github.io/ko/about/</loc>
+  <lastmod>2022-09-13T20:49:43+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
-<loc>https://bradkwon.github.io/tech/2017/12/10/xaml-in-xamarin-kr/</loc>
-<lastmod>2017-12-10T00:00:00+01:00</lastmod>
+  <loc>https://bradkwon.github.io/ko/contact/</loc>
+  <lastmod>2022-09-13T20:49:43+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
-<loc>https://bradkwon.github.io/tech/2017/12/10/xaml-in-xamarin/</loc>
-<lastmod>2017-12-10T00:00:00+01:00</lastmod>
+  <loc>https://bradkwon.github.io/ko/tech/</loc>
+  <lastmod>2022-09-13T20:49:43+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
-<loc>https://bradkwon.github.io/tech/2017/12/15/layouts-in-xamarin-forms-kr/</loc>
-<lastmod>2017-12-15T00:00:00+01:00</lastmod>
+  <loc>https://bradkwon.github.io/ko/blog/</loc>
+  <lastmod>2022-09-13T20:49:43+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
-<loc>https://bradkwon.github.io/tech/2017/12/15/layouts-in-xamarin-forms/</loc>
-<lastmod>2017-12-15T00:00:00+01:00</lastmod>
+  <loc>https://bradkwon.github.io/ko/tags/</loc>
+  <lastmod>2022-09-13T20:49:43+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
-<loc>https://bradkwon.github.io/blog/2018/01/02/algorithm-book-review/</loc>
-<lastmod>2018-01-02T00:00:00+01:00</lastmod>
+  <loc>https://bradkwon.github.io/assets/BradKwonCV.docx</loc>
+  <lastmod>2022-09-13T20:49:36+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
-<loc>https://bradkwon.github.io/blog/2018/01/02/flipped-movie-review/</loc>
-<lastmod>2018-01-02T00:00:00+01:00</lastmod>
+  <loc>https://bradkwon.github.io/assets/BradKwonCV.pdf</loc>
+  <lastmod>2022-09-13T20:49:36+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
-<loc>https://bradkwon.github.io/blog/2018/01/02/hector-book-review/</loc>
-<lastmod>2018-01-02T00:00:00+01:00</lastmod>
+  <loc>https://bradkwon.github.io/ko/tech/index.html</loc>
+  <lastmod>2022-09-13T20:49:43+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
-<loc>https://bradkwon.github.io/blog/2018/01/02/reading-method/</loc>
-<lastmod>2018-01-02T00:00:00+01:00</lastmod>
+  <loc>https://bradkwon.github.io/tech/2019/03/07/singleton-vs-static/</loc>
+  <lastmod>2022-09-13T20:49:43+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
-<loc>https://bradkwon.github.io/tech/2019/03/07/singleton-vs-static-kr/</loc>
-<lastmod>2019-03-07T00:00:00+01:00</lastmod>
+  <loc>https://bradkwon.github.io/tech/2017/12/15/layouts-in-xamarin-forms/</loc>
+  <lastmod>2022-09-13T20:49:43+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
-<loc>https://bradkwon.github.io/tech/2019/03/07/singleton-vs-static/</loc>
-<lastmod>2019-03-07T00:00:00+01:00</lastmod>
+  <loc>https://bradkwon.github.io/tech/2017/12/10/xaml-in-xamarin/</loc>
+  <lastmod>2022-09-13T20:49:43+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
-<loc>https://bradkwon.github.io/about/</loc>
+  <loc>https://bradkwon.github.io/tech/2017/12/04/xamarin-forms-intro/</loc>
+  <lastmod>2022-09-13T20:49:43+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
-<loc>https://bradkwon.github.io/contact/</loc>
+  <loc>https://bradkwon.github.io/tech/2017/12/01/xamarin-code-sharing/</loc>
+  <lastmod>2022-09-13T20:49:43+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
-<loc>https://bradkwon.github.io/</loc>
+  <loc>https://bradkwon.github.io/tech/page/2/index.html</loc>
+  <lastmod>2022-09-13T20:49:43+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
-<loc>https://bradkwon.github.io/tags/</loc>
+  <loc>https://bradkwon.github.io/ko/blog/index.html</loc>
+  <lastmod>2022-09-13T20:49:43+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
-<loc>https://bradkwon.github.io/blog/</loc>
+  <loc>https://bradkwon.github.io/tech/2017/11/15/xamarin-setup/</loc>
+  <lastmod>2022-09-13T20:49:43+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
-<loc>https://bradkwon.github.io/blog/page/2/</loc>
+  <loc>https://bradkwon.github.io/tech/index.html</loc>
+  <lastmod>2022-09-13T20:49:43+00:00</lastmod>
+  <priority>0.51</priority>
 </url>
 <url>
-<loc>https://bradkwon.github.io/tech/</loc>
+  <loc>https://bradkwon.github.io/ko/tech/2019/03/07/singleton-vs-static/</loc>
+  <lastmod>2022-09-13T20:49:43+00:00</lastmod>
+  <priority>0.51</priority>
 </url>
 <url>
-<loc>https://bradkwon.github.io/tech/page/2/</loc>
+  <loc>https://bradkwon.github.io/ko/tech/2017/12/15/layouts-in-xamarin-forms/</loc>
+  <lastmod>2022-09-13T20:49:43+00:00</lastmod>
+  <priority>0.51</priority>
 </url>
 <url>
-<loc>https://bradkwon.github.io/tech/page/3/</loc>
+  <loc>https://bradkwon.github.io/ko/tech/2017/12/10/xaml-in-xamarin/</loc>
+  <lastmod>2022-09-13T20:49:43+00:00</lastmod>
+  <priority>0.51</priority>
 </url>
 <url>
-<loc>https://bradkwon.github.io/assets/BradKwonCV.pdf</loc>
-<lastmod>2021-05-11T21:34:30+02:00</lastmod>
+  <loc>https://bradkwon.github.io/ko/tech/2017/12/04/xamarin-forms-intro/</loc>
+  <lastmod>2022-09-13T20:49:43+00:00</lastmod>
+  <priority>0.51</priority>
 </url>
+<url>
+  <loc>https://bradkwon.github.io/ko/tech/2017/12/01/xamarin-code-sharing/</loc>
+  <lastmod>2022-09-13T20:49:43+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://bradkwon.github.io/ko/tech/page/2/index.html</loc>
+  <lastmod>2022-09-13T20:49:43+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://bradkwon.github.io/blog/index.html</loc>
+  <lastmod>2022-09-13T20:49:43+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://bradkwon.github.io/ko/blog/2022/09/12/living-in-germany-as-a-renter/</loc>
+  <lastmod>2022-09-13T20:49:43+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://bradkwon.github.io/ko/blog/2018/01/02/reading-method/</loc>
+  <lastmod>2022-09-13T20:49:43+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://bradkwon.github.io/ko/blog/2018/01/02/hector-book-review/</loc>
+  <lastmod>2022-09-13T20:49:43+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://bradkwon.github.io/ko/blog/2018/01/02/flipped-movie-review/</loc>
+  <lastmod>2022-09-13T20:49:43+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://bradkwon.github.io/ko/blog/2018/01/02/algorithm-book-review/</loc>
+  <lastmod>2022-09-13T20:49:43+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://bradkwon.github.io/ko/blog/page/2/index.html</loc>
+  <lastmod>2022-09-13T20:49:43+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://bradkwon.github.io/ko/blog/2017/06/27/hector-book-review/</loc>
+  <lastmod>2022-09-13T20:49:43+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://bradkwon.github.io/ko/blog/2017/11/12/new-adventure/</loc>
+  <lastmod>2022-09-13T20:49:43+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://bradkwon.github.io/ko/tech/2017/11/15/xamarin-setup/</loc>
+  <lastmod>2022-09-13T20:49:43+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+
+
 </urlset>
