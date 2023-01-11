@@ -26,7 +26,7 @@ So, google map library is loosely coupled to the main app so it can be easily mo
 
 Yes, I also think it is a best practice and at least it is a good way to plug in 3rd-party libraries. I needed this kind of quote to back me up as he is a renowned software engineer a.k.a Uncle Bob in the software world.
 
-I also noticed that this is a decorator-ish pattern. The decorator pattern is one of the well-known design patterns from the Gang of Four. When I learned it back in university, it was too abstract so I almost forgot it until now. (Yes, I am not a good software engineer unfortunately)
+I also noticed that this is the decorator pattern, which is one of the well-known design patterns from the Gang of Four. This pattern is quite often used when we do dependency injection stuff.
 
 However, it is always not good to have black and white thinking. We have to choose a proper solution depending on our situations. Luckily, I was able to bring one good article from the Very good layered architecture in Flutter written by Very Good Ventures (VGV). If you go to the subtitle **Use the right amount of abstraction** in the article, you will see that there are two choices we can take. In most business cases, we have to wrap it though.
 
