@@ -30,7 +30,7 @@
                     <dt>힐리월드 - 독일 베를린</dt>
                     <dd>
                         <a href="https://www.healy.shop/" target="_blank">
-                            <img src="https://media-exp1.licdn.com/dms/image/C560BAQF_pPqbKcaCcw/company-logo_100_100/0/1624893796882?e=1671062400&v=beta&t=EpSqaA91pwqVuEDfRlDDxlc74PU748WYB0kgQySK3B4" alt="힐리월드" style="margin: 20px;">
+                            <img src="https://www.healyprintworld.shop/media/94/03/7f/1653290172/logo_healy_rgb.png" alt="힐리월드" style="margin: 20px;height: 70px;">
                         </a>
                     </dd>
                     <br />
