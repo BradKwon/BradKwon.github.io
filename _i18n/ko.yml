@@ -8,7 +8,7 @@ descriptions:
 
 titles:
   index: 브래드 권
-  about: 자기소개
+  about: 경력
   contact: 연락
   tags: 태그
   tech: 기술 블로그
@@ -16,7 +16,7 @@ titles:
 
 menus:
   home: 홈
-  about: 자기소개
+  about: 경력
   contact: 연락
   tech: 기술
   blog: 블로그

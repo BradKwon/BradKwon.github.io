@@ -6,10 +6,8 @@ copyright_name: Brad Kwon
 description: "Brad Kwon's personal website. The introduction, the portfolio and blogs about programming and life of Brad Hyeongu Kwon."
 baseurl: ""
 url: "https://BradKwon.github.io"
-#twitter_username: SBootstrap
 linkedin_username: BradKwon
 github_username:  BradKwon
-facebook_username:  hyeongu.kwon
 email_username:  junya815@gmail.com
 
 # Google Analytics

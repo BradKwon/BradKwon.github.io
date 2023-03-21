@@ -8,7 +8,7 @@ descriptions:
 
 titles:
   index: Brad Kwon
-  about: Who am I
+  about: Career
   contact: Contact
   tags: Tags
   tech: Tech Blog
@@ -16,7 +16,7 @@ titles:
 
 menus:
   home: Home
-  about: Who Am I
+  about: Career
   contact: Contact
   tech: Tech
   blog: Blog
