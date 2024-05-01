@@ -31,7 +31,7 @@
         <div class="panel-heading" role="tab" id="heading14">
             <h4 class="panel-title">
                 <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse14" aria-expanded="false" aria-controls="collapse14">
-                    Flutter 개발자 <small class="text-muted">2021년 12월 ~ 현재</small>
+                    팀 리드 Flutter 개발자 <small class="text-muted">2021년 12월 ~ 현재</small>
                 </a>
             </h4>
         </div>
@@ -46,7 +46,7 @@
                     </dd>
                     <br />
                     <dt>스킬:</dt>
-                    <dd>Flutter, Dart, Gitlab, Bluetooth Low Energy, Bitrise, Firebase</dd>
+                    <dd>Flutter, Dart, Gitlab, Bluetooth Low Energy, Bitrise, Firebase, Tech Lead</dd>
                     <br />
                     <dd>잘 일하고 있습니다. :)</dd>
                 </dl>
@@ -743,6 +743,68 @@
 ---
 
 <div class="panel-group" id="accordion-projects" role="tablist" aria-multiselectable="true">
+    <!-- Item 2 -->
+    <div class="panel panel-default">
+        <div class="panel-heading" role="tab" id="projects-heading2">
+            <h4 class="panel-title">
+                <a role="button" data-toggle="collapse" data-parent="#accordion-projects" href="#projects-collapse2" aria-expanded="false" aria-controls="projects-collapse2">
+                        돼지 저금통 EX 모바일 앱 <small class="text-muted">2022년 1월 ~ 2024년 4월</small>
+                </a>
+            </h4>
+        </div>
+        <div id="projects-collapse2" class="panel-collapse collapse" role="tabpanel" aria-labelledby="projects-heading2">
+            <div class="panel-body" style="font-size:0.8em;">
+                <dl>
+                    <dt>스킬:</dt>
+                    <dd>Flutter, Dart, Bloc, AdMob, GitHub, Firebase, CodeMagic</dd>
+                    <br/>
+                    <dt>상세설명:</dt>
+                    <dd>
+                        <p style="margin-top:0px;">
+                            모바일 앱 개발자로 일하면서 직접 만든 앱을 하나 만들고 싶어서 작은 도구 앱을 하나 만들었습니다.
+                            언젠가 아이들이 자기들 한국 용돈이 유로로 얼마냐고 자주 물어봤었는데 그럴때마다 환율을 조회해서 애들한테 알려줬었습니다. 그러다가 문득, 이걸 자동화해서 아이들이 직접 변환된 금액을 확인할 수 있으면 좋겠다고 생각했습니다. 그러면서 아이들이 환율때문에 금액이 매일 바뀐다는 걸 알고 조금이나마 개념을 이해할 수 있으면 좋겠다고 생각했고 여기서 아이디어를 얻었습니다.                            
+                        </p>
+                        <p>
+                            이 앱에서는 <a href="https://www.frankfurter.app/" target="blank">Frankfurter 서비스</a> 라는 유럽 중앙은행에서 환율 정보를 가져오는 무료 서비스를 사용했습니다.
+                            그리고, 이를 사용한 <a href="https://pub.dev/packages/frankfurter" target="blank">플러터 패키지</a>를 사용했습니다.
+                            환율은 실시간이 아니며 유럽 중앙은행의 배포일자와 동일하게 휴일을 제외한 매일 CET 오후 4시에 업데이트됩니다.
+                        </p>
+                        <p>
+                            플러터 상태 관리 라이브러리로는 잘 구조화되어있고 엄격해서 제가 선호하는 Bloc (Business logic component) 을 사용하였습니다.
+                        </p>
+                        <p>
+                            파이어베이스의 클라우드 메시징, 리모트 설정, 크래쉬틱스 같은 일부 기능들을 사용하였습니다.
+                        </p>
+                        <p>
+                            또한, 이 앱은 34 언어를 지원하고 있습니다. 제가 모든 언어를 말할 수 있다면 좋겠지만 그렇지 않아서 구글 번역기와 디플을 사용하는 <a href="https://pub.dev/packages/auto_translator" target="blank">auto_translator</a> 플러터 패키지를 사용하여 쉽게 번역을 할 수 있었습니다.
+                        </p>
+                        <p>
+                            이 앱을 완성했을 때, 앱 개발 비용도 좀 커버할 수 있으면 좋겠다고 생각해서 구글 애드몹을 사용하여 광고도 추가했습니다. 이 비용을 커버할 수 있을지는 모르겠지만 그렇게 되기를 바랍니다.
+                        </p>
+                        <p>
+                            이 앱을 개발 및 배포하면서 크로스 플랫폼 모바일 앱 개발의 처음부터 마지막까지를 혼자 힘으로 다 경험할 수 있어서 좋았습니다. 물론, 모바일 개발자로 일하면서 거의 대부분의 부분은 다 경험해 봤지만 일부는 권한 문제때문에 경험할 수 없었는데 마지막 퍼즐이 완성된 것 같아 뿌듯합니다.
+                        </p>
+                    </dd>
+                    <br/>
+                    <dt>App Links:</dt>
+                    <dd>
+                        <p>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Android&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;iOS
+                        </p>
+                        <p>
+                            <a href="https://play.google.com/store/apps/details?id=com.ninebear.piggybank" target="_blank">
+                                <img src="https://play-lh.googleusercontent.com/2RkVVkZOa4YjoFlBHMPwmTYaC_eZVquZX3QFW2BvkwcTCEaMbiEDV1eTuXgX97dHUy8=w480-h960-rw" alt="Android App" style="margin-bottom: 10px; margin-right: 20px; display: inline-block; height: 100px;">
+                            </a>
+                            <a href="https://apps.apple.com/us/app/piggybank-ex/id6482575990" target="_blank">
+                                <img src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/93/c7/43/93c7436f-7584-667c-4a48-bf8e30746660/AppIcon-0-0-1x_U007emarketing-0-7-0-0-85-220.png/460x0w.webp" alt="iOS App" style="margin-bottom: 10px; display: inline-block; height: 100px;">
+                            </a>
+                        </p>
+                    </dd>
+                </dl>
+            </div>
+        </div>
+    </div>
+    <!-- Item 1 -->
     <div class="panel panel-default">
         <div class="panel-heading" role="tab" id="projects-heading1">
             <h4 class="panel-title">

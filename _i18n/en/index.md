@@ -29,7 +29,7 @@ When it comes to the database, I had mainly used MS SQL Server and Oracle, and R
         <div class="panel-heading" role="tab" id="heading14">
             <h4 class="panel-title">
                 <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse14" aria-expanded="false" aria-controls="collapse14">
-                    Flutter Developer <small class="text-muted">Dec. 2021 ~ Present</small>
+                    Team Lead Flutter Developer <small class="text-muted">Dec. 2021 ~ Present</small>
                 </a>
             </h4>
         </div>
@@ -44,7 +44,7 @@ When it comes to the database, I had mainly used MS SQL Server and Oracle, and R
                     </dd>
                     <br />
                     <dt>Skills:</dt>
-                    <dd>Flutter, Dart, Gitlab, Bluetooth Low Energy, Bitrise, Firebase</dd>
+                    <dd>Flutter, Dart, Gitlab, Bluetooth Low Energy, Bitrise, Firebase, Tech Lead</dd>
                     <br />
                     <dd>I'm having fun here :)</dd>
                 </dl>
@@ -817,6 +817,73 @@ When it comes to the database, I had mainly used MS SQL Server and Oracle, and R
 ---
 
 <div class="panel-group" id="accordion-projects" role="tablist" aria-multiselectable="true">
+    <!-- Item 2 -->
+    <div class="panel panel-default">
+        <div class="panel-heading" role="tab" id="projects-heading2">
+            <h4 class="panel-title">
+                <a role="button" data-toggle="collapse" data-parent="#accordion-projects" href="#projects-collapse2" aria-expanded="false" aria-controls="projects-collapse2">
+                        PiggyBank EX mobile app <small class="text-muted">Jan. 2022 ~ Apr. 2024</small>
+                </a>
+            </h4>
+        </div>
+        <div id="projects-collapse2" class="panel-collapse collapse" role="tabpanel" aria-labelledby="projects-heading2">
+            <div class="panel-body" style="font-size:0.8em;">
+                <dl>
+                    <dt>Skills:</dt>
+                    <dd>Flutter, Dart, Bloc, AdMob, GitHub, Firebase, CodeMagic</dd>
+                    <br/>
+                    <dt>Details:</dt>
+                    <dd>
+                        <p style="margin-top:0px;">
+                            Since I have worked as a mobile developer, I wanted to develop my own mobile app and here my small tool app comes.
+                            I got the idea of this tool by my kid because they often asked me how much their Korean pocket money in Euro is.
+                            Whenever I answer it, I needed to look up the converted amount in the exchange rate calculation website.
+                            I thought it would be great if they can check it by themselves and also thought it would be good for them by seeing that
+                            their converted amount changes due to the exchange rate changes. Then they can at least understand a bit of currency differences.
+                        </p>
+                        <p>
+                            The app gets the exchange rates from the <a href="https://www.frankfurter.app/" target="blank">Frankfurter service</a>, which gets it from the European Central Bank free of charge. And its <a href="https://pub.dev/packages/frankfurter" target="blank">Flutter package</a>.
+                            The exchange rate is not real-time. It is updated around CET 4PM every working day aligned with the European Central Bank publish schedule.
+                        </p>
+                        <p>
+                            I used Bloc (Business logic component) for the Flutter state management library because it is strict and has straightforward well-organized structure.
+                        </p>
+                        <p>
+                            The app uses some Firebase products such as Firebase Cloud Messaging, Remote Config, and Crashlytics as the Flutter and the Firebase set is quite common.
+                        </p>
+                        <p>
+                            This app supports 34 languages. It would be fantastic if I can speak all those languages however, I can't so I translated all text with
+                            Google Translator and Deepl. There was a really convenient package, <a href="https://pub.dev/packages/auto_translator" target="blank">auto_translator</a> that enalbes the automation of this process.
+                        </p>
+                        <p>
+                            When I completed the app, I wanted to cover my cost of app release and development, which is all developers' dream I guess. 
+                            As you know, it is not free to release Android and iOS app to their app stores. Therefore, I added some ads using Google AdMob.
+                            Hopefully, I can cover my Google and Apple registration fees at least.
+                        </p>
+                        <p>
+                            With this app release, I was able to experience the cross-platform mobile app development lifecycle from scratch to the end of jouney, which is to release it to the Google and Apple app stores on my own. Of course, I already know most of them from my work experiences however, there are some missing puzzles that I couldn't do due to the permissions.
+                        </p>
+                    </dd>
+                    <br/>
+                    <dt>App Links:</dt>
+                    <dd>
+                        <p>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Android&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;iOS
+                        </p>
+                        <p>
+                            <a href="https://play.google.com/store/apps/details?id=com.ninebear.piggybank" target="_blank">
+                                <img src="https://play-lh.googleusercontent.com/2RkVVkZOa4YjoFlBHMPwmTYaC_eZVquZX3QFW2BvkwcTCEaMbiEDV1eTuXgX97dHUy8=w480-h960-rw" alt="Android App" style="margin-bottom: 10px; margin-right: 20px; display: inline-block; height: 100px;">
+                            </a>
+                            <a href="https://apps.apple.com/us/app/piggybank-ex/id6482575990" target="_blank">
+                                <img src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/93/c7/43/93c7436f-7584-667c-4a48-bf8e30746660/AppIcon-0-0-1x_U007emarketing-0-7-0-0-85-220.png/460x0w.webp" alt="iOS App" style="margin-bottom: 10px; display: inline-block; height: 100px;">
+                            </a>
+                        </p>
+                    </dd>
+                </dl>
+            </div>
+        </div>
+    </div>
+    <!-- Item 1 -->
     <div class="panel panel-default">
         <div class="panel-heading" role="tab" id="projects-heading1">
             <h4 class="panel-title">
