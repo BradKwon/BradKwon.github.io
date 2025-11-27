@@ -1,10 +1,10 @@
 # I am a software developer <small class="text-muted">who loves adventures.</small>
 
-Since I have received bachelor's degree in software engineering, I have worked as a software developer continuously. I started my career in Los Angeles, California, USA as an intern and have worked mostly in Seoul, South Korea but this time in Berlin, Germany. I was curious about what is it like to use other technologies, except for Visual Basic and .Net that I used in my first job. Since then, my adventure has begun.
+Since earning my bachelor’s degree in Software Engineering, I’ve been working as a software developer in different places and industries. I started my career in Los Angeles, then worked in Seoul, and eventually moved to Berlin, which is known as a big IT hub in Europe. Working in these different environments made me more curious about various technologies and how they are used. That curiosity naturally led me to try many areas, from desktop and web development to mobile.
 
-I have mainly used .Net stacks; but, also used Java stacks such as Spring MVC, Struts, Java web service and JSP. I cover from desktop application to web and mobile development because I started my career with desktop applications and have moved to web technologies. Furthermore, I have dedicated into Xamarin Android development in recent months. 
+Among all the technologies I experienced, mobile development—especially cross-platform—became the most interesting part for me. Flutter in particular felt efficient and enjoyable to work with, and I like seeing how it keeps improving and expanding to more platforms.
 
-When it comes to databases, I have often used MS SQL Server, although I also used other databases such as Realm, Oracle and Sybase. Therefore, I do believe that I have deep knowledge of utilizing MS SQL Server A-Z.
+When it comes to databases, I mainly used MS-SQL and Oracle before because they were common in enterprise projects. After I moved to mobile development, I started using more mobile-friendly options like Firestore, SQLite, Hive, and Realm. Even though NoSQL is very popular nowadays, I still think SQL’s structured approach is strong and works well in many situations.
 
 If you want to know more of my career, please see my **resume/CV ([<span style="color: blue;">Word</span>](/assets/BradKwonCV.docx)/[<span style="color: red;">PDF</span>](/assets/BradKwonCV.pdf))**
 

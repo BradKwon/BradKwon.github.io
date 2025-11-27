@@ -1,25 +1,19 @@
 ## Hi there!
 
-I am a software engineer with passion to learn about modern technologies.
-It is fun to discover what I can do with those cool things out there and to become an expert of them.
-As a software engineer, I believe that it is my destiny to learn new things and make them up and running. 
+I am a software engineer who enjoys learning modern technologies. It is interesting for me to explore what I can build with new tools and to grow my expertise step by step. As a developer, I believe it is natural for me to keep learning new things and make them work in real projects.
 
-I have get-up-and-go attitude and also very thoughtful at the same time.
-I know how to get things done and want my work running always.
+I have a get-up-and-go attitude, but I am also careful and thoughtful when I need to be. I focus on getting things done and making sure what I build keeps running well.
 
-I am also a person who loves trips, music, learning, and smiling. I enjoy seeing myself to get more improved today than yesterday. So everyday is a series of intriguing adventures.
+Outside of work, I enjoy traveling, music, learning new things, and simply smiling. I like seeing myself become a little better than yesterday, so every day feels like another small but intriguing adventure.
 
 <br/><br/>
 # Career
 
-Since I have received bachelor's degree in software engineering, I have worked as a software engineer. I started my career in Los Angeles, California, USA as an intern and have worked in Seoul, South Korea and Berlin, Germany since then.
+Since earning my bachelor’s degree in Software Engineering, I’ve been working as a software developer in different places and industries. I started my career in Los Angeles, then worked in Seoul, and eventually moved to Berlin, which is known as a big IT hub in Europe. Working in these different environments made me more curious about various technologies and how they are used. That curiosity naturally led me to try many areas, from desktop and web development to mobile.
 
-I was always curious about what is it like to use other technologies so I grabbed any chances if I can learn something new and made it up and running.
+Among all the technologies I experienced, mobile development—especially cross-platform—became the most interesting part for me. Flutter in particular felt efficient and enjoyable to work with, and I like seeing how it keeps improving and expanding to more platforms.
 
-Although I started from Visual Basic and .Net in desktop app environment, I spontaneously moved to web and mobile. Over the course of that, I used Java, Javascript. Dart and 
-Typescript are the ones I am using as I am in the Flutter world now.
-
-When it comes to the database, I had mainly used MS SQL Server and Oracle, and Realm, SQLite, Firestore in mobile development.
+When it comes to databases, I mainly used MS-SQL and Oracle before because they were common in enterprise projects. After I moved to mobile development, I started using more mobile-friendly options like Firestore, SQLite, Hive, and Realm. Even though NoSQL is very popular nowadays, I still think SQL’s structured approach is strong and works well in many situations.
 
 ---
 
@@ -44,7 +38,7 @@ When it comes to the database, I had mainly used MS SQL Server and Oracle, and R
                     </dd>
                     <br />
                     <dt>Skills:</dt>
-                    <dd>Flutter, Dart, Gitlab, Bluetooth Low Energy, Bitrise, Firebase, Tech Lead</dd>
+                    <dd>Flutter, Dart, GitLab, Firebase, Bluetooth, Bitrise, Typescript, Phrase, SQLite, Jira, Confluence</dd>
                     <br />
                     <dd>I'm having fun here :)</dd>
                 </dl>
