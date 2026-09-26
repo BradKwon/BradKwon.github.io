@@ -1,30 +1,55 @@
-# I am a software developer <small class="text-muted">who loves adventures.</small>
+# Software Engineer
 
-Since earning my bachelor’s degree in Software Engineering, I’ve been working as a software developer in different places and industries. I started my career in Los Angeles, then worked in Seoul, and eventually moved to Berlin, which is known as a big IT hub in Europe. Working in these different environments made me more curious about various technologies and how they are used. That curiosity naturally led me to try many areas, from desktop and web development to mobile.
+<small class="text-muted">Mobile & Enterprise Software
+Development</small>
 
-Among all the technologies I experienced, mobile development—especially cross-platform—became the most interesting part for me. Flutter in particular felt efficient and enjoyable to work with, and I like seeing how it keeps improving and expanding to more platforms.
+I am a software engineer and technical lead with 10+ years of experience
+across mobile and enterprise software development. My recent focus has
+been cross-platform mobile development with Flutter, following earlier
+experience with Xamarin and a strong foundation in C#/.NET and
+enterprise software.
 
-When it comes to databases, I mainly used MS-SQL and Oracle before because they were common in enterprise projects. After I moved to mobile development, I started using more mobile-friendly options like Firestore, SQLite, Hive, and Realm. Even though NoSQL is very popular nowadays, I still think SQL’s structured approach is strong and works well in many situations.
+I currently lead mobile application development, with responsibility for
+technical direction, architecture, CI/CD, engineering quality, and
+reliable product delivery. I enjoy staying hands-on while working
+closely with product managers, QA, backend engineers, and other
+stakeholders to turn product requirements into maintainable software.
 
-If you want to know more of my career, please see my **resume/CV ([<span style="color: blue;">Word</span>](/assets/BradKwonCV.docx)/[<span style="color: red;">PDF</span>](/assets/BradKwonCV.pdf))**
+Before moving into mobile development, I worked extensively on
+enterprise systems across retail, finance, construction, aviation, and
+public-sector projects. That background includes ASP.NET, C#/.NET,
+Microsoft SQL Server, Oracle, Java, desktop applications, web
+applications, and database-driven business systems.
 
-If you think it is not enough, then you can see my experiences in more detailed in my portfolio below.
+Across these roles, I have worked on products ranging from large
+enterprise systems to mobile applications used by millions of users,
+including BLE-connected products and regulated digital health
+applications.
+
+<style>
+.cv-link { color: royalblue; }
+.cv-link:hover { color: mediumblue; }
+</style>
+
+For a concise overview of my experience, please see my **<a href="/assets/BradKwonCV.pdf" class="cv-link">Resume / CV</a>**.
+
+For a more detailed project history, see my portfolio below.
 
 ## Career
 
----
+------------------------------------------------------------------------
 
 <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
-    <!-- item 14 -->
+    <!-- item 15 -->
     <div class="panel panel-default">
-        <div class="panel-heading" role="tab" id="heading14">
+        <div class="panel-heading" role="tab" id="heading15">
             <h4 class="panel-title">
-                <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse14" aria-expanded="false" aria-controls="collapse14">
-                    Flutter Developer <small class="text-muted">Dec. 2021 ~ Present</small>
+                <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse15" aria-expanded="false" aria-controls="collapse15">
+                    Team Lead Flutter Engineer <small class="text-muted">Oct. 2023 ~ Present</small>
                 </a>
             </h4>
         </div>
-        <div id="collapse14" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading14">
+        <div id="collapse15" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading15">
             <div class="panel-body" style="font-size:0.8em;">
                 <dl>
                     <dt>Healy World GmbH - Berlin, Germany</dt>
@@ -33,11 +58,45 @@ If you think it is not enough, then you can see my experiences in more detailed 
                             <img src="https://www.healyprintworld.shop/media/94/03/7f/1653290172/logo_healy_rgb.png" alt="Healy" style="margin: 20px; height: 70px;">
                         </a>
                     </dd>
-                    <br />
                     <dt>Skills:</dt>
-                    <dd>Flutter, Dart, Gitlab, Bluetooth Low Energy, Bitrise, Firebase</dd>
+                    <dd>Flutter, Dart, Mobile Development, CI/CD, Bluetooth Low Energy</dd>
                     <br />
-                    <dd>I'm having fun here :)</dd>
+                    <dt>Responsibilities:</dt>
+                    <dd>
+                        - Leading mobile application development for iOS and Android.
+                        <br />
+                        - Responsible for technical direction, engineering quality, and product delivery.
+                        <br />
+                        - Collaborating with product, QA, backend, and other engineering teams.
+                    </dd>
+                </dl>
+            </div>
+        </div>
+    </div>
+    <!-- item 14 -->
+    <div class="panel panel-default">
+        <div class="panel-heading" role="tab" id="heading14">
+            <h4 class="panel-title">
+                <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse14" aria-expanded="false" aria-controls="collapse14">
+                    Senior Flutter Engineer <small class="text-muted">Dec. 2021 ~ Sep. 2023</small>
+                </a>
+            </h4>
+        </div>
+        <div id="collapse14" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading14">
+            <div class="panel-body" style="font-size:0.8em;">
+                <dl>
+                    <dt>Healy World GmbH - Berlin, Germany</dt>
+                    <dt>Skills:</dt>
+                    <dd>Flutter, Dart, Mobile Development, Bluetooth Low Energy</dd>
+                    <br />
+                    <dt>Responsibilities:</dt>
+                    <dd>
+                        - Developed and maintained production Flutter applications for iOS and Android.
+                        <br />
+                        - Worked on mobile integrations for connected wearable products.
+                        <br />
+                        - Collaborated with cross-functional teams to deliver reliable mobile experiences.
+                    </dd>
                 </dl>
             </div>
         </div>
@@ -54,7 +113,7 @@ If you think it is not enough, then you can see my experiences in more detailed 
         <div id="collapse13" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading13">
             <div class="panel-body" style="font-size:0.8em;">
                 <dl>
-                    <dt>Neuronation - Berlin, Germany</dt>
+                    <dt>NeuroNation - Berlin, Germany</dt>
                     <dd>
                         <a href="https://www.neuronation.com/" target="_blank" title="Go to their website.">
                             <img src="https://cms.cdn.neuronation.com/assets/opxp/logo.svg" alt="Neuronation" style="margin: 20px;">
@@ -124,7 +183,7 @@ If you think it is not enough, then you can see my experiences in more detailed 
                     </dd>
                     <br />
                     <dt>Skills:</dt>
-                    <dd>Net 4.5+, C#, Xamarin, Android, Realm, Mapbox, Git, GitFlow, GitKraken</dd>
+                    <dd>.NET Framework 4.5+, C#, Xamarin, Android, Realm, Mapbox, Git, GitFlow, GitKraken</dd>
                     <br />
                     <dt>In charge of:</dt>
                     <dd>
@@ -165,7 +224,7 @@ If you think it is not enough, then you can see my experiences in more detailed 
                         </a>
                     </dd>
                     <dt>Skills:</dt>
-                    <dd>Net 4.5+, C#, Dapper, ASP.Net MVC, ASP.Net WebAPI, WinformMVP, WCF, jQuery, Ajax, Json, Bootstrap, VB, Crystal Report, MS Sql Server</dd>
+                    <dd>.NET Framework 4.5+, C#, Dapper, ASP.NET MVC, ASP.NET Web API, WinForms (MVP), WCF, jQuery, AJAX, JSON, Bootstrap, VB, Crystal Reports, Microsoft SQL Server</dd>
                     <br/>
                     <dt>In charge of:</dt>
                     <dd>
@@ -805,7 +864,7 @@ If you think it is not enough, then you can see my experiences in more detailed 
 
 ## Personal projects
 
----
+------------------------------------------------------------------------
 
 <div class="panel-group" id="accordion-projects" role="tablist" aria-multiselectable="true">
     <div class="panel panel-default">

@@ -1,26 +1,81 @@
-# <small class="text-muted">모험을 즐기는</small> 소프트웨어 개발자
+# 소프트웨어 개발자
 
-소프트웨어공학 학사 학위를 받은 이후로, 저는 여러 나라와 다양한 산업에서 소프트웨어 개발자로 일해 왔습니다. 처음에는 미국 LA에서 커리어를 시작했고, 이후 한국 서울에서 일했으며, 지금은 유럽의 주요 IT 허브 중 하나인 베를린에서 일하고 있습니다. 이렇게 다른 환경에서 일해 오면서, 기술들이 어떻게 사용되고 어떤 방식으로 산업에 적용되는지에 대해 더 많은 호기심을 갖게 되었고, 이런 호기심 덕분에 데스크톱, 웹, 그리고 지금의 모바일까지 여러 분야를 자연스럽게 경험하게 됐습니다.
+<small class="text-muted">모바일 & 엔터프라이즈 소프트웨어 개발</small>
 
-여러 기술들을 다뤄보는 과정에서, 특히 모바일 개발, 그 중에서도 크로스플랫폼 개발이 가장 흥미롭게 느껴졌습니다. Flutter는 효율적이고 사용하기 즐거운 기술이었고, 계속해서 발전하고 더 많은 플랫폼으로 확장되는 모습을 보는 것이 재미있습니다.
+모바일 및 엔터프라이즈 소프트웨어 개발 분야에서 10년 이상의 경력을 가진
+소프트웨어 개발자이자 테크니컬 리드입니다. 최근에는 Flutter를 활용한
+크로스플랫폼 모바일 개발에 집중하고 있으며, 이전에는 Xamarin을 사용했고
+C#/.NET 및 엔터프라이즈 소프트웨어 개발 분야에서도 오랜 경험을
+쌓았습니다.
 
-데이터베이스의 경우 예전에는 기업용 시스템에서 흔하게 쓰이던 MS-SQL이나 Oracle을 주로 사용했지만, 모바일 개발을 시작한 이후로는 Firestore, SQLite, Hive, Realm 같은 모바일 친화적인 데이터베이스를 더 많이 사용하게 되었습니다. 요즘은 NoSQL이 많이 사용되지만, 저는 여전히 SQL의 구조적인 접근 방식이 강력하고 많은 상황에서 효율적이라고 생각합니다.
+현재 모바일 애플리케이션 개발을 리드하며 기술 방향, 아키텍처, CI/CD,
+엔지니어링 품질 및 안정적인 제품 개발을 담당하고 있습니다. 직접 개발에도
+계속 참여하면서 제품 매니저, QA, 백엔드 엔지니어 및 기타 이해관계자들과
+긴밀하게 협업하여 제품 요구사항을 유지보수하기 좋은 소프트웨어로
+구현하는 것을 중요하게 생각합니다.
 
-제 경력에 대해 더 알고 싶으시면 아래 제 링크드인 프로필이나 여기 제 이력서를 참고해 주세요. **([<span style="color: blue;">Word</span>](/assets/BradKwonCV.docx)/[<span style="color: red;">PDF</span>](/assets/BradKwonCV.pdf))**
+모바일 개발로 전환하기 전에는 리테일, 금융, 건설, 항공 및 공공 분야의
+다양한 엔터프라이즈 시스템을 개발했습니다. ASP.NET, C#/.NET, Microsoft
+SQL Server, Oracle, Java를 비롯해 데스크톱 애플리케이션, 웹 애플리케이션
+및 데이터베이스 기반 업무 시스템을 폭넓게 경험했습니다.
 
-정보가 부족하시다면 아래 제 포트폴리오도 참고해 주세요.
+이러한 경력을 통해 대규모 엔터프라이즈 시스템부터 수백만 명이 사용하는
+모바일 애플리케이션까지 다양한 제품을 개발해 왔으며, BLE 연동 제품과
+규제 대상 디지털 헬스 애플리케이션 개발 경험도 가지고 있습니다.
+
+<style>
+.cv-link { color: royalblue; }
+.cv-link:hover { color: mediumblue; }
+</style>
+
+제 경력을 간략하게 확인하려면 <a href="/assets/BradKwonCV.pdf" class="cv-link">Resume/CV</a> 를 참고해 주세요.
+
+보다 자세한 프로젝트 경력은 아래 포트폴리오에서 확인할 수 있습니다.
 
 ## 경력
 
----
+------------------------------------------------------------------------
 
 <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+    <!-- item 15 -->
+    <div class="panel panel-default">
+        <div class="panel-heading" role="tab" id="heading15">
+            <h4 class="panel-title">
+                <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse15" aria-expanded="false" aria-controls="collapse15">
+                    팀 리드 Flutter 엔지니어 <small class="text-muted">2023년 10월 ~ 현재</small>
+                </a>
+            </h4>
+        </div>
+        <div id="collapse15" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading15">
+            <div class="panel-body" style="font-size:0.8em;">
+                <dl>
+                    <dt>힐리월드 - 독일 베를린</dt>
+                    <dd>
+                        <a href="https://www.healy.shop/" target="_blank">
+                            <img src="https://www.healyprintworld.shop/media/94/03/7f/1653290172/logo_healy_rgb.png" alt="힐리월드" style="margin: 20px; height: 70px;">
+                        </a>
+                    </dd>
+                    <dt>스킬:</dt>
+                    <dd>Flutter, Dart, Mobile Development, CI/CD, Bluetooth Low Energy</dd>
+                    <br />
+                    <dt>담당:</dt>
+                    <dd>
+                        - iOS 및 Android 모바일 애플리케이션 개발 리드.
+                        <br />
+                        - 기술 방향, 엔지니어링 품질 및 제품 개발 담당.
+                        <br />
+                        - 제품, QA, 백엔드 및 기타 엔지니어링 팀과 협업.
+                    </dd>
+                </dl>
+            </div>
+        </div>
+    </div>
     <!-- item 14 -->
     <div class="panel panel-default">
         <div class="panel-heading" role="tab" id="heading14">
             <h4 class="panel-title">
                 <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse14" aria-expanded="false" aria-controls="collapse14">
-                    Flutter 개발자 <small class="text-muted">2021년 12월 ~ 현재</small>
+                    시니어 Flutter 엔지니어 <small class="text-muted">2021년 12월 ~ 2023년 9월</small>
                 </a>
             </h4>
         </div>
@@ -28,16 +83,17 @@
             <div class="panel-body" style="font-size:0.8em;">
                 <dl>
                     <dt>힐리월드 - 독일 베를린</dt>
-                    <dd>
-                        <a href="https://www.healy.shop/" target="_blank">
-                            <img src="https://www.healyprintworld.shop/media/94/03/7f/1653290172/logo_healy_rgb.png" alt="힐리월드" style="margin: 20px;height: 70px;">
-                        </a>
-                    </dd>
-                    <br />
                     <dt>스킬:</dt>
-                    <dd>Flutter, Dart, Gitlab, Bluetooth Low Energy, Bitrise, Firebase</dd>
+                    <dd>Flutter, Dart, Mobile Development, Bluetooth Low Energy</dd>
                     <br />
-                    <dd>잘 일하고 있습니다. :)</dd>
+                    <dt>담당:</dt>
+                    <dd>
+                        - iOS 및 Android용 프로덕션 Flutter 애플리케이션 개발 및 유지보수.
+                        <br />
+                        - 커넥티드 웨어러블 제품의 모바일 연동 개발.
+                        <br />
+                        - 안정적인 모바일 경험 제공을 위해 여러 직군의 팀과 협업.
+                    </dd>
                 </dl>
             </div>
         </div>
@@ -124,7 +180,7 @@
                     </dd>
                     <br />
                     <dt>스킬:</dt>
-                    <dd>Net 4.5+, C#, Xamarin, Android, Realm, Mapbox, Git, GitFlow, GitKraken</dd>
+                    <dd>.NET Framework 4.5+, C#, Xamarin, Android, Realm, Mapbox, Git, GitFlow, GitKraken</dd>
                     <br />
                     <dt>담당:</dt>
                     <dd>
@@ -165,7 +221,7 @@
                         </a>
                     </dd>
                     <dt>스킬:</dt>
-                    <dd>Net 4.5+, C#, Dapper, ASP.Net MVC, ASP.Net WebAPI, WinformMVP, WCF, jQuery, Ajax, Json, Bootstrap, VB, Crystal Report, MS Sql Server</dd>
+                    <dd>.NET Framework 4.5+, C#, Dapper, ASP.NET MVC, ASP.NET Web API, WinForms (MVP), WCF, jQuery, AJAX, JSON, Bootstrap, VB, Crystal Reports, Microsoft SQL Server</dd>
                     <br/>
                     <dt>담당:</dt>
                     <dd>
@@ -729,7 +785,7 @@
 
 ## 개인 프로젝트
 
----
+------------------------------------------------------------------------
 
 <div class="panel-group" id="accordion-projects" role="tablist" aria-multiselectable="true">
     <div class="panel panel-default">
