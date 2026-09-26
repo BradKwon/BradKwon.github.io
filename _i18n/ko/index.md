@@ -1,33 +1,81 @@
-## 안녕하세요?
+# 소프트웨어 개발자
 
-저는 늘 새로운 프로그래밍 지식을 배워가면서 활동하고 있는 소프트웨어 엔지니어입니다.
-세상에 존재하는 여러 기술들을 이용해 내가 할 수 있는 일들을 찾고 그런 기술들을 마스터해 나가는 과정에서 기쁨을 발견합니다.
-소프트웨어 엔지니어로서 언제나 새로운 기술들을 습득하고 구현해 나가는 게 숙명이라고 생각하고 있습니다.
+<small class="text-muted">모바일 & 엔터프라이즈 소프트웨어 개발</small>
 
-무언가를 주도적으로 해 나가는 걸 좋아하지만 동시에 매사에 신중하려 하는 스타일이며 일을 어떻게 처리해야
-할 지를 알고 맡은 일이 성공적으로 돌아가는 것을 좋아합니다.
+모바일 및 엔터프라이즈 소프트웨어 개발 분야에서 10년 이상의 경력을 가진
+소프트웨어 개발자이자 테크니컬 리드입니다. 최근에는 Flutter를 활용한
+크로스플랫폼 모바일 개발에 집중하고 있으며, 이전에는 Xamarin을 사용했고
+C#/.NET 및 엔터프라이즈 소프트웨어 개발 분야에서도 오랜 경험을
+쌓았습니다.
 
-여행, 음악, 배움과 웃는 걸 좋아하는 사람이며 매일매일 발전해 나가는 제 모습을 보는 것을 좋아합니다.
-그래서 하루하루가 저에게는 늘 새로운 여행입니다.
+현재 모바일 애플리케이션 개발을 리드하며 기술 방향, 아키텍처, CI/CD,
+엔지니어링 품질 및 안정적인 제품 개발을 담당하고 있습니다. 직접 개발에도
+계속 참여하면서 제품 매니저, QA, 백엔드 엔지니어 및 기타 이해관계자들과
+긴밀하게 협업하여 제품 요구사항을 유지보수하기 좋은 소프트웨어로
+구현하는 것을 중요하게 생각합니다.
 
-<br/><br/>
-# Career
+모바일 개발로 전환하기 전에는 리테일, 금융, 건설, 항공 및 공공 분야의
+다양한 엔터프라이즈 시스템을 개발했습니다. ASP.NET, C#/.NET, Microsoft
+SQL Server, Oracle, Java를 비롯해 데스크톱 애플리케이션, 웹 애플리케이션
+및 데이터베이스 기반 업무 시스템을 폭넓게 경험했습니다.
 
-소프트웨어공학 학사 학위를 받은 이후로, 저는 여러 나라와 다양한 산업에서 소프트웨어 개발자로 일해 왔습니다. 처음에는 미국 LA에서 커리어를 시작했고, 이후 한국 서울에서 일했으며, 지금은 유럽의 주요 IT 허브 중 하나인 베를린에서 일하고 있습니다. 이렇게 다른 환경에서 일해 오면서, 기술들이 어떻게 사용되고 어떤 방식으로 산업에 적용되는지에 대해 더 많은 호기심을 갖게 되었고, 이런 호기심 덕분에 데스크톱, 웹, 그리고 지금의 모바일까지 여러 분야를 자연스럽게 경험하게 됐습니다.
+이러한 경력을 통해 대규모 엔터프라이즈 시스템부터 수백만 명이 사용하는
+모바일 애플리케이션까지 다양한 제품을 개발해 왔으며, BLE 연동 제품과
+규제 대상 디지털 헬스 애플리케이션 개발 경험도 가지고 있습니다.
 
-여러 기술들을 다뤄보는 과정에서, 특히 모바일 개발, 그 중에서도 크로스플랫폼 개발이 가장 흥미롭게 느껴졌습니다. Flutter는 효율적이고 사용하기 즐거운 기술이었고, 계속해서 발전하고 더 많은 플랫폼으로 확장되는 모습을 보는 것이 재미있습니다.
+<style>
+.cv-link { color: royalblue; }
+.cv-link:hover { color: mediumblue; }
+</style>
 
-데이터베이스의 경우 예전에는 기업용 시스템에서 흔하게 쓰이던 MS-SQL이나 Oracle을 주로 사용했지만, 모바일 개발을 시작한 이후로는 Firestore, SQLite, Hive, Realm 같은 모바일 친화적인 데이터베이스를 더 많이 사용하게 되었습니다. 요즘은 NoSQL이 많이 사용되지만, 저는 여전히 SQL의 구조적인 접근 방식이 강력하고 많은 상황에서 효율적이라고 생각합니다.
+제 경력을 간략하게 확인하려면 <a href="/assets/BradKwonCV.pdf" class="cv-link">Resume/CV</a> 를 참고해 주세요.
 
----
+보다 자세한 프로젝트 경력은 아래 포트폴리오에서 확인할 수 있습니다.
+
+## 경력
+
+------------------------------------------------------------------------
 
 <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+    <!-- item 15 -->
+    <div class="panel panel-default">
+        <div class="panel-heading" role="tab" id="heading15">
+            <h4 class="panel-title">
+                <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse15" aria-expanded="false" aria-controls="collapse15">
+                    팀 리드 Flutter 엔지니어 <small class="text-muted">2023년 10월 ~ 현재</small>
+                </a>
+            </h4>
+        </div>
+        <div id="collapse15" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading15">
+            <div class="panel-body" style="font-size:0.8em;">
+                <dl>
+                    <dt>힐리월드 - 독일 베를린</dt>
+                    <dd>
+                        <a href="https://www.healy.shop/" target="_blank">
+                            <img src="https://www.healyprintworld.shop/media/94/03/7f/1653290172/logo_healy_rgb.png" alt="힐리월드" style="margin: 20px; height: 70px;">
+                        </a>
+                    </dd>
+                    <dt>스킬:</dt>
+                    <dd>Flutter, Dart, Mobile Development, CI/CD, Bluetooth Low Energy</dd>
+                    <br />
+                    <dt>담당:</dt>
+                    <dd>
+                        - iOS 및 Android 모바일 애플리케이션 개발 리드.
+                        <br />
+                        - 기술 방향, 엔지니어링 품질 및 제품 개발 담당.
+                        <br />
+                        - 제품, QA, 백엔드 및 기타 엔지니어링 팀과 협업.
+                    </dd>
+                </dl>
+            </div>
+        </div>
+    </div>
     <!-- item 14 -->
     <div class="panel panel-default">
         <div class="panel-heading" role="tab" id="heading14">
             <h4 class="panel-title">
                 <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse14" aria-expanded="false" aria-controls="collapse14">
-                    팀 리드 Flutter 개발자 <small class="text-muted">2021년 12월 ~ 현재</small>
+                    시니어 Flutter 엔지니어 <small class="text-muted">2021년 12월 ~ 2023년 9월</small>
                 </a>
             </h4>
         </div>
@@ -35,16 +83,17 @@
             <div class="panel-body" style="font-size:0.8em;">
                 <dl>
                     <dt>힐리월드 - 독일 베를린</dt>
-                    <dd>
-                        <a href="https://www.healy.shop/" target="_blank">
-                            <img src="https://www.healyprintworld.shop/media/94/03/7f/1653290172/logo_healy_rgb.png" alt="힐리월드" style="margin: 20px;height: 70px;">
-                        </a>
-                    </dd>
-                    <br />
                     <dt>스킬:</dt>
-                    <dd>Flutter, Dart, GitLab, Firebase, Bluetooth, Bitrise, Typescript, Phrase, SQLite, Jira, Confluence</dd>
+                    <dd>Flutter, Dart, Mobile Development, Bluetooth Low Energy</dd>
                     <br />
-                    <dd>잘 일하고 있습니다. :)</dd>
+                    <dt>담당:</dt>
+                    <dd>
+                        - iOS 및 Android용 프로덕션 Flutter 애플리케이션 개발 및 유지보수.
+                        <br />
+                        - 커넥티드 웨어러블 제품의 모바일 연동 개발.
+                        <br />
+                        - 안정적인 모바일 경험 제공을 위해 여러 직군의 팀과 협업.
+                    </dd>
                 </dl>
             </div>
         </div>
@@ -131,7 +180,7 @@
                     </dd>
                     <br />
                     <dt>스킬:</dt>
-                    <dd>Net 4.5+, C#, Xamarin, Android, Realm, Mapbox, Git, GitFlow, GitKraken</dd>
+                    <dd>.NET Framework 4.5+, C#, Xamarin, Android, Realm, Mapbox, Git, GitFlow, GitKraken</dd>
                     <br />
                     <dt>담당:</dt>
                     <dd>
@@ -172,7 +221,7 @@
                         </a>
                     </dd>
                     <dt>스킬:</dt>
-                    <dd>Net 4.5+, C#, Dapper, ASP.Net MVC, ASP.Net WebAPI, WinformMVP, WCF, jQuery, Ajax, Json, Bootstrap, VB, Crystal Report, MS Sql Server</dd>
+                    <dd>.NET Framework 4.5+, C#, Dapper, ASP.NET MVC, ASP.NET Web API, WinForms (MVP), WCF, jQuery, AJAX, JSON, Bootstrap, VB, Crystal Reports, Microsoft SQL Server</dd>
                     <br/>
                     <dt>담당:</dt>
                     <dd>
@@ -734,73 +783,11 @@
     </div>
 </div>
 
-### 개인 프로젝트
+## 개인 프로젝트
 
----
+------------------------------------------------------------------------
 
 <div class="panel-group" id="accordion-projects" role="tablist" aria-multiselectable="true">
-    <!-- Item 2 -->
-    <div class="panel panel-default">
-        <div class="panel-heading" role="tab" id="projects-heading2">
-            <h4 class="panel-title">
-                <a role="button" data-toggle="collapse" data-parent="#accordion-projects" href="#projects-collapse2" aria-expanded="false" aria-controls="projects-collapse2">
-                        돼지 저금통 EX 모바일 앱 <small class="text-muted">2022년 1월 ~ 2024년 4월</small>
-                </a>
-            </h4>
-        </div>
-        <div id="projects-collapse2" class="panel-collapse collapse" role="tabpanel" aria-labelledby="projects-heading2">
-            <div class="panel-body" style="font-size:0.8em;">
-                <dl>
-                    <dt>스킬:</dt>
-                    <dd>Flutter, Dart, Bloc, AdMob, GitHub, Firebase, CodeMagic</dd>
-                    <br/>
-                    <dt>상세설명:</dt>
-                    <dd>
-                        <p style="margin-top:0px;">
-                            모바일 앱 개발자로 일하면서 직접 만든 앱을 하나 만들고 싶어서 작은 도구 앱을 하나 만들었습니다.
-                            언젠가 아이들이 자기들 한국 용돈이 유로로 얼마냐고 자주 물어봤었는데 그럴때마다 환율을 조회해서 애들한테 알려줬었습니다. 그러다가 문득, 이걸 자동화해서 아이들이 직접 변환된 금액을 확인할 수 있으면 좋겠다고 생각했습니다. 그러면서 아이들이 환율때문에 금액이 매일 바뀐다는 걸 알고 조금이나마 개념을 이해할 수 있으면 좋겠다고 생각했고 여기서 아이디어를 얻었습니다.                            
-                        </p>
-                        <p>
-                            이 앱에서는 <a href="https://www.frankfurter.app/" target="blank">Frankfurter 서비스</a> 라는 유럽 중앙은행에서 환율 정보를 가져오는 무료 서비스를 사용했습니다.
-                            그리고, 이를 사용한 <a href="https://pub.dev/packages/frankfurter" target="blank">플러터 패키지</a>를 사용했습니다.
-                            환율은 실시간이 아니며 유럽 중앙은행의 배포일자와 동일하게 휴일을 제외한 매일 CET 오후 4시에 업데이트됩니다.
-                        </p>
-                        <p>
-                            플러터 상태 관리 라이브러리로는 잘 구조화되어있고 엄격해서 제가 선호하는 Bloc (Business logic component) 을 사용하였습니다.
-                        </p>
-                        <p>
-                            파이어베이스의 클라우드 메시징, 리모트 설정, 크래쉬틱스 같은 일부 기능들을 사용하였습니다.
-                        </p>
-                        <p>
-                            또한, 이 앱은 34 언어를 지원하고 있습니다. 제가 모든 언어를 말할 수 있다면 좋겠지만 그렇지 않아서 구글 번역기와 디플을 사용하는 <a href="https://pub.dev/packages/auto_translator" target="blank">auto_translator</a> 플러터 패키지를 사용하여 쉽게 번역을 할 수 있었습니다.
-                        </p>
-                        <p>
-                            이 앱을 완성했을 때, 앱 개발 비용도 좀 커버할 수 있으면 좋겠다고 생각해서 구글 애드몹을 사용하여 광고도 추가했습니다. 이 비용을 커버할 수 있을지는 모르겠지만 그렇게 되기를 바랍니다.
-                        </p>
-                        <p>
-                            이 앱을 개발 및 배포하면서 크로스 플랫폼 모바일 앱 개발의 처음부터 마지막까지를 혼자 힘으로 다 경험할 수 있어서 좋았습니다. 물론, 모바일 개발자로 일하면서 거의 대부분의 부분은 다 경험해 봤지만 일부는 권한 문제때문에 경험할 수 없었는데 마지막 퍼즐이 완성된 것 같아 뿌듯합니다.
-                        </p>
-                    </dd>
-                    <br/>
-                    <dt>App Links:</dt>
-                    <dd>
-                        <p>
-                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Android&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;iOS
-                        </p>
-                        <p>
-                            <a href="https://play.google.com/store/apps/details?id=com.ninebear.piggybank" target="_blank">
-                                <img src="https://play-lh.googleusercontent.com/2RkVVkZOa4YjoFlBHMPwmTYaC_eZVquZX3QFW2BvkwcTCEaMbiEDV1eTuXgX97dHUy8=w480-h960-rw" alt="Android App" style="margin-bottom: 10px; margin-right: 20px; display: inline-block; height: 100px;">
-                            </a>
-                            <a href="https://apps.apple.com/us/app/piggybank-ex/id6482575990" target="_blank">
-                                <img src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/93/c7/43/93c7436f-7584-667c-4a48-bf8e30746660/AppIcon-0-0-1x_U007emarketing-0-7-0-0-85-220.png/460x0w.webp" alt="iOS App" style="margin-bottom: 10px; display: inline-block; height: 100px;">
-                            </a>
-                        </p>
-                    </dd>
-                </dl>
-            </div>
-        </div>
-    </div>
-    <!-- Item 1 -->
     <div class="panel panel-default">
         <div class="panel-heading" role="tab" id="projects-heading1">
             <h4 class="panel-title">

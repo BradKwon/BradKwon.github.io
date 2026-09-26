@@ -1,33 +1,55 @@
-## Hi there!
+# Software Engineer
 
-I am a software engineer who enjoys learning modern technologies. It is interesting for me to explore what I can build with new tools and to grow my expertise step by step. As a developer, I believe it is natural for me to keep learning new things and make them work in real projects.
+<small class="text-muted">Mobile & Enterprise Software
+Development</small>
 
-I have a get-up-and-go attitude, but I am also careful and thoughtful when I need to be. I focus on getting things done and making sure what I build keeps running well.
+I am a software engineer and technical lead with 10+ years of experience
+across mobile and enterprise software development. My recent focus has
+been cross-platform mobile development with Flutter, following earlier
+experience with Xamarin and a strong foundation in C#/.NET and
+enterprise software.
 
-Outside of work, I enjoy traveling, music, learning new things, and simply smiling. I like seeing myself become a little better than yesterday, so every day feels like another small but intriguing adventure.
+I currently lead mobile application development, with responsibility for
+technical direction, architecture, CI/CD, engineering quality, and
+reliable product delivery. I enjoy staying hands-on while working
+closely with product managers, QA, backend engineers, and other
+stakeholders to turn product requirements into maintainable software.
 
-<br/><br/>
-# Career
+Before moving into mobile development, I worked extensively on
+enterprise systems across retail, finance, construction, aviation, and
+public-sector projects. That background includes ASP.NET, C#/.NET,
+Microsoft SQL Server, Oracle, Java, desktop applications, web
+applications, and database-driven business systems.
 
-Since earning my bachelor’s degree in Software Engineering, I’ve been working as a software developer in different places and industries. I started my career in Los Angeles, then worked in Seoul, and eventually moved to Berlin, which is known as a big IT hub in Europe. Working in these different environments made me more curious about various technologies and how they are used. That curiosity naturally led me to try many areas, from desktop and web development to mobile.
+Across these roles, I have worked on products ranging from large
+enterprise systems to mobile applications used by millions of users,
+including BLE-connected products and regulated digital health
+applications.
 
-Among all the technologies I experienced, mobile development—especially cross-platform—became the most interesting part for me. Flutter in particular felt efficient and enjoyable to work with, and I like seeing how it keeps improving and expanding to more platforms.
+<style>
+.cv-link { color: royalblue; }
+.cv-link:hover { color: mediumblue; }
+</style>
 
-When it comes to databases, I mainly used MS-SQL and Oracle before because they were common in enterprise projects. After I moved to mobile development, I started using more mobile-friendly options like Firestore, SQLite, Hive, and Realm. Even though NoSQL is very popular nowadays, I still think SQL’s structured approach is strong and works well in many situations.
+For a concise overview of my experience, please see my **<a href="/assets/BradKwonCV.pdf" class="cv-link">Resume / CV</a>**.
 
----
+For a more detailed project history, see my portfolio below.
+
+## Career
+
+------------------------------------------------------------------------
 
 <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
-    <!-- item 14 -->
+    <!-- item 15 -->
     <div class="panel panel-default">
-        <div class="panel-heading" role="tab" id="heading14">
+        <div class="panel-heading" role="tab" id="heading15">
             <h4 class="panel-title">
-                <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse14" aria-expanded="false" aria-controls="collapse14">
-                    Team Lead Flutter Developer <small class="text-muted">Dec. 2021 ~ Present</small>
+                <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse15" aria-expanded="false" aria-controls="collapse15">
+                    Team Lead Flutter Engineer <small class="text-muted">Oct. 2023 ~ Present</small>
                 </a>
             </h4>
         </div>
-        <div id="collapse14" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading14">
+        <div id="collapse15" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading15">
             <div class="panel-body" style="font-size:0.8em;">
                 <dl>
                     <dt>Healy World GmbH - Berlin, Germany</dt>
@@ -36,11 +58,45 @@ When it comes to databases, I mainly used MS-SQL and Oracle before because they 
                             <img src="https://www.healyprintworld.shop/media/94/03/7f/1653290172/logo_healy_rgb.png" alt="Healy" style="margin: 20px; height: 70px;">
                         </a>
                     </dd>
-                    <br />
                     <dt>Skills:</dt>
-                    <dd>Flutter, Dart, GitLab, Firebase, Bluetooth, Bitrise, Typescript, Phrase, SQLite, Jira, Confluence</dd>
+                    <dd>Flutter, Dart, Mobile Development, CI/CD, Bluetooth Low Energy</dd>
                     <br />
-                    <dd>I'm having fun here :)</dd>
+                    <dt>Responsibilities:</dt>
+                    <dd>
+                        - Leading mobile application development for iOS and Android.
+                        <br />
+                        - Responsible for technical direction, engineering quality, and product delivery.
+                        <br />
+                        - Collaborating with product, QA, backend, and other engineering teams.
+                    </dd>
+                </dl>
+            </div>
+        </div>
+    </div>
+    <!-- item 14 -->
+    <div class="panel panel-default">
+        <div class="panel-heading" role="tab" id="heading14">
+            <h4 class="panel-title">
+                <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse14" aria-expanded="false" aria-controls="collapse14">
+                    Senior Flutter Engineer <small class="text-muted">Dec. 2021 ~ Sep. 2023</small>
+                </a>
+            </h4>
+        </div>
+        <div id="collapse14" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading14">
+            <div class="panel-body" style="font-size:0.8em;">
+                <dl>
+                    <dt>Healy World GmbH - Berlin, Germany</dt>
+                    <dt>Skills:</dt>
+                    <dd>Flutter, Dart, Mobile Development, Bluetooth Low Energy</dd>
+                    <br />
+                    <dt>Responsibilities:</dt>
+                    <dd>
+                        - Developed and maintained production Flutter applications for iOS and Android.
+                        <br />
+                        - Worked on mobile integrations for connected wearable products.
+                        <br />
+                        - Collaborated with cross-functional teams to deliver reliable mobile experiences.
+                    </dd>
                 </dl>
             </div>
         </div>
@@ -57,7 +113,7 @@ When it comes to databases, I mainly used MS-SQL and Oracle before because they 
         <div id="collapse13" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading13">
             <div class="panel-body" style="font-size:0.8em;">
                 <dl>
-                    <dt>Neuronation - Berlin, Germany</dt>
+                    <dt>NeuroNation - Berlin, Germany</dt>
                     <dd>
                         <a href="https://www.neuronation.com/" target="_blank" title="Go to their website.">
                             <img src="https://cms.cdn.neuronation.com/assets/opxp/logo.svg" alt="Neuronation" style="margin: 20px;">
@@ -127,7 +183,7 @@ When it comes to databases, I mainly used MS-SQL and Oracle before because they 
                     </dd>
                     <br />
                     <dt>Skills:</dt>
-                    <dd>Net 4.5+, C#, Xamarin, Android, Realm, Mapbox, Git, GitFlow, GitKraken</dd>
+                    <dd>.NET Framework 4.5+, C#, Xamarin, Android, Realm, Mapbox, Git, GitFlow, GitKraken</dd>
                     <br />
                     <dt>In charge of:</dt>
                     <dd>
@@ -168,7 +224,7 @@ When it comes to databases, I mainly used MS-SQL and Oracle before because they 
                         </a>
                     </dd>
                     <dt>Skills:</dt>
-                    <dd>Net 4.5+, C#, Dapper, ASP.Net MVC, ASP.Net WebAPI, WinformMVP, WCF, jQuery, Ajax, Json, Bootstrap, VB, Crystal Report, MS Sql Server</dd>
+                    <dd>.NET Framework 4.5+, C#, Dapper, ASP.NET MVC, ASP.NET Web API, WinForms (MVP), WCF, jQuery, AJAX, JSON, Bootstrap, VB, Crystal Reports, Microsoft SQL Server</dd>
                     <br/>
                     <dt>In charge of:</dt>
                     <dd>
@@ -806,78 +862,11 @@ When it comes to databases, I mainly used MS-SQL and Oracle before because they 
     </div>
 </div>
 
-### Personal projects
+## Personal projects
 
----
+------------------------------------------------------------------------
 
 <div class="panel-group" id="accordion-projects" role="tablist" aria-multiselectable="true">
-    <!-- Item 2 -->
-    <div class="panel panel-default">
-        <div class="panel-heading" role="tab" id="projects-heading2">
-            <h4 class="panel-title">
-                <a role="button" data-toggle="collapse" data-parent="#accordion-projects" href="#projects-collapse2" aria-expanded="false" aria-controls="projects-collapse2">
-                        PiggyBank EX mobile app <small class="text-muted">Jan. 2022 ~ Apr. 2024</small>
-                </a>
-            </h4>
-        </div>
-        <div id="projects-collapse2" class="panel-collapse collapse" role="tabpanel" aria-labelledby="projects-heading2">
-            <div class="panel-body" style="font-size:0.8em;">
-                <dl>
-                    <dt>Skills:</dt>
-                    <dd>Flutter, Dart, Bloc, AdMob, GitHub, Firebase, CodeMagic</dd>
-                    <br/>
-                    <dt>Details:</dt>
-                    <dd>
-                        <p style="margin-top:0px;">
-                            Since I have worked as a mobile developer, I wanted to develop my own mobile app and here my small tool app comes.
-                            I got the idea of this tool by my kid because they often asked me how much their Korean pocket money in Euro is.
-                            Whenever I answer it, I needed to look up the converted amount in the exchange rate calculation website.
-                            I thought it would be great if they can check it by themselves and also thought it would be good for them by seeing that
-                            their converted amount changes due to the exchange rate changes. Then they can at least understand a bit of currency differences.
-                        </p>
-                        <p>
-                            The app gets the exchange rates from the <a href="https://www.frankfurter.app/" target="blank">Frankfurter service</a>, which gets it from the European Central Bank free of charge. And its <a href="https://pub.dev/packages/frankfurter" target="blank">Flutter package</a>.
-                            The exchange rate is not real-time. It is updated around CET 4PM every working day aligned with the European Central Bank publish schedule.
-                        </p>
-                        <p>
-                            I used Bloc (Business logic component) for the Flutter state management library because it is strict and has straightforward well-organized structure.
-                        </p>
-                        <p>
-                            The app uses some Firebase products such as Firebase Cloud Messaging, Remote Config, and Crashlytics as the Flutter and the Firebase set is quite common.
-                        </p>
-                        <p>
-                            This app supports 34 languages. It would be fantastic if I can speak all those languages however, I can't so I translated all text with
-                            Google Translator and Deepl. There was a really convenient package, <a href="https://pub.dev/packages/auto_translator" target="blank">auto_translator</a> that enalbes the automation of this process.
-                        </p>
-                        <p>
-                            When I completed the app, I wanted to cover my cost of app release and development, which is all developers' dream I guess. 
-                            As you know, it is not free to release Android and iOS app to their app stores. Therefore, I added some ads using Google AdMob.
-                            Hopefully, I can cover my Google and Apple registration fees at least.
-                        </p>
-                        <p>
-                            With this app release, I was able to experience the cross-platform mobile app development lifecycle from scratch to the end of jouney, which is to release it to the Google and Apple app stores on my own. Of course, I already know most of them from my work experiences however, there are some missing puzzles that I couldn't do due to the permissions.
-                        </p>
-                    </dd>
-                    <br/>
-                    <dt>App Links:</dt>
-                    <dd>
-                        <p>
-                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Android&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;iOS
-                        </p>
-                        <p>
-                            <a href="https://play.google.com/store/apps/details?id=com.ninebear.piggybank" target="_blank">
-                                <img src="https://play-lh.googleusercontent.com/2RkVVkZOa4YjoFlBHMPwmTYaC_eZVquZX3QFW2BvkwcTCEaMbiEDV1eTuXgX97dHUy8=w480-h960-rw" alt="Android App" style="margin-bottom: 10px; margin-right: 20px; display: inline-block; height: 100px;">
-                            </a>
-                            <a href="https://apps.apple.com/us/app/piggybank-ex/id6482575990" target="_blank">
-                                <img src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/93/c7/43/93c7436f-7584-667c-4a48-bf8e30746660/AppIcon-0-0-1x_U007emarketing-0-7-0-0-85-220.png/460x0w.webp" alt="iOS App" style="margin-bottom: 10px; display: inline-block; height: 100px;">
-                            </a>
-                        </p>
-                    </dd>
-                </dl>
-            </div>
-        </div>
-    </div>
-    <!-- Item 1 -->
     <div class="panel panel-default">
         <div class="panel-heading" role="tab" id="projects-heading1">
             <h4 class="panel-title">
